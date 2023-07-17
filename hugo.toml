@@ -1,4 +1,4 @@
-baseURL = "https://dongje.kim/"
+baseURL = "https://dk3156.github.io/dongje.kim/"
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = "anatole"
