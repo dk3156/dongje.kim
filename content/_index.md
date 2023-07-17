@@ -11,8 +11,10 @@ GPA: 3.489 / 4.0
 
 Relevant coursework: Software Engineering, Design and Analysis of Algorithm, Computer Graphics, Artificial Intelligence, Database, Data Strcuture and Algorithms, Object Oriented Programming, Intro to Programming, Human Computer Interaction, Linear Algebra
 
-Github: https://github.com/dk3156 |
-LinkedIn: https://www.linkedin.com/in/dongjekim/ |
-Other Portfolio: https://dk3156.github.io/Art/
+Github: https://github.com/dk3156
+
+LinkedIn: https://www.linkedin.com/in/dongjekim/
+
+Other Portfolio: https://dk3156.github.io/Art
 
 ---
