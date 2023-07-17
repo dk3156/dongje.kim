@@ -1,0 +1,14 @@
+Battle Arthur Lancelot
+Warrior	Jim	42
+Warrior	Lancelot 15
+Warrior Arthur 15
+Warrior Torvalds 20
+Warrior Gates 8
+Warrior Lancelot 21
+Status
+Battle Arthur Lancelot
+Battle Jim Lancelot
+Battle Torvalds Gates
+Battle Gates Lancelot
+Status
+
