@@ -85,20 +85,22 @@ The following link is the tutorial video for demonstration purposes.
 
 {{< youtube DEza2H9qdpk>}}
 
+
 ## Performance Metrics
+
 F1 and Recall scores for the first five comments
 
-![]("https://user-images.githubusercontent.com/78196670/235417649-a6aca9c7-874d-4398-aadd-486777285207.png")
+<img width="261" alt="metric5" src="https://user-images.githubusercontent.com/78196670/235417649-a6aca9c7-874d-4398-aadd-486777285207.png">
 
 F1 score visualization in box-plot
 
-![]("https://user-images.githubusercontent.com/78196670/235417878-24b142e7-066d-4ea2-bf9c-77f2da81ed5a.png")
-
-![]("https://user-images.githubusercontent.com/78196670/235417936-db792c34-3df5-42ec-b002-64b3d05b2cb5.png")
-
-![]("https://user-images.githubusercontent.com/78196670/235418023-213650db-11ca-4768-8a28-387d7703063f.png")
-
-![]("https://user-images.githubusercontent.com/78196670/235418023-213650db-11ca-4768-8a28-387d7703063f.png")
-
-![]("https://user-images.githubusercontent.com/78196670/235418082-1051e337-00dc-416b-b3a6-18c88922e4a7.png")
+<img width="500" src="https://user-images.githubusercontent.com/78196670/235417878-24b142e7-066d-4ea2-bf9c-77f2da81ed5a.png">
+<br>
+<img width="500" src="https://user-images.githubusercontent.com/78196670/235417936-db792c34-3df5-42ec-b002-64b3d05b2cb5.png"><br>
+<br>
+<img width="500" src="https://user-images.githubusercontent.com/78196670/235418023-213650db-11ca-4768-8a28-387d7703063f.png">
+<br>
+<img width="500" src="https://user-images.githubusercontent.com/78196670/235418023-213650db-11ca-4768-8a28-387d7703063f.png">
+<br>
+<img width="500" src="https://user-images.githubusercontent.com/78196670/235418082-1051e337-00dc-416b-b3a6-18c88922e4a7.png">
 
