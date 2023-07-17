@@ -8,7 +8,7 @@ enableEmoji = true
 title = "Dongje Kim"
 author = "dongje kim"
 description = "Portfolio"
-mainSections = ["experience", "projects", "skills"]
+mainSections = ["experience", "projects", "skills", "blog"]
 profilePicture = "images/tiger.png"
 
 [menu]
@@ -32,7 +32,7 @@ profilePicture = "images/tiger.png"
   url = "/projects/"
 
   [[menu.main]]
-  name = "skill"
+  name = "blog"
   weight = 4
-  identifier = "skill"
-  url = "/skills/"
+  identifier = "blog"
+  url = "/blog/"
