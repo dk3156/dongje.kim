@@ -1,0 +1,241 @@
+<!doctype html><html dir=ltr lang=en data-theme class="html theme--light"><head><title>dongje kim
+|
+DSA lab 4</title><meta charset=utf-8><meta name=generator content="Hugo 0.115.3"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name=author content="dongje kim"><meta name=description content="Portfolio"><link rel=stylesheet href=/dongje.kim/scss/main.min.1147aa5bacb4bce677a0e264073829caedb82fd18ea07a5f1d80521f539d1c45.css integrity="sha256-EUeqW6y0vOZ3oOJkBzgpyu24L9GOoHpfHYBSH1OdHEU=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/fontawesome.min.7d272de35b410fb165377550cdf9c4d3a80fbbcc961e111914e4d5c0eaf5729f.css integrity="sha256-fSct41tBD7FlN3VQzfnE06gPu8yWHhEZFOTVwOr1cp8=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/solid.min.55d8333481b07a08e07cf6f37319753a2b47e99f4c395394c5747b48b495aa9b.css integrity="sha256-VdgzNIGwegjgfPbzcxl1OitH6Z9MOVOUxXR7SLSVqps=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/regular.min.a7448d02590b43449364b6b5922ed9af5410abb4de4238412a830316dedb850b.css integrity="sha256-p0SNAlkLQ0STZLa1ki7Zr1QQq7TeQjhBKoMDFt7bhQs=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/brands.min.9ed75a5d670c953fe4df935937674b4646f92674367e9e66eb995bb04e821647.css integrity="sha256-ntdaXWcMlT/k35NZN2dLRkb5JnQ2fp5m65lbsE6CFkc=" crossorigin=anonymous type=text/css><link rel="shortcut icon" href=/dongje.kim/favicon.ico type=image/x-icon><link rel=apple-touch-icon sizes=180x180 href=/dongje.kim/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/dongje.kim/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/dongje.kim/favicon-16x16.png><link rel=canonical href=https://dk3156.github.io/dongje.kim/experience/dsa/labs/lab4/><script type=text/javascript src=/dongje.kim/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js integrity="sha256-+RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI=" crossorigin=anonymous></script>
+<script type=text/javascript src=/dongje.kim/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc=" crossorigin=anonymous></script><meta name=twitter:card content="summary"><meta name=twitter:title content="DSA lab 4"><meta name=twitter:description content="Download problem set
+Answer for Coding Questions #1 def is_palindrome(s): left = 0 right = len(s) - 1 while left < right: #or while left < right if s[left] != s[right]: return False left += 1 right -= 1 return True #simplified def is_palindrome2(s): for i in range(len(s)//2): if s[i] != s[len(s)-1 - i]: #or ss[-1 -i] return False return True #2 def reverse_vowels(input_str): left = 0 right = len(input_str) - 1 vowels = &#34;aeiou&#34; lst = list(input_str) #linear while left < right: #can't use for loop because you don't know where vowels are placed if lst[left] in vowels and lst[right] in vowels: lst[left], lst[right] = lst[right], lst[left] left += 1 right -= 1 if lst[left] not in vowels: left += 1 if lst[right] not in vowels: right -= 1 return &#34;&#34;."><meta property="og:title" content="DSA lab 4"><meta property="og:description" content="Download problem set
+Answer for Coding Questions #1 def is_palindrome(s): left = 0 right = len(s) - 1 while left < right: #or while left < right if s[left] != s[right]: return False left += 1 right -= 1 return True #simplified def is_palindrome2(s): for i in range(len(s)//2): if s[i] != s[len(s)-1 - i]: #or ss[-1 -i] return False return True #2 def reverse_vowels(input_str): left = 0 right = len(input_str) - 1 vowels = &#34;aeiou&#34; lst = list(input_str) #linear while left < right: #can't use for loop because you don't know where vowels are placed if lst[left] in vowels and lst[right] in vowels: lst[left], lst[right] = lst[right], lst[left] left += 1 right -= 1 if lst[left] not in vowels: left += 1 if lst[right] not in vowels: right -= 1 return &#34;&#34;."><meta property="og:type" content="article"><meta property="og:url" content="https://dk3156.github.io/dongje.kim/experience/dsa/labs/lab4/"><meta property="article:section" content="experience"><meta property="og:site_name" content="Dongje Kim"><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"experience","name":"DSA lab 4","headline":"DSA lab 4","alternativeHeadline":"","description":"
+      
+        Download problem set\nAnswer for Coding Questions #1 def is_palindrome(s): left = 0 right = len(s) - 1 while left \u0026lt; right: #or while left \u0026lt; right if s[left] != s[right]: return False left \u002b= 1 right -= 1 return True #simplified def is_palindrome2(s): for i in range(len(s)\/\/2): if s[i] != s[len(s)-1 - i]: #or ss[-1 -i] return False return True #2 def reverse_vowels(input_str): left = 0 right = len(input_str) - 1 vowels = \u0026#34;aeiou\u0026#34; lst = list(input_str) #linear while left \u0026lt; right: #can\u0026#39;t use for loop because you don\u0026#39;t know where vowels are placed if lst[left] in vowels and lst[right] in vowels: lst[left], lst[right] = lst[right], lst[left] left \u002b= 1 right -= 1 if lst[left] not in vowels: left \u002b= 1 if lst[right] not in vowels: right -= 1 return \u0026#34;\u0026#34;.
+
+
+      
+
+
+    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/dk3156.github.io\/dongje.kim\/experience\/dsa\/labs\/lab4\/"},"author":{"@type":"Person","name":"dongje kim"},"creator":{"@type":"Person","name":"dongje kim"},"accountablePerson":{"@type":"Person","name":"dongje kim"},"copyrightHolder":{"@type":"Person","name":"dongje kim"},"copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"dongje kim","url":"https://dk3156.github.io/dongje.kim/","logo":{"@type":"ImageObject","url":"https:\/\/dk3156.github.io\/dongje.kim\/favicon-32x32.png","width":"32","height":"32"}},"image":[],"url":"https:\/\/dk3156.github.io\/dongje.kim\/experience\/dsa\/labs\/lab4\/","wordCount":"1261","genre":[],"keywords":[]}</script></head><body class=body><div class=wrapper><aside class=wrapper__sidebar><div class="sidebar
+animated fadeInDown"><div class=sidebar__content><div class=sidebar__introduction><img class=sidebar__introduction-profileimage src=/dongje.kim/images/tiger.png alt="profile picture"><div class=sidebar__introduction-title><a href=/dongje.kim>Dongje Kim</a></div><div class=sidebar__introduction-description><p>Portfolio</p></div></div><ul class=sidebar__list></ul></div><footer class="footer footer__sidebar"><ul class=footer__list><li class=footer__item>&copy;
+dongje kim
+2023</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></div></aside><main class=wrapper__main><header class=header><div class="animated fadeInDown"><a role=button class=navbar-burger data-target=navMenu aria-label=menu aria-expanded=false><span aria-hidden=true class=navbar-burger__line></span>
+<span aria-hidden=true class=navbar-burger__line></span>
+<span aria-hidden=true class=navbar-burger__line></span></a><nav class=nav><ul class=nav__list id=navMenu><li class=nav__list-item><a href=/dongje.kim/ title>Home</a></li><li class=nav__list-item><a href=/dongje.kim/experience/work/ title>experience</a></li><li class=nav__list-item><a href=/dongje.kim/projects/ title>project</a></li><li class=nav__list-item><a href=/dongje.kim/skills/ title>skill</a></li></ul><ul class="nav__list nav__list--end"><li class=nav__list-item><div class=themeswitch><a title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></li></ul></nav></div></header><div class="post
+animated fadeInDown"><div class=post__content><h1>DSA Lab 4</h1><p><a href=https://dk3156.github.io/experience/dsa/labs/dsa_lab4.docx>Download problem set</a></p><h2 id=answer-for-coding-questions>Answer for Coding Questions</h2><pre tabindex=0><code>#1
+def is_palindrome(s): 
+    left = 0
+    right = len(s) - 1
+    while left &lt; right: #or while left &lt; right
+        if s[left] != s[right]: return False
+        left += 1
+        right -= 1 return True
+
+#simplified
+def is_palindrome2(s): 
+    for i in range(len(s)//2):
+        if s[i] != s[len(s)-1 - i]: #or ss[-1 -i]
+            return False
+    return True
+
+#2
+def reverse_vowels(input_str): 
+    left = 0
+    right = len(input_str) - 1 vowels = &#34;aeiou&#34;
+    lst = list(input_str) #linear
+    while left &lt; right: 
+    #can&#39;t use for loop because you don&#39;t know where vowels are placed 
+    if lst[left] in vowels and lst[right] in vowels:
+        lst[left], lst[right] = lst[right], lst[left] left += 1
+    right -= 1
+    if lst[left] not in vowels: 
+        left += 1
+    if lst[right] not in vowels: 
+        right -= 1
+    return &#34;&#34;.join(lst) #linear
+
+#Q3
+def find_missingl(lst): 
+    if lst[0] != 0:
+        return 0
+    for i in range(1, len(lst)):
+        if lst[i] - lst[i-1] &gt; 1: 
+        #difference between 2 consecutive numbers is expected to be 1
+        return lst[i] - 1 
+    return len(lst)
+#3b binary
+&#39;&#39;&#39;
+with lst = [0, 1, 2, 3, 4, 5, 6, 7, 8 ]
+we expect i == lst[i];
+however, if we remove a number, there will be a shift for example, removing 3 will cause:
+lst = [0, 1, 2, 4, 5, 6, 7, 8]
+now, i == lst[i] only applies for numbers up to 2, everything else is lst[i] = i + 1, ex) at i = 3, we have 4
+binary search is used to detect that shift:
+for example (first iteration), lst = [0, 1, 2, 4, 5, 6, 7, 8]
+left = 0, lst[left] = 0
+right = 7, lst[right] = 8 #expected 7 here mid = 3, lst[mid] = 4
+if lst[right] - lst[mid] != right - mid -&gt; (8-4) != (7-3)
+this is False, so that means we didn&#39;t detect a shift on the right side
+if lst[mid] - lst[left] != mid - left -&gt; (4-0) != (3-0)
+well, this is True, so that means the shift occured somewhere on the left
+so update mid -&gt; right = mid and we eliminated the right half our search
+#notice we don&#39;t do right = mid - 1 and throwaway the mid like we did for normal binary search because we are looking for a MISSING val
+this is because if we did right = mid -1, we&#39;d get right = 2 and our search would be [0, 1, 2]
+we threw away the mid in binary search because we were looking for an EXISTING val and we already checked if val == lst[mid]
+anyway,
+continue this until lst[right] - lst[left] == 2; the missing number would&#39;ve been in between
+&#39;&#39;&#39;
+#3b
+def find_missingb(lst): 
+    left = 0
+    right = len(lst) - 1 
+    if lst[0] != 0:
+        return 0
+    elif lst[len(lst) - 1] == len(lst) - 1:
+        return len(lst)
+    while lst[right] - lst[left] != 2:
+        mid = (left + right)//2
+        if lst[right] - lst[mid] != right - mid:
+            left = mid
+        elif lst[mid] - lst[left] != mid - left:
+            right = mid 
+    return lst[left] + 1
+#3c
+def find_missingc(lst):
+    total = sum(lst) #linear
+    for num in range(len(lst)+1):
+        total -= num 
+    return -total
+#3c without using sum function
+def find_missingc2(lst):
+    total = 0
+    for num in range(len(lst)):
+        total -= (num - lst[num]) 
+    return len(lst) - total
+#3c using the n(n+1)/2 function
+def find_missingc3(lst):
+    #len(lst) = n
+    return len(lst)*(len(lst)+1)//2 - sum(lst)
+#Q4 Part A
+def find_pivot(lst): 
+    left = 0
+    right = len(lst) - 1 mid = left
+    while left &lt; right:
+        mid = (left + right)//2
+        if (lst[mid] &gt; lst[right]): #if the right bound is smaller than the mid, this part is not sorted
+            left = mid + 1
+            #only increment left, because the smallest should be on the left side 
+        else:
+        #lst[mid] &lt; lst[left] left bound biger than mid, this part is not sorted
+            right = mid 
+    return left
+#Q4 Part B
+def shift_binary_search(lst, target): 
+    mid = find_pivot(lst) #save the pivot 
+    left = 0
+    right = len(lst) - 1
+    #now binary search while left &lt;= right:
+    mid = (left + right) //2 
+    if lst[mid] == target:
+        return mid
+    elif lst[mid] &lt; target:
+        left = mid + 1
+    else: #lst[mid] &gt; target
+        right = mid - 1
+    ßreturn None #couldn&#39;t find
+#5a
+import math
+def jump_search_k(lst, val, k):
+    if len(lst) &gt; 0: 
+        curr = 0
+        prev = curr 
+        jump = k
+    #check if list not empty first
+    #save the prev jump point
+    #how much you jump, this is your k
+    #jump not out of bound and lst[curr] &lt; val
+    while curr &lt; len(lst) and lst[curr] &lt; val: 
+        prev = curr
+        curr += jump
+    #if jump out of range for a non perfect square size
+    if curr &gt;= len(lst):
+        prev = curr - jump #jump back to prev
+        curr = len(lst) - 1 #change upper bound to last index
+    #linear search back at most n//k values
+    while curr &gt;= prev: 
+        if lst[curr] == val:
+            return curr curr -= 1
+    return None #couldn&#39;t find it 
+    
+#5b
+def jump_search(lst, val):
+    if len(lst) &gt; 0: 
+    #check if list not empty first 
+    curr = 0
+    prev = curr #save the prev jump point
+    jump = math.floor(math.sqrt(len(lst))) 
+    #how much you jump, this is your k
+    #int( len(lst) ** (0.5) )
+    #jump not out of bound and lst[curr] &lt; val
+    while curr &lt; len(lst) and lst[curr] &lt; val: 
+        prev = curr
+        curr += jump
+    #if jump out of range for a non perfect square size
+    if curr &gt;= len(lst):
+        prev = curr - jump
+        curr = len(lst) - 1 #change upper bound to last index
+    #linear search back at most sqrt(n) values, k == sqrt(n)
+    while curr &gt;= prev: 
+        if lst[curr] == val:
+            return curr curr -= 1
+    return None #couldn&#39;t find it
+&#39;&#39;&#39;
+lst = [-1111, -818, -646, -50, -25, -3, 0, 1, 2, 11, 33, 45, 46, 51, 58, 72, 74, 75, 99, 110, 120, 121, 345, 400, 500, 999, 1000, 1114, 1134, 10010, 500000, 999999]
+
+#Testing k
+for i in range(1, len(lst)):
+# print(&#34;i:&#34;,i)
+    print(&#34;TESTING VALUES IN LIST:&#34;, &#34;k = &#34;, i, &#34;\n&#34;)
+for val in lst:
+    if jump_search_k(lst, val, i) is None:
+        print(val, &#34;FAILED - DID NOT FIND&#34;)
+#just to make sure you’re not stuck in an infinite loop print(&#34;TEST k COMPLETED&#34;)
+#Testing sqrt
+print(&#34;\nTESTING VALUES IN LIST: k = sqrt(n) \n&#34;)
+
+for val in lst:
+    if jump_search(lst, val) is None:
+        print(val, &#34;FAILED - DID NOT FIND&#34;)
+#just to make sure you’re not stuck in an infinite loop print(&#34;TEST sqrt COMPLETED&#34;)
+&#39;&#39;&#39;
+#6
+def exponential_search(lst, val):
+    if len(lst) &gt; 0: #check if list is not empty if lst[0] == val: #check index 0 first
+        return 0 
+    else:
+        i = 1 #start at 1 for the exponential search while i * 2 &lt; len(lst) and lst[i] &lt; val:
+    i *= 2
+    left = i//2
+    right = i
+    if lst[right] &lt; val: #check if out of bounds (exited because i * 2 &lt; len(lst))
+        right = len(lst) - 1
+    #now binary search
+    while left &lt;= right:
+        mid = (left + right)//2
+    if lst[mid] == val: 
+        return mid
+    elif lst[mid] &lt; val: 
+        left = mid + 1
+    elif lst[mid] &gt; val: 
+        right = mid - 1
+    return None
+
+#testing exponential search
+lst = [-1111, -818, -646, -50, -25, -3, 0, 1, 2, 11, 33, 45, 46, 51, 58, 72, 74, 75, 99, 110, 120, 121, 345, 400, 500, 999, 1000, 1114, 1134, 10010, 500000, 999999]
+&#39;&#39;&#39;
+print(&#34;TESTING VALUES IN LIST:\n&#34;)
+
+for val in lst:
+    if exponential_search(lst, val) is None:
+        print(val, &#34;FAILED - DID NOT FIND&#34;)
+#just to make sure you’re not stuck in an infinite loop print(&#34;TEST COMPLETED&#34;)
+&#39;&#39;&#39;
+lst = [2,3,4,1] print(shift_binary_search(lst, 1))
+</code></pre></div><div class=post__footer></div></div></main></div><footer class="footer footer__base"><ul class=footer__list><li class=footer__item>&copy;
+dongje kim
+2023</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></body></html>

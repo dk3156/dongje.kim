@@ -1,0 +1,338 @@
+<!doctype html><html dir=ltr lang=en data-theme class="html theme--light"><head><title>dongje kim
+|
+Lab11</title><meta charset=utf-8><meta name=generator content="Hugo 0.115.3"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name=author content="dongje kim"><meta name=description content="Portfolio"><link rel=stylesheet href=/dongje.kim/scss/main.min.1147aa5bacb4bce677a0e264073829caedb82fd18ea07a5f1d80521f539d1c45.css integrity="sha256-EUeqW6y0vOZ3oOJkBzgpyu24L9GOoHpfHYBSH1OdHEU=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/fontawesome.min.7d272de35b410fb165377550cdf9c4d3a80fbbcc961e111914e4d5c0eaf5729f.css integrity="sha256-fSct41tBD7FlN3VQzfnE06gPu8yWHhEZFOTVwOr1cp8=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/solid.min.55d8333481b07a08e07cf6f37319753a2b47e99f4c395394c5747b48b495aa9b.css integrity="sha256-VdgzNIGwegjgfPbzcxl1OitH6Z9MOVOUxXR7SLSVqps=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/regular.min.a7448d02590b43449364b6b5922ed9af5410abb4de4238412a830316dedb850b.css integrity="sha256-p0SNAlkLQ0STZLa1ki7Zr1QQq7TeQjhBKoMDFt7bhQs=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/brands.min.9ed75a5d670c953fe4df935937674b4646f92674367e9e66eb995bb04e821647.css integrity="sha256-ntdaXWcMlT/k35NZN2dLRkb5JnQ2fp5m65lbsE6CFkc=" crossorigin=anonymous type=text/css><link rel="shortcut icon" href=/dongje.kim/favicon.ico type=image/x-icon><link rel=apple-touch-icon sizes=180x180 href=/dongje.kim/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/dongje.kim/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/dongje.kim/favicon-16x16.png><link rel=canonical href=https://dk3156.github.io/dongje.kim/experience/oop/labs/oop_lab11/><script type=text/javascript src=/dongje.kim/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js integrity="sha256-+RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI=" crossorigin=anonymous></script>
+<script type=text/javascript src=/dongje.kim/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc=" crossorigin=anonymous></script><meta name=twitter:card content="summary"><meta name=twitter:title content="Lab11"><meta name=twitter:description content="Answers Download linked_list_basics.pdf
+/* rec10_start.cpp Starting code 22S */ #include <iostream> #include <vector> using namespace std; class Instrument { public: virtual void makeSound() const = 0; virtual void normalPlay() const = 0; }; void Instrument::makeSound() const{ cout << &#34;To make a sound... &#34;; } class Percussion : public Instrument{ public: void makeSound() const { Instrument::makeSound(); cout << &#34;hit me!&#34;<< endl;} }; class Drum : public Percussion { public: void normalPlay() const {cout << &#34;Boom&#34; << endl;} }; class Cymbal : public Percussion { public: void normalPlay() const {cout << &#34;Crash&#34; << endl;} }; class Brass : public Instrument{ public: Brass(unsigned piece): mouthpiece(piece){} void makeSound() const { Instrument::makeSound(); cout << &#34;blow on a mouthpiece of size &#34; << mouthpiece << endl;} private: unsigned mouthpiece; }; class Trombone : public Brass{ public: Trombone(unsigned piece): Brass(piece){} void normalPlay() const {cout << &#34;Blat&#34; << endl;} }; class Trumpet : public Brass{ public: Trumpet(unsigned piece): Brass(piece){} void normalPlay() const {cout << &#34;Toot&#34; << endl;} }; class String : public Instrument{ public: String(unsigned pitch): pitch(pitch){} void makeSound() const { Instrument::makeSound(); cout << &#34;bow a string with pitch &#34; << pitch << endl;} private: unsigned pitch; }; class Violin : public String{ public: Violin(unsigned pitch): String(pitch){} void normalPlay() const {cout << &#34;Screech&#34; << endl;} }; class Cello : public String{ public: Cello(unsigned pitch): String(pitch){} void normalPlay() const {cout << &#34;Squawk&#34; << endl;} }; class MILL { public: void receiveInstr(Instrument& instr){ instr."><meta property="og:title" content="Lab11"><meta property="og:description" content="Answers Download linked_list_basics.pdf
+/* rec10_start.cpp Starting code 22S */ #include <iostream> #include <vector> using namespace std; class Instrument { public: virtual void makeSound() const = 0; virtual void normalPlay() const = 0; }; void Instrument::makeSound() const{ cout << &#34;To make a sound... &#34;; } class Percussion : public Instrument{ public: void makeSound() const { Instrument::makeSound(); cout << &#34;hit me!&#34;<< endl;} }; class Drum : public Percussion { public: void normalPlay() const {cout << &#34;Boom&#34; << endl;} }; class Cymbal : public Percussion { public: void normalPlay() const {cout << &#34;Crash&#34; << endl;} }; class Brass : public Instrument{ public: Brass(unsigned piece): mouthpiece(piece){} void makeSound() const { Instrument::makeSound(); cout << &#34;blow on a mouthpiece of size &#34; << mouthpiece << endl;} private: unsigned mouthpiece; }; class Trombone : public Brass{ public: Trombone(unsigned piece): Brass(piece){} void normalPlay() const {cout << &#34;Blat&#34; << endl;} }; class Trumpet : public Brass{ public: Trumpet(unsigned piece): Brass(piece){} void normalPlay() const {cout << &#34;Toot&#34; << endl;} }; class String : public Instrument{ public: String(unsigned pitch): pitch(pitch){} void makeSound() const { Instrument::makeSound(); cout << &#34;bow a string with pitch &#34; << pitch << endl;} private: unsigned pitch; }; class Violin : public String{ public: Violin(unsigned pitch): String(pitch){} void normalPlay() const {cout << &#34;Screech&#34; << endl;} }; class Cello : public String{ public: Cello(unsigned pitch): String(pitch){} void normalPlay() const {cout << &#34;Squawk&#34; << endl;} }; class MILL { public: void receiveInstr(Instrument& instr){ instr."><meta property="og:type" content="article"><meta property="og:url" content="https://dk3156.github.io/dongje.kim/experience/oop/labs/oop_lab11/"><meta property="article:section" content="experience"><meta property="og:site_name" content="Dongje Kim"><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"experience","name":"Lab11","headline":"Lab11","alternativeHeadline":"","description":"
+      
+        Answers Download linked_list_basics.pdf\n\/* rec10_start.cpp Starting code 22S *\/ #include \u0026lt;iostream\u0026gt; #include \u0026lt;vector\u0026gt; using namespace std; class Instrument { public: virtual void makeSound() const = 0; virtual void normalPlay() const = 0; }; void Instrument::makeSound() const{ cout \u0026lt;\u0026lt; \u0026#34;To make a sound... \u0026#34;; } class Percussion : public Instrument{ public: void makeSound() const { Instrument::makeSound(); cout \u0026lt;\u0026lt; \u0026#34;hit me!\u0026#34;\u0026lt;\u0026lt; endl;} }; class Drum : public Percussion { public: void normalPlay() const {cout \u0026lt;\u0026lt; \u0026#34;Boom\u0026#34; \u0026lt;\u0026lt; endl;} }; class Cymbal : public Percussion { public: void normalPlay() const {cout \u0026lt;\u0026lt; \u0026#34;Crash\u0026#34; \u0026lt;\u0026lt; endl;} }; class Brass : public Instrument{ public: Brass(unsigned piece): mouthpiece(piece){} void makeSound() const { Instrument::makeSound(); cout \u0026lt;\u0026lt; \u0026#34;blow on a mouthpiece of size \u0026#34; \u0026lt;\u0026lt; mouthpiece \u0026lt;\u0026lt; endl;} private: unsigned mouthpiece; }; class Trombone : public Brass{ public: Trombone(unsigned piece): Brass(piece){} void normalPlay() const {cout \u0026lt;\u0026lt; \u0026#34;Blat\u0026#34; \u0026lt;\u0026lt; endl;} }; class Trumpet : public Brass{ public: Trumpet(unsigned piece): Brass(piece){} void normalPlay() const {cout \u0026lt;\u0026lt; \u0026#34;Toot\u0026#34; \u0026lt;\u0026lt; endl;} }; class String : public Instrument{ public: String(unsigned pitch): pitch(pitch){} void makeSound() const { Instrument::makeSound(); cout \u0026lt;\u0026lt; \u0026#34;bow a string with pitch \u0026#34; \u0026lt;\u0026lt; pitch \u0026lt;\u0026lt; endl;} private: unsigned pitch; }; class Violin : public String{ public: Violin(unsigned pitch): String(pitch){} void normalPlay() const {cout \u0026lt;\u0026lt; \u0026#34;Screech\u0026#34; \u0026lt;\u0026lt; endl;} }; class Cello : public String{ public: Cello(unsigned pitch): String(pitch){} void normalPlay() const {cout \u0026lt;\u0026lt; \u0026#34;Squawk\u0026#34; \u0026lt;\u0026lt; endl;} }; class MILL { public: void receiveInstr(Instrument\u0026amp; instr){ instr.
+
+
+      
+
+
+    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/dk3156.github.io\/dongje.kim\/experience\/oop\/labs\/oop_lab11\/"},"author":{"@type":"Person","name":"dongje kim"},"creator":{"@type":"Person","name":"dongje kim"},"accountablePerson":{"@type":"Person","name":"dongje kim"},"copyrightHolder":{"@type":"Person","name":"dongje kim"},"copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"dongje kim","url":"https://dk3156.github.io/dongje.kim/","logo":{"@type":"ImageObject","url":"https:\/\/dk3156.github.io\/dongje.kim\/favicon-32x32.png","width":"32","height":"32"}},"image":[],"url":"https:\/\/dk3156.github.io\/dongje.kim\/experience\/oop\/labs\/oop_lab11\/","wordCount":"785","genre":[],"keywords":[]}</script></head><body class=body><div class=wrapper><aside class=wrapper__sidebar><div class="sidebar
+animated fadeInDown"><div class=sidebar__content><div class=sidebar__introduction><img class=sidebar__introduction-profileimage src=/dongje.kim/images/tiger.png alt="profile picture"><div class=sidebar__introduction-title><a href=/dongje.kim>Dongje Kim</a></div><div class=sidebar__introduction-description><p>Portfolio</p></div></div><ul class=sidebar__list></ul></div><footer class="footer footer__sidebar"><ul class=footer__list><li class=footer__item>&copy;
+dongje kim
+2023</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></div></aside><main class=wrapper__main><header class=header><div class="animated fadeInDown"><a role=button class=navbar-burger data-target=navMenu aria-label=menu aria-expanded=false><span aria-hidden=true class=navbar-burger__line></span>
+<span aria-hidden=true class=navbar-burger__line></span>
+<span aria-hidden=true class=navbar-burger__line></span></a><nav class=nav><ul class=nav__list id=navMenu><li class=nav__list-item><a href=/dongje.kim/ title>Home</a></li><li class=nav__list-item><a href=/dongje.kim/experience/work/ title>experience</a></li><li class=nav__list-item><a href=/dongje.kim/projects/ title>project</a></li><li class=nav__list-item><a href=/dongje.kim/skills/ title>skill</a></li></ul><ul class="nav__list nav__list--end"><li class=nav__list-item><div class=themeswitch><a title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></li></ul></nav></div></header><div class="post
+animated fadeInDown"><div class=post__content><h1>Lab11</h1><h2 id=answers>Answers</h2><p><a href=https://dk3156.github.io/experience/oop/labs/linked_list_basics.pdf>Download linked_list_basics.pdf</a></p><pre tabindex=0><code>/*
+  rec10_start.cpp
+  Starting code 22S
+ */
+
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+class Instrument {
+public:
+  virtual void makeSound() const = 0;
+  virtual void normalPlay() const = 0;
+};
+
+void Instrument::makeSound() const{
+  cout &lt;&lt; &#34;To make a sound... &#34;;
+}
+
+class Percussion : public Instrument{
+public:
+  void makeSound() const {
+    Instrument::makeSound();
+    cout &lt;&lt; &#34;hit me!&#34;&lt;&lt; endl;}
+};
+
+class Drum : public Percussion {
+public:
+  void normalPlay() const {cout &lt;&lt; &#34;Boom&#34; &lt;&lt; endl;}
+};
+
+class Cymbal : public Percussion {
+public:
+  void normalPlay() const {cout &lt;&lt; &#34;Crash&#34; &lt;&lt; endl;}
+};
+
+
+class Brass : public Instrument{
+public:
+  Brass(unsigned piece): mouthpiece(piece){}
+  void makeSound() const {
+    Instrument::makeSound();
+    cout &lt;&lt; &#34;blow on a mouthpiece of size &#34; &lt;&lt; mouthpiece &lt;&lt; endl;}
+private:
+  unsigned mouthpiece;
+};
+
+class Trombone : public Brass{
+public:
+  Trombone(unsigned piece): Brass(piece){}
+  void normalPlay() const {cout &lt;&lt; &#34;Blat&#34; &lt;&lt; endl;}
+};
+
+class Trumpet : public Brass{
+public:
+  Trumpet(unsigned piece): Brass(piece){}
+  void normalPlay() const {cout &lt;&lt; &#34;Toot&#34; &lt;&lt; endl;}
+};
+
+
+class  String : public Instrument{
+public:
+  String(unsigned pitch): pitch(pitch){}
+  void makeSound() const {
+    Instrument::makeSound();
+    cout &lt;&lt; &#34;bow a string with pitch &#34; &lt;&lt; pitch &lt;&lt; endl;}
+private:
+  unsigned pitch;
+};
+
+class Violin : public String{
+public:
+  Violin(unsigned pitch): String(pitch){}
+  void normalPlay() const {cout &lt;&lt; &#34;Screech&#34; &lt;&lt; endl;}
+};
+class Cello : public String{
+public:
+  Cello(unsigned pitch): String(pitch){}
+  void normalPlay() const {cout &lt;&lt; &#34;Squawk&#34; &lt;&lt; endl;}
+};
+
+
+
+class MILL {
+public:
+  void receiveInstr(Instrument&amp; instr){
+      instr.makeSound();
+     //check the vector for the first empty spot
+     //i.e. nullptr, assign to it, return, otherwise after the loop push_back
+     for (size_t i=0; i&lt; ins_vec.size(); ++i){
+         if(ins_vec[i] == nullptr){
+             ins_vec[i] = &amp;instr;
+             return;
+         }
+     }
+    ins_vec.push_back(&amp;instr);
+  }
+
+  void dailyTestPlay() const {
+    for (size_t i=0; i&lt;ins_vec.size(); ++i){
+      if(ins_vec[i] != nullptr){
+        ins_vec[i]-&gt;makeSound();
+      }
+    }
+  }
+
+  Instrument* loanOut(){
+    for (size_t i=0; i&lt;ins_vec.size(); ++i){
+      if(ins_vec[i] != nullptr){
+          Instrument* new_instr = ins_vec[i];
+          ins_vec[i] = nullptr;
+        return new_instr;
+      }
+    }
+    return nullptr;
+};
+
+private:
+  vector&lt;Instrument*&gt; ins_vec;
+};
+//
+// Musician class is provided to the students. Requires the Instrument class.
+//
+
+class Musician {
+public:
+    Musician() : instr(nullptr) {}
+
+    // acceptInstr takes in an instrument for the Musician to later play.
+    //  &#34;loses&#34; any instrument that it used to have.
+    void acceptInstr(Instrument* instPtr) { instr = instPtr; }
+
+    // giveBackInstr: gives the instrument that the Musicial was holding &#34;back&#34;
+    Instrument* giveBackInstr() {
+        Instrument* result(instr);
+        instr = nullptr;
+        return result;
+    }
+
+    // testPlay: testing out my instrument
+    void testPlay() const {
+        if (instr) instr-&gt;makeSound();
+        else cerr &lt;&lt; &#34;have no instr\n&#34;;
+    }
+
+    void normalPlay() const {
+      if (instr) instr-&gt;normalPlay();
+    }
+
+private:
+    Instrument* instr;
+};
+
+class Orch {
+public:
+  void addPlayer (Musician&amp; musician){
+    musician_vec.push_back(&amp;musician);
+  }
+
+  void play() const {
+    for (size_t i=0; i&lt;musician_vec.size(); ++i){
+      musician_vec[i]-&gt;normalPlay();
+    }
+  }
+private:
+  vector&lt;Musician*&gt; musician_vec;
+};
+
+int main() {
+
+    //
+    // PART ONE
+    //
+    cout &lt;&lt; &#34;P A R T  O N E\n&#34;;
+
+    cout &lt;&lt; &#34;Define some instruments --------------------------------------\n&#34;;
+    Drum drum;
+    Cello cello(673);
+    Cymbal cymbal;
+    Trombone tbone(4);
+    Trumpet trpt(12) ;
+    Violin violin(567) ;
+
+    // use the debugger to look at the mill
+    cout &lt;&lt; &#34;Define the MILL ----------------------------------------------\n&#34;;
+    MILL mill;
+
+    cout &lt;&lt; &#34;Put the instruments into the MILL ----------------------------\n&#34;;
+    mill.receiveInstr(trpt);
+    mill.receiveInstr(violin);
+    mill.receiveInstr(tbone);
+    mill.receiveInstr(drum);
+    mill.receiveInstr(cello);
+    mill.receiveInstr(cymbal);
+
+    cout &lt;&lt; &#34;Daily test ---------------------------------------------------\n&#34;
+	 &lt;&lt; &#34;dailyTestPlay()&#34; &lt;&lt; endl;
+    mill.dailyTestPlay();
+    cout &lt;&lt; endl;
+
+    cout &lt;&lt; &#34;Define some Musicians-----------------------------------------\n&#34;;
+    Musician harpo;
+    Musician groucho;
+
+    cout &lt;&lt; &#34;TESTING: groucho.acceptInstr(mill.loanOut());-----------------\n&#34;;
+    groucho.testPlay();
+    cout &lt;&lt; endl;
+    groucho.acceptInstr(mill.loanOut());
+    cout &lt;&lt; endl;
+    groucho.testPlay();
+    cout &lt;&lt; endl;
+    cout &lt;&lt; &#34;dailyTestPlay()&#34; &lt;&lt; endl;
+    mill.dailyTestPlay();
+
+    cout &lt;&lt; endl &lt;&lt; endl;
+
+    groucho.testPlay();
+    cout &lt;&lt; endl;
+    mill.receiveInstr(*groucho.giveBackInstr());
+    harpo.acceptInstr(mill.loanOut());
+    groucho.acceptInstr(mill.loanOut());
+    cout &lt;&lt; endl;
+    groucho.testPlay();
+    cout &lt;&lt; endl;
+    harpo.testPlay();
+    cout &lt;&lt; endl;
+    cout &lt;&lt; &#34;dailyTestPlay()&#34; &lt;&lt; endl;
+    mill.dailyTestPlay();
+
+    cout &lt;&lt; &#34;TESTING: mill.receiveInstr(*groucho.giveBackInstr()); --------\n&#34;;
+
+    // fifth
+    mill.receiveInstr(*groucho.giveBackInstr());
+    cout &lt;&lt; &#34;TESTING: mill.receiveInstr(*harpo.giveBackInstr()); ----------\n&#34;;
+    mill.receiveInstr(*harpo.giveBackInstr());
+
+
+    cout &lt;&lt; endl;
+    cout &lt;&lt; &#34;dailyTestPlay()&#34; &lt;&lt; endl;
+    mill.dailyTestPlay();
+    cout &lt;&lt; endl;
+
+
+    //
+    // PART TWO
+    //
+    cout &lt;&lt; &#34;P A R T  T W O\n&#34;;
+
+
+    Musician bob;
+    Musician sue;
+    Musician mary;
+    Musician ralph;
+    Musician jody;
+    Musician morgan;
+
+    Orch orch;
+
+    // THE SCENARIO
+
+    //Bob joins the orchestra without an instrument.
+    orch.addPlayer(bob);
+
+    //The orchestra performs
+    cout &lt;&lt; &#34;orch performs\n&#34;;
+    orch.play();
+
+    //Sue gets an instrument from the MIL2 and joins the orchestra.
+    sue.acceptInstr(mill.loanOut());
+    orch.addPlayer(sue);
+
+    //Ralph gets an instrument from the MIL2.
+    ralph.acceptInstr(mill.loanOut());
+
+    //Mary gets an instrument from the MIL2 and joins the orchestra.
+    mary.acceptInstr(mill.loanOut());
+    orch.addPlayer(mary);
+
+    //Ralph returns his instrument to the MIL2.
+    mill.receiveInstr(*ralph.giveBackInstr());
+
+    //Jody gets an instrument from the MIL2 and joins the orchestra.
+    jody.acceptInstr(mill.loanOut());
+    orch.addPlayer(jody);
+
+    // morgan gets an instrument from the MIL2
+    morgan.acceptInstr(mill.loanOut());
+
+    //The orchestra performs.
+    cout &lt;&lt; &#34;orch performs\n&#34;;
+    orch.play();
+
+    //Ralph joins the orchestra.
+    orch.addPlayer(ralph);
+
+    //The orchestra performs.
+    cout &lt;&lt; &#34;orch performs\n&#34;;
+    orch.play();
+
+    // bob gets an instrument from the MIL2
+    bob.acceptInstr(mill.loanOut());
+
+    // ralph gets an instrument from the MIL2
+    ralph.acceptInstr(mill.loanOut());
+
+    //The orchestra performs.
+    cout &lt;&lt; &#34;orch performs\n&#34;;
+    orch.play();
+
+    //Morgan joins the orchestra.
+    orch.addPlayer(morgan);
+
+    //The orchestra performs.
+    cout &lt;&lt; &#34;orch performs\n&#34;;
+    orch.play();
+}
+</code></pre></div><div class=post__footer></div></div></main></div><footer class="footer footer__base"><ul class=footer__list><li class=footer__item>&copy;
+dongje kim
+2023</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></body></html>

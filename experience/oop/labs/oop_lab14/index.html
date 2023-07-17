@@ -1,0 +1,167 @@
+<!doctype html><html dir=ltr lang=en data-theme class="html theme--light"><head><title>dongje kim
+|
+Lab14</title><meta charset=utf-8><meta name=generator content="Hugo 0.115.3"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name=author content="dongje kim"><meta name=description content="Portfolio"><link rel=stylesheet href=/dongje.kim/scss/main.min.1147aa5bacb4bce677a0e264073829caedb82fd18ea07a5f1d80521f539d1c45.css integrity="sha256-EUeqW6y0vOZ3oOJkBzgpyu24L9GOoHpfHYBSH1OdHEU=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/fontawesome.min.7d272de35b410fb165377550cdf9c4d3a80fbbcc961e111914e4d5c0eaf5729f.css integrity="sha256-fSct41tBD7FlN3VQzfnE06gPu8yWHhEZFOTVwOr1cp8=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/solid.min.55d8333481b07a08e07cf6f37319753a2b47e99f4c395394c5747b48b495aa9b.css integrity="sha256-VdgzNIGwegjgfPbzcxl1OitH6Z9MOVOUxXR7SLSVqps=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/regular.min.a7448d02590b43449364b6b5922ed9af5410abb4de4238412a830316dedb850b.css integrity="sha256-p0SNAlkLQ0STZLa1ki7Zr1QQq7TeQjhBKoMDFt7bhQs=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/brands.min.9ed75a5d670c953fe4df935937674b4646f92674367e9e66eb995bb04e821647.css integrity="sha256-ntdaXWcMlT/k35NZN2dLRkb5JnQ2fp5m65lbsE6CFkc=" crossorigin=anonymous type=text/css><link rel="shortcut icon" href=/dongje.kim/favicon.ico type=image/x-icon><link rel=apple-touch-icon sizes=180x180 href=/dongje.kim/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/dongje.kim/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/dongje.kim/favicon-16x16.png><link rel=canonical href=https://dk3156.github.io/dongje.kim/experience/oop/labs/oop_lab14/><script type=text/javascript src=/dongje.kim/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js integrity="sha256-+RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI=" crossorigin=anonymous></script>
+<script type=text/javascript src=/dongje.kim/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc=" crossorigin=anonymous></script><meta name=twitter:card content="summary"><meta name=twitter:title content="Lab14"><meta name=twitter:description content="Answers tree.cpp #include <iostream> using namespace std; struct TNode { TNode(int data = 0, TNode *left = nullptr, TNode *right = nullptr) : data(data), left(left), right(right) {} int data; TNode *left, *right; }; struct Node{ Node(int data = 0, Node* next = nullptr): data(data), next(next){} int data; Node* next; }; //int max(TNode* root) { // // Provide this code //} bool recursive_even(int num){ if (num < 2) return num == 0; if (num % 2 == 0) return recursive_even(num / 2); return !"><meta property="og:title" content="Lab14"><meta property="og:description" content="Answers tree.cpp #include <iostream> using namespace std; struct TNode { TNode(int data = 0, TNode *left = nullptr, TNode *right = nullptr) : data(data), left(left), right(right) {} int data; TNode *left, *right; }; struct Node{ Node(int data = 0, Node* next = nullptr): data(data), next(next){} int data; Node* next; }; //int max(TNode* root) { // // Provide this code //} bool recursive_even(int num){ if (num < 2) return num == 0; if (num % 2 == 0) return recursive_even(num / 2); return !"><meta property="og:type" content="article"><meta property="og:url" content="https://dk3156.github.io/dongje.kim/experience/oop/labs/oop_lab14/"><meta property="article:section" content="experience"><meta property="og:site_name" content="Dongje Kim"><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"experience","name":"Lab14","headline":"Lab14","alternativeHeadline":"","description":"
+      
+        Answers tree.cpp #include \u0026lt;iostream\u0026gt; using namespace std; struct TNode { TNode(int data = 0, TNode *left = nullptr, TNode *right = nullptr) : data(data), left(left), right(right) {} int data; TNode *left, *right; }; struct Node{ Node(int data = 0, Node* next = nullptr): data(data), next(next){} int data; Node* next; }; \/\/int max(TNode* root) { \/\/ \/\/ Provide this code \/\/} bool recursive_even(int num){ if (num \u0026lt; 2) return num == 0; if (num % 2 == 0) return recursive_even(num \/ 2); return !
+
+
+      
+
+
+    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/dk3156.github.io\/dongje.kim\/experience\/oop\/labs\/oop_lab14\/"},"author":{"@type":"Person","name":"dongje kim"},"creator":{"@type":"Person","name":"dongje kim"},"accountablePerson":{"@type":"Person","name":"dongje kim"},"copyrightHolder":{"@type":"Person","name":"dongje kim"},"copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"dongje kim","url":"https://dk3156.github.io/dongje.kim/","logo":{"@type":"ImageObject","url":"https:\/\/dk3156.github.io\/dongje.kim\/favicon-32x32.png","width":"32","height":"32"}},"image":[],"url":"https:\/\/dk3156.github.io\/dongje.kim\/experience\/oop\/labs\/oop_lab14\/","wordCount":"572","genre":[],"keywords":[]}</script></head><body class=body><div class=wrapper><aside class=wrapper__sidebar><div class="sidebar
+animated fadeInDown"><div class=sidebar__content><div class=sidebar__introduction><img class=sidebar__introduction-profileimage src=/dongje.kim/images/tiger.png alt="profile picture"><div class=sidebar__introduction-title><a href=/dongje.kim>Dongje Kim</a></div><div class=sidebar__introduction-description><p>Portfolio</p></div></div><ul class=sidebar__list></ul></div><footer class="footer footer__sidebar"><ul class=footer__list><li class=footer__item>&copy;
+dongje kim
+2023</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></div></aside><main class=wrapper__main><header class=header><div class="animated fadeInDown"><a role=button class=navbar-burger data-target=navMenu aria-label=menu aria-expanded=false><span aria-hidden=true class=navbar-burger__line></span>
+<span aria-hidden=true class=navbar-burger__line></span>
+<span aria-hidden=true class=navbar-burger__line></span></a><nav class=nav><ul class=nav__list id=navMenu><li class=nav__list-item><a href=/dongje.kim/ title>Home</a></li><li class=nav__list-item><a href=/dongje.kim/experience/work/ title>experience</a></li><li class=nav__list-item><a href=/dongje.kim/projects/ title>project</a></li><li class=nav__list-item><a href=/dongje.kim/skills/ title>skill</a></li></ul><ul class="nav__list nav__list--end"><li class=nav__list-item><div class=themeswitch><a title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></li></ul></nav></div></header><div class="post
+animated fadeInDown"><div class=post__content><h1>Lab14</h1><h2 id=answers>Answers</h2><h2 id=treecpp>tree.cpp</h2><pre tabindex=0><code>#include &lt;iostream&gt;
+using namespace std;
+
+struct TNode {
+  TNode(int data = 0, TNode *left = nullptr, TNode *right = nullptr)
+    : data(data), left(left), right(right) {}
+  int data;
+  TNode *left, *right;
+};
+
+struct Node{
+    Node(int data = 0, Node* next = nullptr): data(data), next(next){}
+    int data;
+    Node* next;
+};
+
+//int max(TNode* root) {
+//  // Provide this code
+//}
+
+bool recursive_even(int num){
+    if (num &lt; 2) return num == 0;
+    if (num % 2 == 0) return recursive_even(num / 2);
+    return !recursive_even(num / 2);
+}
+
+// count every digit of the binary number. if the number of digit is even, return true
+// else, return false
+// 1. computer remainder of the the integer, and if the remainder is 1, increase the counter
+// 2. if the counter is even, return true. if it is not even, return false.
+Node* add_list(Node*&amp; head, int data){
+    Node* front = new Node(data);
+    front-&gt;next = head;
+    return front;
+}
+
+
+Node* recursive_linked(const Node* head1, const Node* head2){
+
+    //base case
+    if(head1 == nullptr &amp;&amp; head2 == nullptr){
+        return nullptr;
+    }
+    //if head2 is longer
+    else if(head1 == nullptr){
+        return new Node(head2-&gt;data, recursive_linked(head1, head2-&gt;next));
+    }
+    //if head1 is longer
+    else if (head2 == nullptr){
+        return new Node(head1-&gt;data, recursive_linked(head1-&gt;next, head2));
+    }
+    
+    else {
+        return new Node(head1-&gt;data + head2-&gt;data, recursive_linked(head1-&gt;next, head2-&gt;next));
+    }
+}
+
+// set max = root.data
+// if the right root.data is bigger than max, then max = right root.data
+// if the left root.data is bigger, max = left root.data
+//
+
+int find_max(TNode* root){
+    if (!root)
+        throw exception();
+    
+    int cur_max = root-&gt;data;
+    if (root-&gt;right){
+        int right_max = find_max(root-&gt;right);
+        if (cur_max &lt; right_max){
+            cur_max = right_max;
+        }
+    }
+    if (root-&gt;left){
+        int left_max = find_max(root-&gt;left);
+        if (cur_max &lt; left_max){
+           cur_max = left_max;
+       }
+    }
+    return cur_max;
+}
+
+//palindrome: compare the first, last chr and second, second to last...compare if they are equal
+
+bool palindrome(char* chars, int length){
+    if (length == 0 || length == 1) return true;
+    if (*chars != *(chars + length - 1)) return false;
+    return palindrome(chars + 1, length - 2);
+    }
+
+int towers(int num, char start, char target, char spare){
+    if(num == 0) return 0;
+    int step1 = towers(num-1, start, spare, target);
+    int step2 = towers(num-1, spare, start, target);
+    return step1 + step2 + 1;
+}
+
+void mystery(int n) {
+   if (n &gt; 1) {
+      cout &lt;&lt; &#39;a&#39;;
+      mystery(n/2);
+      cout &lt;&lt; &#39;b&#39;;
+      mystery(n/2);
+   }
+   cout &lt;&lt; &#39;c&#39;;
+}
+
+int main() {
+
+  TNode a(1), b(2), c(4), d(8, &amp;a, &amp;b), e(16, &amp;c), f(32, &amp;d, &amp;e);
+    //task1
+    cout &lt;&lt; &#34;number of ones is even in 4 : &#34; &lt;&lt; boolalpha &lt;&lt; recursive_even(4) &lt;&lt; endl;
+    cout &lt;&lt; &#34;number of ones  is in 5 : &#34; &lt;&lt; boolalpha &lt;&lt; recursive_even(5) &lt;&lt; endl;
+  //cout &lt;&lt; max(&amp;f) &lt;&lt; endl;
+    
+    
+    //task2
+    Node* n1 = new Node(1);
+    Node* n2 = new Node(2, n1);
+    Node* n3 = new Node(3, n2);
+    Node* n4 = new Node(4);
+    Node* n5 = new Node(5, n4);
+    Node* sum = recursive_linked(n3, n5);
+    while(sum != nullptr){
+        cout &lt;&lt; sum-&gt;data &lt;&lt; &#34; &#34;;
+        sum = sum-&gt;next;
+    }
+    cout &lt;&lt; endl;
+    
+    //task3
+    TNode* tn1 = new TNode(5);
+    TNode* tn2 = new TNode(6);
+    TNode* tn3 = new TNode(4, tn1, tn2);
+    TNode* tn4 = new TNode(7);
+    TNode* tn5 = new TNode(8);
+    TNode* tn6 = new TNode(3, tn4, tn5);
+    TNode* tn7 = new TNode(2, tn3, tn6);
+    cout &lt;&lt; &#34;max is: &#34; &lt;&lt; find_max(tn7) &lt;&lt; endl;
+    
+    //task6
+    for (int i = 0; i &lt; 11; ++i){
+        cout &lt;&lt; i &lt;&lt; &#34;: &#34;;
+        mystery(i);
+        cout &lt;&lt; endl;
+    }
+    
+}
+</code></pre></div><div class=post__footer></div></div></main></div><footer class="footer footer__base"><ul class=footer__list><li class=footer__item>&copy;
+dongje kim
+2023</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></body></html>

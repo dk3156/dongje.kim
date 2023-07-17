@@ -1,0 +1,413 @@
+<!doctype html><html dir=ltr lang=en data-theme class="html theme--light"><head><title>dongje kim
+|
+HW6</title><meta charset=utf-8><meta name=generator content="Hugo 0.115.3"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name=author content="dongje kim"><meta name=description content="Portfolio"><link rel=stylesheet href=/dongje.kim/scss/main.min.1147aa5bacb4bce677a0e264073829caedb82fd18ea07a5f1d80521f539d1c45.css integrity="sha256-EUeqW6y0vOZ3oOJkBzgpyu24L9GOoHpfHYBSH1OdHEU=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/fontawesome.min.7d272de35b410fb165377550cdf9c4d3a80fbbcc961e111914e4d5c0eaf5729f.css integrity="sha256-fSct41tBD7FlN3VQzfnE06gPu8yWHhEZFOTVwOr1cp8=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/solid.min.55d8333481b07a08e07cf6f37319753a2b47e99f4c395394c5747b48b495aa9b.css integrity="sha256-VdgzNIGwegjgfPbzcxl1OitH6Z9MOVOUxXR7SLSVqps=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/regular.min.a7448d02590b43449364b6b5922ed9af5410abb4de4238412a830316dedb850b.css integrity="sha256-p0SNAlkLQ0STZLa1ki7Zr1QQq7TeQjhBKoMDFt7bhQs=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/brands.min.9ed75a5d670c953fe4df935937674b4646f92674367e9e66eb995bb04e821647.css integrity="sha256-ntdaXWcMlT/k35NZN2dLRkb5JnQ2fp5m65lbsE6CFkc=" crossorigin=anonymous type=text/css><link rel="shortcut icon" href=/dongje.kim/favicon.ico type=image/x-icon><link rel=apple-touch-icon sizes=180x180 href=/dongje.kim/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/dongje.kim/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/dongje.kim/favicon-16x16.png><link rel=canonical href=https://dk3156.github.io/dongje.kim/experience/oop/homeworks/oop_hw6/><script type=text/javascript src=/dongje.kim/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js integrity="sha256-+RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI=" crossorigin=anonymous></script>
+<script type=text/javascript src=/dongje.kim/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc=" crossorigin=anonymous></script><meta name=twitter:card content="summary"><meta name=twitter:title content="HW6"><meta name=twitter:description content="Answers Download nobleWarrior.txt
+Main.cpp // // main.cpp // hw06 // // Created by DJ on 4/12/22. // Copyright © 2022 DJ. All rights reserved. // #include &#34;Noble.h&#34; #include &#34;Warrior.h&#34; #include <iostream> #include <fstream> using namespace std; using namespace WarriorCraft; void read_file(); bool warrior(const string& name, const double strength, vector<Warrior*>& war_vec); bool noble(const string& name, vector<Noble*>& noble_vec); bool hire(const string& noble_name, const string& war_name, vector<Noble*>& noble_vec, vector<Warrior*>& war_vec); bool fire(const string& noble_name, const string& war_name, vector<Noble*>& noble_vec, vector<Warrior*>& war_vec); void status(const vector<Noble*>& noble_vec, const vector<Warrior*>& war_vec); bool battle(const string& name1, const string& name2, vector<Noble*>& noble_vec); void clear(vector<Noble*>& noble_vec, vector<Warrior*>& war_vec); size_t check_noble(const string&, vector<Noble*>&); size_t check_warrior(const string&, vector<Warrior*>&); int main() { read_file(); } void read_file(){ ifstream my_file(&#34;nobleWarriors."><meta property="og:title" content="HW6"><meta property="og:description" content="Answers Download nobleWarrior.txt
+Main.cpp // // main.cpp // hw06 // // Created by DJ on 4/12/22. // Copyright © 2022 DJ. All rights reserved. // #include &#34;Noble.h&#34; #include &#34;Warrior.h&#34; #include <iostream> #include <fstream> using namespace std; using namespace WarriorCraft; void read_file(); bool warrior(const string& name, const double strength, vector<Warrior*>& war_vec); bool noble(const string& name, vector<Noble*>& noble_vec); bool hire(const string& noble_name, const string& war_name, vector<Noble*>& noble_vec, vector<Warrior*>& war_vec); bool fire(const string& noble_name, const string& war_name, vector<Noble*>& noble_vec, vector<Warrior*>& war_vec); void status(const vector<Noble*>& noble_vec, const vector<Warrior*>& war_vec); bool battle(const string& name1, const string& name2, vector<Noble*>& noble_vec); void clear(vector<Noble*>& noble_vec, vector<Warrior*>& war_vec); size_t check_noble(const string&, vector<Noble*>&); size_t check_warrior(const string&, vector<Warrior*>&); int main() { read_file(); } void read_file(){ ifstream my_file(&#34;nobleWarriors."><meta property="og:type" content="article"><meta property="og:url" content="https://dk3156.github.io/dongje.kim/experience/oop/homeworks/oop_hw6/"><meta property="article:section" content="experience"><meta property="og:site_name" content="Dongje Kim"><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"experience","name":"HW6","headline":"HW6","alternativeHeadline":"","description":"
+      
+        Answers Download nobleWarrior.txt\nMain.cpp \/\/ \/\/ main.cpp \/\/ hw06 \/\/ \/\/ Created by DJ on 4\/12\/22. \/\/ Copyright © 2022 DJ. All rights reserved. \/\/ #include \u0026#34;Noble.h\u0026#34; #include \u0026#34;Warrior.h\u0026#34; #include \u0026lt;iostream\u0026gt; #include \u0026lt;fstream\u0026gt; using namespace std; using namespace WarriorCraft; void read_file(); bool warrior(const string\u0026amp; name, const double strength, vector\u0026lt;Warrior*\u0026gt;\u0026amp; war_vec); bool noble(const string\u0026amp; name, vector\u0026lt;Noble*\u0026gt;\u0026amp; noble_vec); bool hire(const string\u0026amp; noble_name, const string\u0026amp; war_name, vector\u0026lt;Noble*\u0026gt;\u0026amp; noble_vec, vector\u0026lt;Warrior*\u0026gt;\u0026amp; war_vec); bool fire(const string\u0026amp; noble_name, const string\u0026amp; war_name, vector\u0026lt;Noble*\u0026gt;\u0026amp; noble_vec, vector\u0026lt;Warrior*\u0026gt;\u0026amp; war_vec); void status(const vector\u0026lt;Noble*\u0026gt;\u0026amp; noble_vec, const vector\u0026lt;Warrior*\u0026gt;\u0026amp; war_vec); bool battle(const string\u0026amp; name1, const string\u0026amp; name2, vector\u0026lt;Noble*\u0026gt;\u0026amp; noble_vec); void clear(vector\u0026lt;Noble*\u0026gt;\u0026amp; noble_vec, vector\u0026lt;Warrior*\u0026gt;\u0026amp; war_vec); size_t check_noble(const string\u0026amp;, vector\u0026lt;Noble*\u0026gt;\u0026amp;); size_t check_warrior(const string\u0026amp;, vector\u0026lt;Warrior*\u0026gt;\u0026amp;); int main() { read_file(); } void read_file(){ ifstream my_file(\u0026#34;nobleWarriors.
+
+
+      
+
+
+    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/dk3156.github.io\/dongje.kim\/experience\/oop\/homeworks\/oop_hw6\/"},"author":{"@type":"Person","name":"dongje kim"},"creator":{"@type":"Person","name":"dongje kim"},"accountablePerson":{"@type":"Person","name":"dongje kim"},"copyrightHolder":{"@type":"Person","name":"dongje kim"},"copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"dongje kim","url":"https://dk3156.github.io/dongje.kim/","logo":{"@type":"ImageObject","url":"https:\/\/dk3156.github.io\/dongje.kim\/favicon-32x32.png","width":"32","height":"32"}},"image":[],"url":"https:\/\/dk3156.github.io\/dongje.kim\/experience\/oop\/homeworks\/oop_hw6\/","wordCount":"1249","genre":[],"keywords":[]}</script></head><body class=body><div class=wrapper><aside class=wrapper__sidebar><div class="sidebar
+animated fadeInDown"><div class=sidebar__content><div class=sidebar__introduction><img class=sidebar__introduction-profileimage src=/dongje.kim/images/tiger.png alt="profile picture"><div class=sidebar__introduction-title><a href=/dongje.kim>Dongje Kim</a></div><div class=sidebar__introduction-description><p>Portfolio</p></div></div><ul class=sidebar__list></ul></div><footer class="footer footer__sidebar"><ul class=footer__list><li class=footer__item>&copy;
+dongje kim
+2023</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></div></aside><main class=wrapper__main><header class=header><div class="animated fadeInDown"><a role=button class=navbar-burger data-target=navMenu aria-label=menu aria-expanded=false><span aria-hidden=true class=navbar-burger__line></span>
+<span aria-hidden=true class=navbar-burger__line></span>
+<span aria-hidden=true class=navbar-burger__line></span></a><nav class=nav><ul class=nav__list id=navMenu><li class=nav__list-item><a href=/dongje.kim/ title>Home</a></li><li class=nav__list-item><a href=/dongje.kim/experience/work/ title>experience</a></li><li class=nav__list-item><a href=/dongje.kim/projects/ title>project</a></li><li class=nav__list-item><a href=/dongje.kim/skills/ title>skill</a></li></ul><ul class="nav__list nav__list--end"><li class=nav__list-item><div class=themeswitch><a title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></li></ul></nav></div></header><div class="post
+animated fadeInDown"><div class=post__content><h1>HW6</h1><h2 id=answers>Answers</h2><p><a href=https://dk3156.github.io/experience/oop/homeworks/nobleWarrior.txt>Download nobleWarrior.txt</a></p><h2 id=maincpp>Main.cpp</h2><pre tabindex=0><code>//
+//  main.cpp
+//  hw06
+//
+//  Created by DJ on 4/12/22.
+//  Copyright © 2022 DJ. All rights reserved.
+//
+
+#include &#34;Noble.h&#34;
+#include &#34;Warrior.h&#34;
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+using namespace std;
+using namespace WarriorCraft;
+
+void read_file();
+bool warrior(const string&amp; name, const double strength, vector&lt;Warrior*&gt;&amp; war_vec);
+bool noble(const string&amp; name, vector&lt;Noble*&gt;&amp; noble_vec);
+bool hire(const string&amp; noble_name, const string&amp; war_name, vector&lt;Noble*&gt;&amp; noble_vec, vector&lt;Warrior*&gt;&amp; war_vec);
+bool fire(const string&amp; noble_name, const string&amp; war_name, vector&lt;Noble*&gt;&amp; noble_vec, vector&lt;Warrior*&gt;&amp; war_vec);
+void status(const vector&lt;Noble*&gt;&amp; noble_vec, const vector&lt;Warrior*&gt;&amp; war_vec);
+bool battle(const string&amp; name1, const string&amp; name2, vector&lt;Noble*&gt;&amp; noble_vec);
+void clear(vector&lt;Noble*&gt;&amp; noble_vec, vector&lt;Warrior*&gt;&amp; war_vec);
+size_t check_noble(const string&amp;, vector&lt;Noble*&gt;&amp;);
+size_t check_warrior(const string&amp;, vector&lt;Warrior*&gt;&amp;);
+
+
+int main() {
+    read_file();
+}
+
+void read_file(){
+    ifstream my_file(&#34;nobleWarriors.txt&#34;);
+    if (!my_file) {
+        cerr &lt;&lt; &#34;failed to open the file&#34; &lt;&lt; endl;
+        exit(1);
+    }
+    
+    vector&lt;Noble*&gt; noble_vec;
+    vector&lt;Warrior*&gt; war_vec;
+    string command;
+    string name1;
+    string name2;
+    double strength;
+    
+    while(my_file &gt;&gt; command){
+        if (command == &#34;Warrior&#34;){
+            my_file &gt;&gt; name1 &gt;&gt; strength ;
+            warrior(name1, strength, war_vec);
+        } else if (command == &#34;Noble&#34;){
+            my_file &gt;&gt; name1;
+            noble(name1, noble_vec);
+        } else if (command == &#34;Hire&#34;){
+            my_file &gt;&gt; name1 &gt;&gt; name2;
+            hire(name1, name2, noble_vec, war_vec);
+        } else if (command == &#34;Fire&#34;){
+            my_file &gt;&gt; name1 &gt;&gt; name2;
+            fire(name1, name2, noble_vec, war_vec);
+        } else if (command == &#34;Status&#34;){
+            status(noble_vec, war_vec);
+        } else if (command == &#34;Battle&#34;){
+            my_file &gt;&gt; name1 &gt;&gt; name2;
+            battle(name1, name2, noble_vec);
+        } else if (command == &#34;Clear&#34;){
+            clear(noble_vec, war_vec);
+        }
+    }
+    
+    my_file.close();
+}
+
+bool warrior(const string&amp; name, const double strength, vector&lt;Warrior*&gt;&amp; war_vec){
+    size_t len = war_vec.size();
+    for (size_t i = 0; i &lt; len; ++i){
+        if(war_vec[i]-&gt;get_name() == name){
+            return false;
+        }
+    }
+    war_vec.push_back(new Warrior(name, strength));
+    return true;
+}
+
+bool noble(const string&amp; name, vector&lt;Noble*&gt;&amp; noble_vec){
+    size_t len = noble_vec.size();
+    for (size_t i = 0; i &lt; len; ++i){
+        if (noble_vec[i]-&gt;get_name() == name){
+            return false;
+        }
+    }
+    noble_vec.push_back(new Noble(name));
+    return true;
+}
+
+bool hire(const string&amp; noble_name, const string&amp; war_name, vector&lt;Noble*&gt;&amp; noble_vec, vector&lt;Warrior*&gt;&amp; war_vec){
+    size_t ind_noble = check_noble(noble_name, noble_vec);
+    size_t ind_war = check_warrior(war_name, war_vec);
+    if (ind_noble != noble_vec.size() &amp;&amp; ind_war != war_vec.size()){
+        return(noble_vec[ind_noble]-&gt;hire(war_vec[ind_war]));
+    }
+    cerr &lt;&lt; &#34;Attempting to hire using unknown warrior: &#34; &lt;&lt; war_name &lt;&lt; endl;
+    return false;
+}
+
+bool fire(const string&amp; noble_name, const string&amp; war_name, vector&lt;Noble*&gt;&amp; noble_vec, vector&lt;Warrior*&gt;&amp; war_vec){
+    size_t ind_noble = check_noble(noble_name, noble_vec);
+    size_t ind_war = check_warrior(war_name, war_vec);
+    if (ind_noble != noble_vec.size() &amp;&amp; ind_war != war_vec.size()){
+        return(noble_vec[ind_noble]-&gt;fire(war_vec[ind_war]));
+    }
+    return false;
+}
+
+void status(const vector&lt;Noble*&gt;&amp; noble_vec, const vector&lt;Warrior*&gt;&amp; war_vec){
+    cout &lt;&lt; &#34;Status&#34; &lt;&lt; endl &lt;&lt; &#34;=====&#34; &lt;&lt; endl &lt;&lt; &#34;Nobles:&#34; &lt;&lt; endl;
+    size_t len_noble = noble_vec.size();
+    size_t len_war = war_vec.size();
+    bool noble_exists = false;
+    for (size_t i = 0; i &lt; len_noble; ++i){
+        cout &lt;&lt; *noble_vec[i] &lt;&lt; endl;
+        noble_exists = true;
+    }
+    if (!noble_exists){
+        cout &lt;&lt; &#34;NONE&#34; &lt;&lt; endl;
+    }
+    bool employed_war = false;
+    cout &lt;&lt; &#34;Unemployed Warriors:&#34; &lt;&lt; endl;
+    for (size_t i = 0; i &lt; len_war; ++i){
+        if(!war_vec[i]-&gt;get_employed()){
+            cout &lt;&lt; *war_vec[i] &lt;&lt; endl;
+            employed_war = true;
+        }
+    }
+    if (!employed_war){
+        cout &lt;&lt; &#34;NONE&#34; &lt;&lt; endl;
+    }
+}
+
+bool battle(const string&amp; name1, const string&amp; name2, vector&lt;Noble*&gt;&amp; noble_vec){
+    size_t len = noble_vec.size();
+    size_t i = check_noble(name1, noble_vec);
+    size_t j = check_noble(name2, noble_vec);
+    if (i == len || j == len){
+        cerr &lt;&lt; &#34;Attempt to battle using unknown noble&#34; &lt;&lt; endl;
+        return false;
+    } else {
+        noble_vec[i]-&gt;battle(noble_vec[j]);
+    }
+    return true;
+}
+
+void clear(vector&lt;Noble*&gt;&amp; noble_vec, vector&lt;Warrior*&gt;&amp; war_vec){
+    size_t len_noble = noble_vec.size();
+    size_t len_war = war_vec.size();
+    for(size_t i = 0; i &lt; len_noble; ++i){
+        delete noble_vec[i];
+    }
+    for(size_t i = 0; i &lt; len_war; ++i){
+        delete war_vec[i];
+    }
+    noble_vec.clear();
+    war_vec.clear();
+}
+
+//this function returns the index of the warrior specified by its name in the warrior vector
+size_t check_warrior(const string&amp; war_name, vector&lt;Warrior*&gt;&amp; war_vec){
+    for (size_t i = 0; i &lt; war_vec.size(); ++i){
+        if(war_vec[i]-&gt;get_name() == war_name){
+            return i;
+        }
+    }
+    return war_vec.size();
+}
+
+//this function returns the index of the noble specified by its name in the noble vector
+size_t check_noble(const string&amp; noble_name, vector&lt;Noble*&gt;&amp; noble_vec){
+    size_t len = noble_vec.size();
+    for (size_t i = 0; i &lt; len; ++i){
+        if (noble_vec[i]-&gt;get_name() == noble_name){
+            return i;
+        }
+    }
+    return noble_vec.size();
+}
+</code></pre><h2 id=noblecpp>Noble.cpp</h2><pre tabindex=0><code>//
+//  Noble.cpp
+//  hw06
+//
+//  Created by DJ on 4/12/22.
+//  Copyright © 2022 DJ. All rights reserved.
+//
+
+
+#include &#34;Warrior.h&#34;
+#include &#34;Noble.h&#34;
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+namespace WarriorCraft{
+    ostream&amp; operator&lt;&lt; (ostream&amp; os, const Noble&amp; rhs){
+        os &lt;&lt; rhs.name &lt;&lt; &#34; has an army of &#34; &lt;&lt; rhs.army.size() &lt;&lt; endl;
+        for (size_t i = 0; i &lt; rhs.army.size(); ++i){
+          os &lt;&lt; &#39;\t&#39; &lt;&lt; *rhs.army[i] &lt;&lt; endl;
+        }
+        return os;
+    }
+
+    Noble::Noble(const string&amp; name): name(name){
+        strength = 0;
+    }
+
+    const string&amp; Noble::get_name() const{
+        return name;
+    }
+
+    void Noble::set_warrior_strength(double ratio){
+        for(size_t i = 0; i &lt; army.size(); ++i){
+                army[i]-&gt;set_strength(ratio);
+        }
+        strength -= ratio*strength;
+    }
+
+    void Noble::battle(Noble* other) {
+        cout &lt;&lt; name &lt;&lt; &#34; battles &#34; &lt;&lt; other-&gt;name &lt;&lt; endl;
+        double other_strg = other-&gt;get_strength();
+            
+            if(strength == 0 &amp;&amp; other_strg == 0){
+                cout &lt;&lt; &#34;Oh, NO! They&#39;re both dead! Yuck!&#34; &lt;&lt; endl;
+            } else if(strength == 0){
+                cout &lt;&lt; &#34;He&#39;s dead, &#34; &lt;&lt; other-&gt;name &lt;&lt; endl;
+            } else if(other_strg == 0){
+                cout &lt;&lt; &#34;He&#39;s dead, &#34; &lt;&lt; name &lt;&lt; endl;
+            } else if(strength == other_strg){
+                this-&gt;set_warrior_strength(1);//setting all army&#39;s strength to zero with ratio 1
+                other-&gt;set_warrior_strength(1);
+                cout &lt;&lt; &#34;Mutual Annihilation: &#34; &lt;&lt; name &lt;&lt; &#34; and &#34; &lt;&lt; other-&gt;name &lt;&lt; &#34; die at each other&#39;s hands&#34; &lt;&lt; endl;
+            } else if(strength &gt; other_strg){
+                double ratio = other_strg/ strength;
+                this -&gt;set_warrior_strength(ratio);
+                other-&gt;set_warrior_strength(1);
+                cout &lt;&lt; name &lt;&lt; &#34; defeats &#34; &lt;&lt; other-&gt;name &lt;&lt; endl;
+            } else {
+                double ratio = strength / other_strg;
+                other-&gt;set_warrior_strength(ratio);
+                this-&gt;set_warrior_strength(1);
+                cout &lt;&lt; other-&gt;name &lt;&lt; &#34; defeats &#34; &lt;&lt; name &lt;&lt; endl;
+            }
+    }
+
+    bool Noble::hire(Warrior* war){
+        if (!war-&gt;get_employed()){
+            army.push_back(war);
+            war-&gt;switch_employed();
+            war-&gt;set_owner(this);
+            strength += war-&gt;get_strength();
+            return true;
+        }
+        cerr &lt;&lt; &#34;Attempt to hire &#34; &lt;&lt; war-&gt;get_name() &lt;&lt; &#34; by &#34; &lt;&lt; name &lt;&lt; &#34; failed!&#34; &lt;&lt; endl;
+        return false;
+    }
+
+    bool Noble::fire(Warrior* war){
+        size_t ind_war = find_warrior(war-&gt;get_name());
+        if(ind_war != army.size()){
+            army[ind_war]-&gt;switch_employed();
+            army[ind_war]-&gt;set_owner(nullptr);
+            strength -= war-&gt;get_strength();
+            Warrior* war_copy = army[ind_war];
+            army[ind_war] = army[army.size()-1];
+            army[army.size()-1] = war_copy;
+            army.pop_back();
+            cout &lt;&lt; &#34;You don&#39;t work for me anymore &#34; &lt;&lt; war-&gt;get_name() &lt;&lt; &#34; -- &#34; &lt;&lt; name &lt;&lt; endl;
+            return true;
+        }
+        return false;
+    }
+
+    size_t Noble::find_warrior(const string&amp; war){
+        for (size_t i = 0; i &lt; army.size(); ++i){
+            if(army[i]-&gt;get_name() == war){
+                return i;
+            }
+        }
+        return army.size();
+    }
+
+    double Noble::get_strength(){
+        return strength;
+    }
+}
+</code></pre><h2 id=nobleh>Noble.h</h2><pre tabindex=0><code>#ifndef Noble_h
+#define Noble_h
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;vector&gt;
+
+namespace WarriorCraft{
+
+    class Warrior;
+
+    class Noble{
+        friend std::ostream&amp; operator&lt;&lt; (std::ostream&amp; os, const Noble&amp; rhs);
+    
+    public:
+        Noble(const std::string&amp; name);
+        const std::string&amp; get_name() const;
+        void set_warrior_strength(double ratio);
+        void battle(Noble* other);
+        bool hire(Warrior* war);
+        bool fire(Warrior* war);
+        size_t find_warrior(const std::string&amp; war);
+        double get_strength();
+        
+    private:
+        std::string name;
+        double strength;
+        std::vector&lt;Warrior*&gt; army;
+    };
+}
+</code></pre><h2 id=warriorcpp>Warrior.cpp</h2><pre tabindex=0><code>#include &#34;Warrior.h&#34;
+#include &#34;Noble.h&#34;
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+namespace WarriorCraft{
+
+        ostream&amp; operator&lt;&lt; (ostream&amp; os, const Warrior&amp; rhs){
+            os &lt;&lt; rhs.name &lt;&lt; &#34;: &#34; &lt;&lt; rhs.strength;
+            return os;
+        }
+        
+        Warrior::Warrior(const string&amp; name, double strength): name(name), strength(strength){
+            employed = false;
+            owner = nullptr;
+        }
+        const string&amp; Warrior::get_name() const {
+            return name;
+        }
+        double Warrior::get_strength() const {
+            return strength;
+        }
+        void Warrior::set_strength(double ratio){
+            strength -= ratio*strength;
+        }
+        void Warrior::switch_employed(){
+            employed = !employed;
+        }
+        bool Warrior::get_employed() const {
+            return employed;
+        }
+        void Warrior::run_away(){
+            switch_employed();
+            owner-&gt;fire(this);
+            owner = nullptr;
+        }
+        void Warrior::set_owner(Noble* noble){
+            owner = noble;
+        }
+    }
+</code></pre><h2 id=warriorh>Warrior.h</h2><pre tabindex=0><code>#ifndef Warrior_h
+#define Warrior_h
+#include &lt;string&gt;
+#include &lt;iostream&gt;
+
+namespace WarriorCraft {
+    class Noble;
+
+    class Warrior{
+        friend std::ostream&amp; operator&lt;&lt; (std::ostream&amp; os, const Warrior&amp; rhs);
+        
+    public:
+
+        Warrior(const std::string&amp; name, double strength);
+        const std::string&amp; get_name() const;
+        double get_strength() const;
+        void set_strength(double ratio);
+        void switch_employed();
+        bool get_employed() const;
+        void run_away();
+        void set_owner(Noble* noble);
+        
+    private:
+        std::string name;
+        double strength;
+        bool employed;
+        Noble* owner;
+    };
+}
+
+#endif /* Warrior_h */
+</code></pre></div><div class=post__footer></div></div></main></div><footer class="footer footer__base"><ul class=footer__list><li class=footer__item>&copy;
+dongje kim
+2023</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></body></html>

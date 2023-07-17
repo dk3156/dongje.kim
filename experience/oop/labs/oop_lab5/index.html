@@ -1,0 +1,207 @@
+<!doctype html><html dir=ltr lang=en data-theme class="html theme--light"><head><title>dongje kim
+|
+Lab5</title><meta charset=utf-8><meta name=generator content="Hugo 0.115.3"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name=author content="dongje kim"><meta name=description content="Portfolio"><link rel=stylesheet href=/dongje.kim/scss/main.min.1147aa5bacb4bce677a0e264073829caedb82fd18ea07a5f1d80521f539d1c45.css integrity="sha256-EUeqW6y0vOZ3oOJkBzgpyu24L9GOoHpfHYBSH1OdHEU=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/fontawesome.min.7d272de35b410fb165377550cdf9c4d3a80fbbcc961e111914e4d5c0eaf5729f.css integrity="sha256-fSct41tBD7FlN3VQzfnE06gPu8yWHhEZFOTVwOr1cp8=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/solid.min.55d8333481b07a08e07cf6f37319753a2b47e99f4c395394c5747b48b495aa9b.css integrity="sha256-VdgzNIGwegjgfPbzcxl1OitH6Z9MOVOUxXR7SLSVqps=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/regular.min.a7448d02590b43449364b6b5922ed9af5410abb4de4238412a830316dedb850b.css integrity="sha256-p0SNAlkLQ0STZLa1ki7Zr1QQq7TeQjhBKoMDFt7bhQs=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/brands.min.9ed75a5d670c953fe4df935937674b4646f92674367e9e66eb995bb04e821647.css integrity="sha256-ntdaXWcMlT/k35NZN2dLRkb5JnQ2fp5m65lbsE6CFkc=" crossorigin=anonymous type=text/css><link rel="shortcut icon" href=/dongje.kim/favicon.ico type=image/x-icon><link rel=apple-touch-icon sizes=180x180 href=/dongje.kim/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/dongje.kim/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/dongje.kim/favicon-16x16.png><link rel=canonical href=https://dk3156.github.io/dongje.kim/experience/oop/labs/oop_lab5/><script type=text/javascript src=/dongje.kim/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js integrity="sha256-+RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI=" crossorigin=anonymous></script>
+<script type=text/javascript src=/dongje.kim/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc=" crossorigin=anonymous></script><meta name=twitter:card content="summary"><meta name=twitter:title content="Lab5"><meta name=twitter:description content="Answers /* rec05-start.cpp */ #include <iostream> #include <string> #include <vector> using namespace std; class Section{ class Student{ friend ostream& operator<<(ostream& os, const Student& rhs){ os << &#34;Name: &#34; << rhs.name << &#34;, Grades: &#34;; for (size_t i = 0; i < rhs.grades.size(); ++i){ os << rhs.grades[i] << &#34; &#34;; } return os; } public: Student(const string& name): name(name), grades(14,-1){} const string& get_name() const { return name; } void update_score(int score, int index){ grades[index-1] = score; } private: string name; vector<int> grades; }; class TimeSlot { friend ostream& operator<<(ostream& os, const TimeSlot& rhs){ os << &#34;[Day: &#34; << rhs."><meta property="og:title" content="Lab5"><meta property="og:description" content="Answers /* rec05-start.cpp */ #include <iostream> #include <string> #include <vector> using namespace std; class Section{ class Student{ friend ostream& operator<<(ostream& os, const Student& rhs){ os << &#34;Name: &#34; << rhs.name << &#34;, Grades: &#34;; for (size_t i = 0; i < rhs.grades.size(); ++i){ os << rhs.grades[i] << &#34; &#34;; } return os; } public: Student(const string& name): name(name), grades(14,-1){} const string& get_name() const { return name; } void update_score(int score, int index){ grades[index-1] = score; } private: string name; vector<int> grades; }; class TimeSlot { friend ostream& operator<<(ostream& os, const TimeSlot& rhs){ os << &#34;[Day: &#34; << rhs."><meta property="og:type" content="article"><meta property="og:url" content="https://dk3156.github.io/dongje.kim/experience/oop/labs/oop_lab5/"><meta property="article:section" content="experience"><meta property="og:site_name" content="Dongje Kim"><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"experience","name":"Lab5","headline":"Lab5","alternativeHeadline":"","description":"
+      
+        Answers \/* rec05-start.cpp *\/ #include \u0026lt;iostream\u0026gt; #include \u0026lt;string\u0026gt; #include \u0026lt;vector\u0026gt; using namespace std; class Section{ class Student{ friend ostream\u0026amp; operator\u0026lt;\u0026lt;(ostream\u0026amp; os, const Student\u0026amp; rhs){ os \u0026lt;\u0026lt; \u0026#34;Name: \u0026#34; \u0026lt;\u0026lt; rhs.name \u0026lt;\u0026lt; \u0026#34;, Grades: \u0026#34;; for (size_t i = 0; i \u0026lt; rhs.grades.size(); \u002b\u002bi){ os \u0026lt;\u0026lt; rhs.grades[i] \u0026lt;\u0026lt; \u0026#34; \u0026#34;; } return os; } public: Student(const string\u0026amp; name): name(name), grades(14,-1){} const string\u0026amp; get_name() const { return name; } void update_score(int score, int index){ grades[index-1] = score; } private: string name; vector\u0026lt;int\u0026gt; grades; }; class TimeSlot { friend ostream\u0026amp; operator\u0026lt;\u0026lt;(ostream\u0026amp; os, const TimeSlot\u0026amp; rhs){ os \u0026lt;\u0026lt; \u0026#34;[Day: \u0026#34; \u0026lt;\u0026lt; rhs.
+
+
+      
+
+
+    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/dk3156.github.io\/dongje.kim\/experience\/oop\/labs\/oop_lab5\/"},"author":{"@type":"Person","name":"dongje kim"},"creator":{"@type":"Person","name":"dongje kim"},"accountablePerson":{"@type":"Person","name":"dongje kim"},"copyrightHolder":{"@type":"Person","name":"dongje kim"},"copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"dongje kim","url":"https://dk3156.github.io/dongje.kim/","logo":{"@type":"ImageObject","url":"https:\/\/dk3156.github.io\/dongje.kim\/favicon-32x32.png","width":"32","height":"32"}},"image":[],"url":"https:\/\/dk3156.github.io\/dongje.kim\/experience\/oop\/labs\/oop_lab5\/","wordCount":"561","genre":[],"keywords":[]}</script></head><body class=body><div class=wrapper><aside class=wrapper__sidebar><div class="sidebar
+animated fadeInDown"><div class=sidebar__content><div class=sidebar__introduction><img class=sidebar__introduction-profileimage src=/dongje.kim/images/tiger.png alt="profile picture"><div class=sidebar__introduction-title><a href=/dongje.kim>Dongje Kim</a></div><div class=sidebar__introduction-description><p>Portfolio</p></div></div><ul class=sidebar__list></ul></div><footer class="footer footer__sidebar"><ul class=footer__list><li class=footer__item>&copy;
+dongje kim
+2023</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></div></aside><main class=wrapper__main><header class=header><div class="animated fadeInDown"><a role=button class=navbar-burger data-target=navMenu aria-label=menu aria-expanded=false><span aria-hidden=true class=navbar-burger__line></span>
+<span aria-hidden=true class=navbar-burger__line></span>
+<span aria-hidden=true class=navbar-burger__line></span></a><nav class=nav><ul class=nav__list id=navMenu><li class=nav__list-item><a href=/dongje.kim/ title>Home</a></li><li class=nav__list-item><a href=/dongje.kim/experience/work/ title>experience</a></li><li class=nav__list-item><a href=/dongje.kim/projects/ title>project</a></li><li class=nav__list-item><a href=/dongje.kim/skills/ title>skill</a></li></ul><ul class="nav__list nav__list--end"><li class=nav__list-item><div class=themeswitch><a title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></li></ul></nav></div></header><div class="post
+animated fadeInDown"><div class=post__content><h1>Lab5</h1><h2 id=answers>Answers</h2><pre tabindex=0><code>/*
+  rec05-start.cpp
+ */
+
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+
+class Section{
+    
+    class Student{
+        friend ostream&amp; operator&lt;&lt;(ostream&amp; os, const Student&amp; rhs){
+            os &lt;&lt; &#34;Name: &#34; &lt;&lt; rhs.name &lt;&lt; &#34;, Grades: &#34;;
+            for (size_t i = 0; i &lt; rhs.grades.size(); ++i){
+                os &lt;&lt; rhs.grades[i] &lt;&lt; &#34; &#34;;
+            }
+            
+            return os;
+        }
+        
+    public:
+        Student(const string&amp; name): name(name), grades(14,-1){}
+        
+        const string&amp; get_name() const {
+            return name;
+        }
+        
+        void update_score(int score, int index){
+            grades[index-1] = score;
+        }
+        
+    private:
+        string name;
+        vector&lt;int&gt; grades;
+    };
+    
+    class TimeSlot {
+        friend ostream&amp; operator&lt;&lt;(ostream&amp; os, const TimeSlot&amp; rhs){
+            os &lt;&lt; &#34;[Day: &#34; &lt;&lt; rhs.day &lt;&lt; &#34;, Start time: &#34; &lt;&lt; rhs.hour &lt;&lt; &#34;]&#34;;
+            
+            return os;
+        }
+        
+    public:
+        TimeSlot(const string&amp; day, int hour): day(day), hour(convert_time(hour)){}
+    
+        
+    private:
+        string day;
+        string hour;
+        string convert_time(int hour){
+            if (hour &lt;= 12){
+                return to_string(hour) + &#34;am&#34;;
+            } else {
+                int new_hour = hour - 12;
+                return to_string(new_hour) + &#34;pm&#34;;
+            }
+        }
+    };
+    
+    friend ostream&amp; operator&lt;&lt;(ostream&amp; os, const Section&amp; rhs){
+        os &lt;&lt; &#34;Section: &#34; &lt;&lt; rhs.name &lt;&lt; &#34;, Time slot: &#34; &lt;&lt; rhs.timeslot &lt;&lt; &#34;, &#34; &lt;&lt; &#34;Students: &#34; &lt;&lt; endl;
+        for (size_t i = 0; i &lt; rhs.student_list.size(); ++i){
+            os &lt;&lt; *rhs.student_list[i] &lt;&lt; endl;
+        }
+        
+        return os;
+    }
+                 
+public:
+    Section(const string&amp; name, const string&amp; day, int hour): name(name), timeslot(day, hour){}
+    
+    void addStudent(const string&amp; name){
+        Student* student = new Student(name);
+        student_list.push_back(student);
+    }
+    
+    void update_student_record(const string&amp; name, int score, int index){
+        for (size_t i = 0; i &lt; student_list.size(); ++i){
+            if (student_list[i]-&gt;get_name() == name){
+                student_list[i]-&gt;update_score(score, index);
+            }
+        }
+    }
+    
+private:
+    string name;
+    TimeSlot timeslot;
+    vector&lt;Student*&gt; student_list;
+};
+
+class LabWorker{
+    friend ostream&amp; operator&lt;&lt; (ostream&amp; os, const LabWorker&amp; rhs){
+        if(rhs.section == nullptr){
+            os &lt;&lt; rhs.name &lt;&lt; &#34; does not have a section&#34; &lt;&lt; endl;
+        } else {
+            os &lt;&lt; rhs.name &lt;&lt; &#34; has &#34; &lt;&lt; *rhs.section;
+        }
+        
+        return os;
+}
+    
+public:
+    LabWorker(const string&amp; name): name(name), section(nullptr){}
+    
+    void addSection(Section&amp; section){
+        this-&gt;section = &amp;section;
+        
+    }
+    
+    void addGrade(const string&amp; name, int score, int index){
+        section-&gt;update_student_record(name, score, index);
+    }
+    
+private:
+    string name;
+    Section* section;
+};
+
+// Test code
+void doNothing(Section sec) { cout &lt;&lt; sec &lt;&lt; endl; }
+
+int main() {
+
+    cout &lt;&lt; &#34;Test 1: Defining a section\n&#34;;
+    Section secA2(&#34;A2&#34;, &#34;Tuesday&#34;, 16);
+    cout &lt;&lt; secA2 &lt;&lt; endl;
+
+    cout &lt;&lt; &#34;\nTest 2: Adding students to a section\n&#34;;
+    secA2.addStudent(&#34;John&#34;);
+    secA2.addStudent(&#34;George&#34;);
+    secA2.addStudent(&#34;Paul&#34;);
+    secA2.addStudent(&#34;Ringo&#34;);
+    cout &lt;&lt; secA2 &lt;&lt; endl;
+
+    cout &lt;&lt; &#34;\nTest 3: Defining a lab worker.\n&#34;;
+    LabWorker moe( &#34;Moe&#34; );
+    cout &lt;&lt; moe &lt;&lt; endl;
+
+    cout &lt;&lt; &#34;\nTest 4: Adding a section to a lab worker.\n&#34;;
+    moe.addSection( secA2 );
+    cout &lt;&lt; moe &lt;&lt; endl;
+
+    cout &lt;&lt; &#34;\nTest 5: Adding a second section and lab worker.\n&#34;;
+    LabWorker jane( &#34;Jane&#34; );
+    Section secB3( &#34;B3&#34;, &#34;Thursday&#34;, 11 );
+    secB3.addStudent(&#34;Thorin&#34;);
+    secB3.addStudent(&#34;Dwalin&#34;);
+    secB3.addStudent(&#34;Balin&#34;);
+    secB3.addStudent(&#34;Kili&#34;);
+    secB3.addStudent(&#34;Fili&#34;);
+    secB3.addStudent(&#34;Dori&#34;);
+    secB3.addStudent(&#34;Nori&#34;);
+    secB3.addStudent(&#34;Ori&#34;);
+    secB3.addStudent(&#34;Oin&#34;);
+    secB3.addStudent(&#34;Gloin&#34;);
+    secB3.addStudent(&#34;Bifur&#34;);
+    secB3.addStudent(&#34;Bofur&#34;);
+    secB3.addStudent(&#34;Bombur&#34;);
+    jane.addSection( secB3 );
+    cout &lt;&lt; jane &lt;&lt; endl;
+
+    cout &lt;&lt; &#34;\nTest 6: Adding some grades for week one\n&#34;;
+    moe.addGrade(&#34;John&#34;, 17, 1);
+    moe.addGrade(&#34;Paul&#34;, 19, 1);
+    moe.addGrade(&#34;George&#34;, 16, 1);
+    moe.addGrade(&#34;Ringo&#34;, 7, 1);
+    cout &lt;&lt; moe &lt;&lt; endl;
+
+    cout &lt;&lt; &#34;\nTest 7: Adding some grades for week three (skipping week 2)\n&#34;;
+    moe.addGrade(&#34;John&#34;, 15, 3);
+    moe.addGrade(&#34;Paul&#34;, 20, 3);
+    moe.addGrade(&#34;Ringo&#34;, 0, 3);
+    moe.addGrade(&#34;George&#34;, 16, 3);
+    cout &lt;&lt; moe &lt;&lt; endl;
+
+    cout &lt;&lt; &#34;\nTest 8: We&#39;re done (almost)! \nWhat should happen to all &#34;
+         &lt;&lt; &#34;those students (or rather their records?)\n&#34;;
+
+    cout &lt;&lt; &#34;\nTest 9: Oh, IF you have covered copy constructors in lecture, &#34;
+         &lt;&lt; &#34;then make sure the following call works:\n&#34;;
+    doNothing(secA2);
+    cout &lt;&lt; &#34;Back from doNothing\n\n&#34;;
+
+} // main
+</code></pre></div><div class=post__footer></div></div></main></div><footer class="footer footer__base"><ul class=footer__list><li class=footer__item>&copy;
+dongje kim
+2023</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></body></html>

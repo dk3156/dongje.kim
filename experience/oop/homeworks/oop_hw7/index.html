@@ -1,0 +1,340 @@
+<!doctype html><html dir=ltr lang=en data-theme class="html theme--light"><head><title>dongje kim
+|
+HW7</title><meta charset=utf-8><meta name=generator content="Hugo 0.115.3"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name=author content="dongje kim"><meta name=description content="Portfolio"><link rel=stylesheet href=/dongje.kim/scss/main.min.1147aa5bacb4bce677a0e264073829caedb82fd18ea07a5f1d80521f539d1c45.css integrity="sha256-EUeqW6y0vOZ3oOJkBzgpyu24L9GOoHpfHYBSH1OdHEU=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/fontawesome.min.7d272de35b410fb165377550cdf9c4d3a80fbbcc961e111914e4d5c0eaf5729f.css integrity="sha256-fSct41tBD7FlN3VQzfnE06gPu8yWHhEZFOTVwOr1cp8=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/solid.min.55d8333481b07a08e07cf6f37319753a2b47e99f4c395394c5747b48b495aa9b.css integrity="sha256-VdgzNIGwegjgfPbzcxl1OitH6Z9MOVOUxXR7SLSVqps=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/regular.min.a7448d02590b43449364b6b5922ed9af5410abb4de4238412a830316dedb850b.css integrity="sha256-p0SNAlkLQ0STZLa1ki7Zr1QQq7TeQjhBKoMDFt7bhQs=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/brands.min.9ed75a5d670c953fe4df935937674b4646f92674367e9e66eb995bb04e821647.css integrity="sha256-ntdaXWcMlT/k35NZN2dLRkb5JnQ2fp5m65lbsE6CFkc=" crossorigin=anonymous type=text/css><link rel="shortcut icon" href=/dongje.kim/favicon.ico type=image/x-icon><link rel=apple-touch-icon sizes=180x180 href=/dongje.kim/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/dongje.kim/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/dongje.kim/favicon-16x16.png><link rel=canonical href=https://dk3156.github.io/dongje.kim/experience/oop/homeworks/oop_hw7/><script type=text/javascript src=/dongje.kim/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js integrity="sha256-+RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI=" crossorigin=anonymous></script>
+<script type=text/javascript src=/dongje.kim/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc=" crossorigin=anonymous></script><meta name=twitter:card content="summary"><meta name=twitter:title content="HW7"><meta name=twitter:description content="Answers Main.cpp // // main.cpp // hw07 // // Created by DJ on 4/13/22. // #include &#34;Noble.h&#34; #include &#34;Protector.h&#34; #include <iostream> #include <fstream> using namespace std; using namespace WarriorCraft; int main() { Lord sam(&#34;Sam&#34;); Archer samantha(&#34;Samantha&#34;, 200); sam.hires(samantha); Lord joe(&#34;Joe&#34;); PersonWithStrengthToFight randy(&#34;Randolf the Elder&#34;, 250); joe.battle(randy); joe.battle(sam); Lord janet(&#34;Janet&#34;); Swordsman hardy(&#34;TuckTuckTheHardy&#34;, 100); Swordsman stout(&#34;TuckTuckTheStout&#34;, 80); janet.hires(hardy); janet.hires(stout); PersonWithStrengthToFight barclay(&#34;Barclay the Bold&#34;, 300); janet.battle(barclay); janet.hires(samantha); Archer pethora(&#34;Pethora&#34;, 50); Archer thora(&#34;Thorapleth&#34;, 60); Wizard merlin(&#34;Merlin&#34;, 150); janet."><meta property="og:title" content="HW7"><meta property="og:description" content="Answers Main.cpp // // main.cpp // hw07 // // Created by DJ on 4/13/22. // #include &#34;Noble.h&#34; #include &#34;Protector.h&#34; #include <iostream> #include <fstream> using namespace std; using namespace WarriorCraft; int main() { Lord sam(&#34;Sam&#34;); Archer samantha(&#34;Samantha&#34;, 200); sam.hires(samantha); Lord joe(&#34;Joe&#34;); PersonWithStrengthToFight randy(&#34;Randolf the Elder&#34;, 250); joe.battle(randy); joe.battle(sam); Lord janet(&#34;Janet&#34;); Swordsman hardy(&#34;TuckTuckTheHardy&#34;, 100); Swordsman stout(&#34;TuckTuckTheStout&#34;, 80); janet.hires(hardy); janet.hires(stout); PersonWithStrengthToFight barclay(&#34;Barclay the Bold&#34;, 300); janet.battle(barclay); janet.hires(samantha); Archer pethora(&#34;Pethora&#34;, 50); Archer thora(&#34;Thorapleth&#34;, 60); Wizard merlin(&#34;Merlin&#34;, 150); janet."><meta property="og:type" content="article"><meta property="og:url" content="https://dk3156.github.io/dongje.kim/experience/oop/homeworks/oop_hw7/"><meta property="article:section" content="experience"><meta property="og:site_name" content="Dongje Kim"><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"experience","name":"HW7","headline":"HW7","alternativeHeadline":"","description":"
+      
+        Answers Main.cpp \/\/ \/\/ main.cpp \/\/ hw07 \/\/ \/\/ Created by DJ on 4\/13\/22. \/\/ #include \u0026#34;Noble.h\u0026#34; #include \u0026#34;Protector.h\u0026#34; #include \u0026lt;iostream\u0026gt; #include \u0026lt;fstream\u0026gt; using namespace std; using namespace WarriorCraft; int main() { Lord sam(\u0026#34;Sam\u0026#34;); Archer samantha(\u0026#34;Samantha\u0026#34;, 200); sam.hires(samantha); Lord joe(\u0026#34;Joe\u0026#34;); PersonWithStrengthToFight randy(\u0026#34;Randolf the Elder\u0026#34;, 250); joe.battle(randy); joe.battle(sam); Lord janet(\u0026#34;Janet\u0026#34;); Swordsman hardy(\u0026#34;TuckTuckTheHardy\u0026#34;, 100); Swordsman stout(\u0026#34;TuckTuckTheStout\u0026#34;, 80); janet.hires(hardy); janet.hires(stout); PersonWithStrengthToFight barclay(\u0026#34;Barclay the Bold\u0026#34;, 300); janet.battle(barclay); janet.hires(samantha); Archer pethora(\u0026#34;Pethora\u0026#34;, 50); Archer thora(\u0026#34;Thorapleth\u0026#34;, 60); Wizard merlin(\u0026#34;Merlin\u0026#34;, 150); janet.
+
+
+      
+
+
+    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/dk3156.github.io\/dongje.kim\/experience\/oop\/homeworks\/oop_hw7\/"},"author":{"@type":"Person","name":"dongje kim"},"creator":{"@type":"Person","name":"dongje kim"},"accountablePerson":{"@type":"Person","name":"dongje kim"},"copyrightHolder":{"@type":"Person","name":"dongje kim"},"copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"dongje kim","url":"https://dk3156.github.io/dongje.kim/","logo":{"@type":"ImageObject","url":"https:\/\/dk3156.github.io\/dongje.kim\/favicon-32x32.png","width":"32","height":"32"}},"image":[],"url":"https:\/\/dk3156.github.io\/dongje.kim\/experience\/oop\/homeworks\/oop_hw7\/","wordCount":"872","genre":[],"keywords":[]}</script></head><body class=body><div class=wrapper><aside class=wrapper__sidebar><div class="sidebar
+animated fadeInDown"><div class=sidebar__content><div class=sidebar__introduction><img class=sidebar__introduction-profileimage src=/dongje.kim/images/tiger.png alt="profile picture"><div class=sidebar__introduction-title><a href=/dongje.kim>Dongje Kim</a></div><div class=sidebar__introduction-description><p>Portfolio</p></div></div><ul class=sidebar__list></ul></div><footer class="footer footer__sidebar"><ul class=footer__list><li class=footer__item>&copy;
+dongje kim
+2023</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></div></aside><main class=wrapper__main><header class=header><div class="animated fadeInDown"><a role=button class=navbar-burger data-target=navMenu aria-label=menu aria-expanded=false><span aria-hidden=true class=navbar-burger__line></span>
+<span aria-hidden=true class=navbar-burger__line></span>
+<span aria-hidden=true class=navbar-burger__line></span></a><nav class=nav><ul class=nav__list id=navMenu><li class=nav__list-item><a href=/dongje.kim/ title>Home</a></li><li class=nav__list-item><a href=/dongje.kim/experience/work/ title>experience</a></li><li class=nav__list-item><a href=/dongje.kim/projects/ title>project</a></li><li class=nav__list-item><a href=/dongje.kim/skills/ title>skill</a></li></ul><ul class="nav__list nav__list--end"><li class=nav__list-item><div class=themeswitch><a title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></li></ul></nav></div></header><div class="post
+animated fadeInDown"><div class=post__content><h1>HW7</h1><h2 id=answers>Answers</h2><h2 id=maincpp>Main.cpp</h2><pre tabindex=0><code>//
+//  main.cpp
+//  hw07
+//
+//  Created by DJ on 4/13/22.
+//
+#include &#34;Noble.h&#34;
+#include &#34;Protector.h&#34;
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+using namespace std;
+using namespace WarriorCraft;
+
+int main() {
+    Lord sam(&#34;Sam&#34;);
+    Archer samantha(&#34;Samantha&#34;, 200);
+    sam.hires(samantha);
+    Lord joe(&#34;Joe&#34;);
+    PersonWithStrengthToFight randy(&#34;Randolf the Elder&#34;, 250);
+    joe.battle(randy);
+    joe.battle(sam);
+    Lord janet(&#34;Janet&#34;);
+    Swordsman hardy(&#34;TuckTuckTheHardy&#34;, 100);
+    Swordsman stout(&#34;TuckTuckTheStout&#34;, 80);
+    janet.hires(hardy);
+    janet.hires(stout);
+    PersonWithStrengthToFight barclay(&#34;Barclay the Bold&#34;, 300);
+    janet.battle(barclay);
+    janet.hires(samantha);
+    Archer pethora(&#34;Pethora&#34;, 50);
+    Archer thora(&#34;Thorapleth&#34;, 60);
+    Wizard merlin(&#34;Merlin&#34;, 150);
+    janet.hires(pethora);
+    janet.hires(thora);
+    sam.hires(merlin);
+    janet.battle(barclay);
+    sam.battle(barclay);
+    joe.battle(barclay);
+}
+</code></pre><h2 id=noblecpp>Noble.cpp</h2><pre tabindex=0><code>
+#include &#34;Protector.h&#34;
+#include &#34;Noble.h&#34;
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+namespace WarriorCraft{
+    ostream&amp; operator&lt;&lt; (ostream&amp; os, const Noble&amp; rhs){
+        os &lt;&lt; rhs.name &lt;&lt; &#34; has an army of &#34; &lt;&lt; rhs.army.size() &lt;&lt; endl;
+        for (size_t i = 0; i &lt; rhs.army.size(); ++i){
+          os &lt;&lt; &#39;\t&#39; &lt;&lt; *rhs.army[i] &lt;&lt; endl;
+        }
+        return os;
+    }
+
+    Noble::Noble(const string&amp; name): name(name){
+        strength = 0;
+    }
+
+    const string&amp; Noble::get_name() const{
+        return name;
+    }
+
+    void Noble::set_warrior_strength(double ratio){
+        for(size_t i = 0; i &lt; army.size(); ++i){
+                army[i]-&gt;set_strength(ratio);
+        }
+        strength -= ratio*strength;
+    }
+
+    void Noble::battle(Noble&amp; other) {
+        cout &lt;&lt; name &lt;&lt; &#34; battles &#34; &lt;&lt; other.name &lt;&lt; endl;
+        double other_strg = other.get_strength();
+            
+            if(strength == 0 &amp;&amp; other_strg == 0){
+                cout &lt;&lt; &#34;Oh, NO! They&#39;re both dead! Yuck!&#34; &lt;&lt; endl;
+            } else if(strength == 0){
+                cout &lt;&lt; &#34;He&#39;s dead, &#34; &lt;&lt; other.name &lt;&lt; endl;
+            } else if(other_strg == 0){
+                cout &lt;&lt; &#34;He&#39;s dead, &#34; &lt;&lt; name &lt;&lt; endl;
+            } else if(strength == other_strg){
+                set_warrior_strength(1);//setting all army&#39;s strength to zero with ratio 1
+                other.set_warrior_strength(1);
+                cout &lt;&lt; &#34;Mutual Annihilation: &#34; &lt;&lt; name &lt;&lt; &#34; and &#34; &lt;&lt; other-&gt;name &lt;&lt; &#34; die at each other&#39;s hands&#34; &lt;&lt; endl;
+            } else if(strength &gt; other_strg){
+                double ratio = other_strg/ strength;
+                set_warrior_strength(ratio);
+                other.set_warrior_strength(1);
+                cout &lt;&lt; name &lt;&lt; &#34; defeats &#34; &lt;&lt; other-&gt;name &lt;&lt; endl;
+            } else {
+                double ratio = strength / other_strg;
+                other.set_warrior_strength(ratio);
+                set_warrior_strength(1);
+                cout &lt;&lt; other.name &lt;&lt; &#34; defeats &#34; &lt;&lt; name &lt;&lt; endl;
+            }
+    }
+
+    bool Noble::hires(Protector&amp; prot){
+        if (!prot.get_employed()){
+            army.push_back(&amp;prot);
+            prot.switch_employed();
+            prot.set_owner(this);
+            strength += prot.&gt;get_strength();
+            return true;
+        }
+        cerr &lt;&lt; &#34;Attempt to hire &#34; &lt;&lt; prot.get_name() &lt;&lt; &#34; by &#34; &lt;&lt; name &lt;&lt; &#34; failed!&#34; &lt;&lt; endl;
+        return false;
+    }
+
+    bool Noble::fires(Protector&amp; prot){
+        size_t ind_war = find_warrior(prot.get_name());
+        if(ind_war != army.size()){
+            army[ind_war]-&gt;switch_employed();
+            army[ind_war]-&gt;set_owner(nullptr);
+            strength -= prot.get_strength();
+            Protector* prot_copy = army[ind_war];
+            army[ind_war] = army[army.size()-1];
+            army[army.size()-1] = prot_copy;
+            army.pop_back();
+            cout &lt;&lt; &#34;You don&#39;t work for me anymore &#34; &lt;&lt; prot.get_name() &lt;&lt; &#34; -- &#34; &lt;&lt; name &lt;&lt; endl;
+            return true;
+        }
+        return false;
+    }
+
+    size_t Noble::find_warrior(const string&amp; war){
+        for (size_t i = 0; i &lt; army.size(); ++i){
+            if(army[i]-&gt;get_name() == war){
+                return i;
+            }
+        }
+        return army.size();
+    }
+
+    double Noble::get_strength(){
+        return strength;
+    }
+
+    Lord::Lord(const string&amp; name): Noble(name){}
+
+    void Lord::battle(Noble&amp; other){
+        Noble::battle(other);
+        for (size_t i = 0; i &lt; army.size(); ++i){
+            army[i]-&gt;defend();
+        }
+    }
+
+    PersonWithStrengthtoFight::PersonWithStrengthToFight(const string&amp; name, double strength): Noble(name), strength(strength){}
+
+    void PersonWithStrengthToFight::battle(Noble&amp; other){
+        cout &lt;&lt; &#34;UGH!!&#34; &lt;&lt; endl;
+        Noble::battle(other);
+    }
+
+}
+</code></pre><h2 id=nobleh>Noble.h</h2><pre tabindex=0><code>#ifndef Noble_h
+#define Noble_h
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+namespace WarriorCraft{
+
+    class Protector;
+
+    class Noble{
+        friend std::ostream&amp; operator&lt;&lt; (std::ostream&amp; os, const Noble&amp; rhs);
+        virtual void battle(Noble&amp; other) = 0;
+    
+    public:
+        Noble(const std::string&amp; name);
+        const std::string&amp; get_name() const;
+        void set_warrior_strength(double ratio);
+        bool hires(Protector&amp; prot);
+        bool fires(Protector&amp; prot);
+        size_t find_warrior(const std::string&amp; war);
+        double get_strength();
+        
+    private:
+        std::string name;
+    protected: double strength;
+        std::vector&lt;Protector*&gt; army;
+    };
+
+    class Lord : public Noble{
+    public:
+        Lord(const string&amp; name);
+        void battle(Noble&amp; other);
+    };
+
+    class PersonWithStrengthToFight : public Noble{
+    public:
+        PersonWithStrengthToFight(const string&amp; name, double strength);
+        void battle(Noble&amp; other);
+    };
+}
+#endif /* Noble_h */
+</code></pre><h2 id=protectorcpp>Protector.cpp</h2><pre tabindex=0><code>#include &#34;Protector.h&#34;
+#include &#34;Noble.h&#34;
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+namespace WarriorCraft{
+
+    ostream&amp; operator&lt;&lt; (ostream&amp; os, const Protectors&amp; rhs){
+        os &lt;&lt; rhs.name &lt;&lt; &#34;: &#34; &lt;&lt; rhs.strength;
+        return os;
+    }
+        
+    Protector::Protector(const string&amp; name, double strength): name(name), strength(strength){
+        employed = false;
+        owner = nullptr;
+    }
+    const string&amp; Protector::get_name() const {
+        return name;
+    }
+    double Protector::get_strength() const {
+        return strength;
+    }
+    void Protector::set_strength(double ratio){
+        strength -= ratio*strength;
+    }
+    void Protector::switch_employed(){
+        employed = !employed;
+    }
+    bool Protector::get_employed() const {
+        return employed;
+    }
+    void Protector::run_away(){
+        switch_employed();
+        owner-&gt;fire(this);
+        owner = nullptr;
+    }
+    void Protector::set_owner(Noble* noble){
+        owner = noble;
+    }
+    
+    void Protector::defend(){}
+
+    Wizard::Wizard(const string&amp; name, double strength): Protector(name, strength){}
+    void Wizard::defend(){
+        cout &lt;&lt; &#34;POOF!&#34; &lt;&lt; endl;
+    }
+
+    Warrior::Warrior(const string&amp; name, double strength): Protector(name, strength){}
+    void Warrior::defend(){
+        cout &lt;&lt; name &lt;&lt; &#34; says: Take that in the name of my lord, &#34; &lt;&lt; owner-&gt;get_name() &lt;&lt; endl;
+    }
+
+    Swordsman::Swordsman(const string&amp; name, double strength): Protector(name, strength){}
+    void Swordsman::defend(){
+        cout &lt;&lt; &#34;CLANG&#34; &lt;&lt; &#34; &#34;;
+        Warriors::defend();
+    }
+
+    Archer::Archer(const string&amp; name, double strength): Protector(name, strength){}
+    void Archer::defend() override { 
+        cout &lt;&lt; &#34;TWANG!&#34; &lt;&lt; &#34; &#34;;
+        Warriors::defend();
+    }
+}
+</code></pre><h2 id=protectorh>Protector.h</h2><pre tabindex=0><code>
+#ifndef Protector_h
+#define Protector_h
+#include &lt;string&gt;
+#include &lt;iostream&gt;
+
+namespace WarriorCraft {
+    class Noble;
+
+    class Protector{
+        friend std::ostream&amp; operator&lt;&lt; (std::ostream&amp; os, const Protector&amp; rhs);
+        virtual void defend() = 0;
+        
+    public:
+
+        Protector(const std::string&amp; name, double strength);
+        const std::string&amp; get_name() const;
+        double get_strength() const;
+        void set_strength(double ratio);
+        void switch_employed();
+        bool get_employed() const;
+        void run_away();
+        void set_owner(Noble* noble);
+        
+    private:
+        std::string name;
+        double strength;
+        bool employed;
+        Noble* owner;
+    };
+
+    class Wizard : public Protector{
+    public:
+        Wizard(const string&amp; name, double strength);
+        void defend();
+    };
+
+    class Warrior : public Protector{
+    public:
+        Warrior(const string&amp; name, double strength);
+        void defend();
+    };
+
+    class Swordsman : public Warrior{
+    public:
+        Swordsman(const string&amp; name, double strength);
+        void defend();
+    };
+
+    class Archer : public Warrior{
+    public:
+        Archer(const string&amp; name, double strength);
+        void defend();
+    };
+}
+
+#endif /* Protector_h */
+</code></pre></div><div class=post__footer></div></div></main></div><footer class="footer footer__base"><ul class=footer__list><li class=footer__item>&copy;
+dongje kim
+2023</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></body></html>

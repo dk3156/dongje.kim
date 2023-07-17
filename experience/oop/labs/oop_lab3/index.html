@@ -1,0 +1,370 @@
+<!doctype html><html dir=ltr lang=en data-theme class="html theme--light"><head><title>dongje kim
+|
+Lab3</title><meta charset=utf-8><meta name=generator content="Hugo 0.115.3"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name=author content="dongje kim"><meta name=description content="Portfolio"><link rel=stylesheet href=/dongje.kim/scss/main.min.1147aa5bacb4bce677a0e264073829caedb82fd18ea07a5f1d80521f539d1c45.css integrity="sha256-EUeqW6y0vOZ3oOJkBzgpyu24L9GOoHpfHYBSH1OdHEU=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/fontawesome.min.7d272de35b410fb165377550cdf9c4d3a80fbbcc961e111914e4d5c0eaf5729f.css integrity="sha256-fSct41tBD7FlN3VQzfnE06gPu8yWHhEZFOTVwOr1cp8=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/solid.min.55d8333481b07a08e07cf6f37319753a2b47e99f4c395394c5747b48b495aa9b.css integrity="sha256-VdgzNIGwegjgfPbzcxl1OitH6Z9MOVOUxXR7SLSVqps=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/regular.min.a7448d02590b43449364b6b5922ed9af5410abb4de4238412a830316dedb850b.css integrity="sha256-p0SNAlkLQ0STZLa1ki7Zr1QQq7TeQjhBKoMDFt7bhQs=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/brands.min.9ed75a5d670c953fe4df935937674b4646f92674367e9e66eb995bb04e821647.css integrity="sha256-ntdaXWcMlT/k35NZN2dLRkb5JnQ2fp5m65lbsE6CFkc=" crossorigin=anonymous type=text/css><link rel="shortcut icon" href=/dongje.kim/favicon.ico type=image/x-icon><link rel=apple-touch-icon sizes=180x180 href=/dongje.kim/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/dongje.kim/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/dongje.kim/favicon-16x16.png><link rel=canonical href=https://dk3156.github.io/dongje.kim/experience/oop/labs/oop_lab3/><script type=text/javascript src=/dongje.kim/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js integrity="sha256-+RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI=" crossorigin=anonymous></script>
+<script type=text/javascript src=/dongje.kim/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc=" crossorigin=anonymous></script><meta name=twitter:card content="summary"><meta name=twitter:title content="Lab3"><meta name=twitter:description content="Answers /* rec03_start.cpp */ // Provided #include <iostream> #include <string> #include <vector> #include <fstream> using namespace std; // Task 1 // Define an Account struct struct Account{ string name; int number; }; // Task 2 // Define an Account class (use a different name than in Task 1) class Account2{ friend ostream& operator<<(ostream&, const Account2&); public: Account2(const string& the_name, const int& the_number): name(the_name), number(the_number){} const string& get_name() const {return name;} int get_number() const {return number;} private: string name; int number; }; // Task 3 // Define an Account (use a different name than in Task 1&amp;2) and // Transaction classes class Transaction3{ friend ostream& operator<<(ostream&, const Transaction3&); public: Transaction3(int the_amount, int the_sign): amount(the_amount), sign(the_sign){} int get_amount() const {return amount;} int get_sign() const {return sign;} private: //amount of withdraw or deposit int amount; //if withdraw, -1, if deposit, +1 int sign; }; class Account3{ friend ostream& operator<<(ostream&, const Account3&); public: Account3(const string& the_name, int the_number): name(the_name), number(the_number){} void deposit(int amount){ trans."><meta property="og:title" content="Lab3"><meta property="og:description" content="Answers /* rec03_start.cpp */ // Provided #include <iostream> #include <string> #include <vector> #include <fstream> using namespace std; // Task 1 // Define an Account struct struct Account{ string name; int number; }; // Task 2 // Define an Account class (use a different name than in Task 1) class Account2{ friend ostream& operator<<(ostream&, const Account2&); public: Account2(const string& the_name, const int& the_number): name(the_name), number(the_number){} const string& get_name() const {return name;} int get_number() const {return number;} private: string name; int number; }; // Task 3 // Define an Account (use a different name than in Task 1&amp;2) and // Transaction classes class Transaction3{ friend ostream& operator<<(ostream&, const Transaction3&); public: Transaction3(int the_amount, int the_sign): amount(the_amount), sign(the_sign){} int get_amount() const {return amount;} int get_sign() const {return sign;} private: //amount of withdraw or deposit int amount; //if withdraw, -1, if deposit, +1 int sign; }; class Account3{ friend ostream& operator<<(ostream&, const Account3&); public: Account3(const string& the_name, int the_number): name(the_name), number(the_number){} void deposit(int amount){ trans."><meta property="og:type" content="article"><meta property="og:url" content="https://dk3156.github.io/dongje.kim/experience/oop/labs/oop_lab3/"><meta property="article:section" content="experience"><meta property="og:site_name" content="Dongje Kim"><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"experience","name":"Lab3","headline":"Lab3","alternativeHeadline":"","description":"
+      
+        Answers \/* rec03_start.cpp *\/ \/\/ Provided #include \u0026lt;iostream\u0026gt; #include \u0026lt;string\u0026gt; #include \u0026lt;vector\u0026gt; #include \u0026lt;fstream\u0026gt; using namespace std; \/\/ Task 1 \/\/ Define an Account struct struct Account{ string name; int number; }; \/\/ Task 2 \/\/ Define an Account class (use a different name than in Task 1) class Account2{ friend ostream\u0026amp; operator\u0026lt;\u0026lt;(ostream\u0026amp;, const Account2\u0026amp;); public: Account2(const string\u0026amp; the_name, const int\u0026amp; the_number): name(the_name), number(the_number){} const string\u0026amp; get_name() const {return name;} int get_number() const {return number;} private: string name; int number; }; \/\/ Task 3 \/\/ Define an Account (use a different name than in Task 1\u0026amp;2) and \/\/ Transaction classes class Transaction3{ friend ostream\u0026amp; operator\u0026lt;\u0026lt;(ostream\u0026amp;, const Transaction3\u0026amp;); public: Transaction3(int the_amount, int the_sign): amount(the_amount), sign(the_sign){} int get_amount() const {return amount;} int get_sign() const {return sign;} private: \/\/amount of withdraw or deposit int amount; \/\/if withdraw, -1, if deposit, \u002b1 int sign; }; class Account3{ friend ostream\u0026amp; operator\u0026lt;\u0026lt;(ostream\u0026amp;, const Account3\u0026amp;); public: Account3(const string\u0026amp; the_name, int the_number): name(the_name), number(the_number){} void deposit(int amount){ trans.
+
+
+      
+
+
+    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/dk3156.github.io\/dongje.kim\/experience\/oop\/labs\/oop_lab3\/"},"author":{"@type":"Person","name":"dongje kim"},"creator":{"@type":"Person","name":"dongje kim"},"accountablePerson":{"@type":"Person","name":"dongje kim"},"copyrightHolder":{"@type":"Person","name":"dongje kim"},"copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"dongje kim","url":"https://dk3156.github.io/dongje.kim/","logo":{"@type":"ImageObject","url":"https:\/\/dk3156.github.io\/dongje.kim\/favicon-32x32.png","width":"32","height":"32"}},"image":[],"url":"https:\/\/dk3156.github.io\/dongje.kim\/experience\/oop\/labs\/oop_lab3\/","wordCount":"1076","genre":[],"keywords":[]}</script></head><body class=body><div class=wrapper><aside class=wrapper__sidebar><div class="sidebar
+animated fadeInDown"><div class=sidebar__content><div class=sidebar__introduction><img class=sidebar__introduction-profileimage src=/dongje.kim/images/tiger.png alt="profile picture"><div class=sidebar__introduction-title><a href=/dongje.kim>Dongje Kim</a></div><div class=sidebar__introduction-description><p>Portfolio</p></div></div><ul class=sidebar__list></ul></div><footer class="footer footer__sidebar"><ul class=footer__list><li class=footer__item>&copy;
+dongje kim
+2023</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></div></aside><main class=wrapper__main><header class=header><div class="animated fadeInDown"><a role=button class=navbar-burger data-target=navMenu aria-label=menu aria-expanded=false><span aria-hidden=true class=navbar-burger__line></span>
+<span aria-hidden=true class=navbar-burger__line></span>
+<span aria-hidden=true class=navbar-burger__line></span></a><nav class=nav><ul class=nav__list id=navMenu><li class=nav__list-item><a href=/dongje.kim/ title>Home</a></li><li class=nav__list-item><a href=/dongje.kim/experience/work/ title>experience</a></li><li class=nav__list-item><a href=/dongje.kim/projects/ title>project</a></li><li class=nav__list-item><a href=/dongje.kim/skills/ title>skill</a></li></ul><ul class="nav__list nav__list--end"><li class=nav__list-item><div class=themeswitch><a title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></li></ul></nav></div></header><div class="post
+animated fadeInDown"><div class=post__content><h1>Lab3</h1><h2 id=answers>Answers</h2><pre tabindex=0><code>/*
+  rec03_start.cpp
+ */
+
+// Provided
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;vector&gt;
+#include &lt;fstream&gt;
+using namespace std;
+
+// Task 1
+// Define an Account struct
+struct Account{
+    string name;
+    int number;
+};
+
+// Task 2
+// Define an Account class (use a different name than in Task 1)
+class Account2{
+friend ostream&amp; operator&lt;&lt;(ostream&amp;, const Account2&amp;);
+    
+public:
+    Account2(const string&amp; the_name, const int&amp; the_number): name(the_name), number(the_number){}
+    
+    const string&amp; get_name() const {return name;}
+    int get_number() const {return number;}
+private:
+    string name;
+    int number;
+};
+
+// Task 3
+// Define an Account (use a different name than in Task 1&amp;2) and
+// Transaction classes
+
+class Transaction3{
+    friend ostream&amp; operator&lt;&lt;(ostream&amp;, const Transaction3&amp;);
+    
+public:
+    Transaction3(int the_amount, int the_sign): amount(the_amount), sign(the_sign){}
+    int get_amount() const {return amount;}
+    int get_sign() const {return sign;}
+private:
+    //amount of withdraw or deposit
+    int amount;
+    //if withdraw, -1, if deposit, +1
+    int sign;
+};
+
+
+class Account3{
+    friend ostream&amp; operator&lt;&lt;(ostream&amp;, const Account3&amp;);
+    
+public:
+    Account3(const string&amp; the_name, int the_number): name(the_name), number(the_number){}
+    void deposit(int amount){
+        trans.emplace_back(amount, 1);
+        balance += amount;
+    }
+    void withdraw(int amount){
+        trans.emplace_back(amount, -1);
+        balance -= amount;
+    }
+    
+    const string&amp; get_name() const {return name;}
+    int get_number() const {return number;}
+    int get_balance() const{return balance;}
+    
+private:
+    string name;
+    int number;
+    vector&lt;Transaction3&gt; trans;
+    int balance = 0;
+};
+
+
+ostream&amp; operator&lt;&lt; (ostream&amp; os, const Account3&amp; acc){
+    os &lt;&lt; &#34;Account &#34; &lt;&lt; acc.name &lt;&lt; &#34; &#34; &lt;&lt; acc.number &lt;&lt; endl;
+    os &lt;&lt; &#34;transaction history: &#34; &lt;&lt; endl;
+    for(size_t i = 0; i &lt; acc.trans.size(); ++i){
+        os &lt;&lt; acc.trans[i];
+    }
+    os &lt;&lt; &#34;balance remained: &#34; &lt;&lt; acc.balance &lt;&lt; endl;
+    
+    return os;
+}
+
+ostream&amp; operator&lt;&lt; (ostream&amp; os, const Transaction3&amp; trans){
+    if(trans.sign == -1){
+        os &lt;&lt; trans.amount &lt;&lt; &#34; withdrawn.&#34; &lt;&lt; endl;
+    } else {
+        os &lt;&lt; trans.amount &lt;&lt; &#34; deposited.&#34; &lt;&lt; endl;
+    }
+    
+    return os;
+}
+
+
+// Task 4
+// Define an Account with a nested public Transaction class
+// (use different names than in the previous Tasks)
+
+class Account4{
+    friend ostream&amp; operator&lt;&lt;(ostream&amp;, const Account4&amp;);
+    
+public:
+    class Transaction4{
+        friend ostream&amp; operator&lt;&lt;(ostream&amp;, const Transaction4&amp;);
+        
+        Transaction4(int the_amount, int the_sign): amount(the_amount), sign(the_sign){}
+        int get_amount() const {return amount;}
+        int get_sign() const {return sign;}
+    private:
+        //amount of withdraw or deposit
+        int amount;
+        //if withdraw, -1, if deposit, +1
+        int sign;
+    };
+    
+    Account4(const string&amp; the_name, int the_number, int the_amount, int the_sign): name(the_name), number(the_number){}
+    void deposit(int amount){
+        trans.emplace_back(amount, 1);
+        balance += amount;
+    }
+    void withdraw(int amount){
+        if(balance - amount &lt; 0){
+            cerr &lt;&lt; &#34; Not enough balance&#34; &lt;&lt; endl;
+            return;
+        }
+        trans.emplace_back(amount, -1);
+        balance -= amount;
+    }
+    
+    const string&amp; get_name() const {return name;}
+    int get_number() const {return number;}
+    int get_balance() const{return balance;}
+    
+private:
+    string name;
+    int number;
+    vector&lt;Transaction4&gt; trans;
+    int balance = 0;
+};
+
+
+ostream&amp; operator&lt;&lt; (ostream&amp; os, const Account4&amp; acc){
+    os &lt;&lt; &#34;Account &#34; &lt;&lt; acc.name &lt;&lt; &#34; &#34; &lt;&lt; acc.number &lt;&lt; endl;
+    os &lt;&lt; &#34;transaction history: &#34; &lt;&lt; endl;
+    for(size_t i = 0; i &lt; acc.trans.size(); ++i){
+        os &lt;&lt; acc.trans[i];
+    }
+    os &lt;&lt; &#34;balance remained: &#34; &lt;&lt; acc.balance &lt;&lt; endl;
+    return os;
+}
+
+ostream&amp; operator&lt;&lt; (ostream&amp; os, const Account4::Transaction4&amp; trans){
+    if(trans.sign == -1){
+        os &lt;&lt; trans.amount &lt;&lt; &#34; withdrawn.&#34; &lt;&lt; endl;
+    } else {
+        os &lt;&lt; trans.amount &lt;&lt; &#34; deposited.&#34; &lt;&lt; endl;
+    }
+    
+    return os;
+}
+
+
+
+
+// Task 5
+// Define an Account with a nested private Transaction class
+// (use different names than in the previous Tasks)
+
+
+size_t find_account(const vector&lt;Account3&gt;&amp; vec, int account_num);
+
+int main() {
+
+    // Task 1: account as struct
+    //      1a
+    cout &lt;&lt; &#34;Task1a:\n&#34;;
+    
+    string name;
+    int number;
+    vector&lt;Account&gt; acc_vec;
+    
+    ifstream my_file(&#34;accounts.txt&#34;);
+    if (!my_file){
+        cerr &lt;&lt; &#34;Error: the file does not exist&#34; &lt;&lt; endl;
+    }
+    while (my_file &gt;&gt; name &gt;&gt; number){
+        Account acc;
+        acc.name = name;
+        acc.number = number;
+        acc_vec.push_back(acc);
+    }
+    my_file.close();
+    
+    for(size_t i = 0; i &lt; acc_vec.size(); ++i){
+        cout &lt;&lt; acc_vec[i].name &lt;&lt; &#34; &#34; &lt;&lt; acc_vec[i].number &lt;&lt; endl;
+    }
+
+    //      1b
+    cout &lt;&lt; &#34;Task1b:\n&#34;;
+    cout &lt;&lt; &#34;Filling vector of struct objects, using {} initialization:\n&#34;;
+    
+    acc_vec.clear();
+    my_file.open(&#34;accounts.txt&#34;);
+    while (my_file &gt;&gt; name &gt;&gt; number){
+        Account acc2 {name, number};
+        acc_vec.push_back(acc2);
+    }
+    my_file.close();
+    
+    for(size_t i = 0; i &lt; acc_vec.size(); ++i){
+        cout &lt;&lt; acc_vec[i].name &lt;&lt; &#34; &#34; &lt;&lt; acc_vec[i].number &lt;&lt; endl;
+    }
+
+    //==================================
+    // Task 2: account as class
+
+    //      2a
+    cout &lt;&lt; &#34;==============\n&#34;;
+    cout &lt;&lt; &#34;\nTask2a:&#34;;
+    cout &lt;&lt; &#34;\nFilling vector of class objects, using local class object:\n&#34;;
+    
+    vector&lt;Account2&gt; acc2_vec;
+    my_file.open(&#34;accounts.txt&#34;);
+    while (my_file &gt;&gt; name &gt;&gt; number){
+        Account2 acc2(name, number);
+        acc2_vec.push_back(acc2);
+    }
+    my_file.close();
+    
+    for(size_t i = 0; i &lt; acc2_vec.size(); ++i){
+        cout &lt;&lt; acc2_vec[i].get_name() &lt;&lt; &#34; &#34; &lt;&lt; acc2_vec[i].get_number() &lt;&lt; endl;
+    }
+    
+    cout &lt;&lt; &#34;\nTask2b:\n&#34;;
+    cout &lt;&lt; &#34;output using output operator with getters\n&#34;;
+    //line 162
+    for(size_t i = 0; i &lt; acc2_vec.size(); ++i){
+        cout &lt;&lt; acc2_vec[i] &lt;&lt; endl;
+    }
+    
+    cout &lt;&lt; &#34;\nTask2c:\n&#34;;
+    cout &lt;&lt; &#34;output using output operator as friend without getters\n&#34;;
+    //line 166
+    for(size_t i = 0; i &lt; acc2_vec.size(); ++i){
+        cout &lt;&lt; acc2_vec[i] &lt;&lt; endl;
+    }
+
+    cout &lt;&lt; &#34;\nTask2d:\n&#34;;
+    cout &lt;&lt; &#34;Filling vector of class objects, using temporary class object:\n&#34;;
+    acc2_vec.clear();
+    my_file.open(&#34;accounts.txt&#34;);
+    while (my_file &gt;&gt; name &gt;&gt; number){
+        acc2_vec.push_back(Account2(name, number));
+    }
+    my_file.close();
+    
+    for(size_t i = 0; i &lt; acc2_vec.size(); ++i){
+        cout &lt;&lt; acc2_vec[i] &lt;&lt; endl;
+    }
+    
+    cout &lt;&lt; &#34;\nTask2e:\n&#34;;
+    cout &lt;&lt; &#34;Filling vector of class objects, using emplace_back:\n&#34;;
+    acc2_vec.clear();
+    my_file.open(&#34;accounts.txt&#34;);
+    while (my_file &gt;&gt; name &gt;&gt; number){
+        acc2_vec.emplace_back(name, number);
+    }
+    my_file.close();
+    
+    for(size_t i = 0; i &lt; acc2_vec.size(); ++i){
+        cout &lt;&lt; acc2_vec[i] &lt;&lt; endl;
+    }
+    
+    cout &lt;&lt; &#34;==============\n&#34;;
+    cout &lt;&lt; &#34;\nTask 3:\nAccounts and Transaction:\n&#34;;
+
+    ifstream my_file2;
+    vector&lt;Account3&gt; acc3_vec;
+    string command;
+    int account_num;
+    int amount;
+    size_t index;
+    my_file.open(&#34;transactions.txt&#34;);
+    if(!my_file){
+        cerr &lt;&lt; &#34;No such file exists&#34; &lt;&lt; endl;
+    }
+    while (my_file &gt;&gt; command){
+        if (command == &#34;Account&#34;){
+            my_file &gt;&gt; name &gt;&gt; number;
+            Account3 acc(name, number);
+            acc3_vec.push_back(acc);
+        } else if (command == &#34;Deposit&#34;){
+            my_file &gt;&gt; account_num &gt;&gt; amount;
+            index = find_account(acc3_vec, account_num);
+            if(index == acc3_vec.size()){
+                cerr &lt;&lt; &#34;No such account number exists.&#34; &lt;&lt; endl;
+            } else {
+                acc3_vec[index].deposit(amount);
+            }
+        } else if (command == &#34;Withdraw&#34;){
+            my_file &gt;&gt; account_num &gt;&gt; amount;
+            index = find_account(acc3_vec, account_num);
+            if(index == acc3_vec.size()){
+                cerr &lt;&lt; &#34;No such account number exists.&#34; &lt;&lt; endl;
+            } else {
+                acc3_vec[index].withdraw(amount);
+            }
+        }
+    }
+    for(size_t i = 0; i &lt; acc3_vec.size(); ++i){
+        cout &lt;&lt; acc3_vec[i] &lt;&lt; endl;
+    }
+    my_file.close();
+    
+
+    cout &lt;&lt; &#34;==============\n&#34;;
+    cout &lt;&lt; &#34;\nTask 4:\nTransaction nested in public section of Account:\n&#34;;
+
+    cout &lt;&lt; &#34;==============\n&#34;;
+    cout &lt;&lt; &#34;\nTask 5:\nTransaction nested in private section of Account:\n&#34;;
+
+    
+}
+
+//ostream&amp; operator&lt;&lt; (ostream&amp; os, const Account2&amp; acc2){
+//    os &lt;&lt; acc2.get_name() &lt;&lt; &#34; &#34; &lt;&lt; acc2.get_number() &lt;&lt; endl;
+    
+//    return os;
+//}
+
+size_t find_account(const vector&lt;Account3&gt;&amp; vec, int account_num){
+    for (size_t i = 0; i &lt; vec.size(); ++i){
+        if(vec[i].get_number() == account_num){
+            return i;
+        }
+    }
+    return vec.size();
+}
+
+ostream&amp; operator&lt;&lt; (ostream&amp; os, const Account2&amp; acc2){
+    os &lt;&lt; acc2.name &lt;&lt; &#34; &#34; &lt;&lt; acc2.number &lt;&lt; endl;
+    
+    return os;
+    }
+</code></pre></div><div class=post__footer></div></div></main></div><footer class="footer footer__base"><ul class=footer__list><li class=footer__item>&copy;
+dongje kim
+2023</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></body></html>

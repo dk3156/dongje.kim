@@ -1,0 +1,412 @@
+<!doctype html><html dir=ltr lang=en data-theme class="html theme--light"><head><title>dongje kim
+|
+Lab12</title><meta charset=utf-8><meta name=generator content="Hugo 0.115.3"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name=author content="dongje kim"><meta name=description content="Portfolio"><link rel=stylesheet href=/dongje.kim/scss/main.min.1147aa5bacb4bce677a0e264073829caedb82fd18ea07a5f1d80521f539d1c45.css integrity="sha256-EUeqW6y0vOZ3oOJkBzgpyu24L9GOoHpfHYBSH1OdHEU=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/fontawesome.min.7d272de35b410fb165377550cdf9c4d3a80fbbcc961e111914e4d5c0eaf5729f.css integrity="sha256-fSct41tBD7FlN3VQzfnE06gPu8yWHhEZFOTVwOr1cp8=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/solid.min.55d8333481b07a08e07cf6f37319753a2b47e99f4c395394c5747b48b495aa9b.css integrity="sha256-VdgzNIGwegjgfPbzcxl1OitH6Z9MOVOUxXR7SLSVqps=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/regular.min.a7448d02590b43449364b6b5922ed9af5410abb4de4238412a830316dedb850b.css integrity="sha256-p0SNAlkLQ0STZLa1ki7Zr1QQq7TeQjhBKoMDFt7bhQs=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/brands.min.9ed75a5d670c953fe4df935937674b4646f92674367e9e66eb995bb04e821647.css integrity="sha256-ntdaXWcMlT/k35NZN2dLRkb5JnQ2fp5m65lbsE6CFkc=" crossorigin=anonymous type=text/css><link rel="shortcut icon" href=/dongje.kim/favicon.ico type=image/x-icon><link rel=apple-touch-icon sizes=180x180 href=/dongje.kim/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/dongje.kim/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/dongje.kim/favicon-16x16.png><link rel=canonical href=https://dk3156.github.io/dongje.kim/experience/oop/labs/oop_lab12/><script type=text/javascript src=/dongje.kim/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js integrity="sha256-+RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI=" crossorigin=anonymous></script>
+<script type=text/javascript src=/dongje.kim/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc=" crossorigin=anonymous></script><meta name=twitter:card content="summary"><meta name=twitter:title content="Lab12"><meta name=twitter:description content="Answers // // main.cpp // rec12 // // Created by DJ on 4/22/22. // #include <cstdlib> #include <iostream> using namespace std; class List { friend ostream& operator<<(ostream& os, const List& rhs){ os << &#34;Outputting the list: &#34; << endl; Node* temp = rhs.header->next; while(temp != rhs.trailer){ os << temp->data << ' '; temp = temp->next; } return os; } struct Node{ Node(int data = 0, Node* next = nullptr, Node* prior = nullptr): data(data), next(next), prior(prior){} int data; Node* next; Node* prior; }; public: class Iterator{ public: friend bool operator==(const List::Iterator& lhs, const List::Iterator& rhs){ return lhs."><meta property="og:title" content="Lab12"><meta property="og:description" content="Answers // // main.cpp // rec12 // // Created by DJ on 4/22/22. // #include <cstdlib> #include <iostream> using namespace std; class List { friend ostream& operator<<(ostream& os, const List& rhs){ os << &#34;Outputting the list: &#34; << endl; Node* temp = rhs.header->next; while(temp != rhs.trailer){ os << temp->data << ' '; temp = temp->next; } return os; } struct Node{ Node(int data = 0, Node* next = nullptr, Node* prior = nullptr): data(data), next(next), prior(prior){} int data; Node* next; Node* prior; }; public: class Iterator{ public: friend bool operator==(const List::Iterator& lhs, const List::Iterator& rhs){ return lhs."><meta property="og:type" content="article"><meta property="og:url" content="https://dk3156.github.io/dongje.kim/experience/oop/labs/oop_lab12/"><meta property="article:section" content="experience"><meta property="og:site_name" content="Dongje Kim"><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"experience","name":"Lab12","headline":"Lab12","alternativeHeadline":"","description":"
+      
+        Answers \/\/ \/\/ main.cpp \/\/ rec12 \/\/ \/\/ Created by DJ on 4\/22\/22. \/\/ #include \u0026lt;cstdlib\u0026gt; #include \u0026lt;iostream\u0026gt; using namespace std; class List { friend ostream\u0026amp; operator\u0026lt;\u0026lt;(ostream\u0026amp; os, const List\u0026amp; rhs){ os \u0026lt;\u0026lt; \u0026#34;Outputting the list: \u0026#34; \u0026lt;\u0026lt; endl; Node* temp = rhs.header-\u0026gt;next; while(temp != rhs.trailer){ os \u0026lt;\u0026lt; temp-\u0026gt;data \u0026lt;\u0026lt; \u0026#39; \u0026#39;; temp = temp-\u0026gt;next; } return os; } struct Node{ Node(int data = 0, Node* next = nullptr, Node* prior = nullptr): data(data), next(next), prior(prior){} int data; Node* next; Node* prior; }; public: class Iterator{ public: friend bool operator==(const List::Iterator\u0026amp; lhs, const List::Iterator\u0026amp; rhs){ return lhs.
+
+
+      
+
+
+    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/dk3156.github.io\/dongje.kim\/experience\/oop\/labs\/oop_lab12\/"},"author":{"@type":"Person","name":"dongje kim"},"creator":{"@type":"Person","name":"dongje kim"},"accountablePerson":{"@type":"Person","name":"dongje kim"},"copyrightHolder":{"@type":"Person","name":"dongje kim"},"copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"dongje kim","url":"https://dk3156.github.io/dongje.kim/","logo":{"@type":"ImageObject","url":"https:\/\/dk3156.github.io\/dongje.kim\/favicon-32x32.png","width":"32","height":"32"}},"image":[],"url":"https:\/\/dk3156.github.io\/dongje.kim\/experience\/oop\/labs\/oop_lab12\/","wordCount":"1437","genre":[],"keywords":[]}</script></head><body class=body><div class=wrapper><aside class=wrapper__sidebar><div class="sidebar
+animated fadeInDown"><div class=sidebar__content><div class=sidebar__introduction><img class=sidebar__introduction-profileimage src=/dongje.kim/images/tiger.png alt="profile picture"><div class=sidebar__introduction-title><a href=/dongje.kim>Dongje Kim</a></div><div class=sidebar__introduction-description><p>Portfolio</p></div></div><ul class=sidebar__list></ul></div><footer class="footer footer__sidebar"><ul class=footer__list><li class=footer__item>&copy;
+dongje kim
+2023</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></div></aside><main class=wrapper__main><header class=header><div class="animated fadeInDown"><a role=button class=navbar-burger data-target=navMenu aria-label=menu aria-expanded=false><span aria-hidden=true class=navbar-burger__line></span>
+<span aria-hidden=true class=navbar-burger__line></span>
+<span aria-hidden=true class=navbar-burger__line></span></a><nav class=nav><ul class=nav__list id=navMenu><li class=nav__list-item><a href=/dongje.kim/ title>Home</a></li><li class=nav__list-item><a href=/dongje.kim/experience/work/ title>experience</a></li><li class=nav__list-item><a href=/dongje.kim/projects/ title>project</a></li><li class=nav__list-item><a href=/dongje.kim/skills/ title>skill</a></li></ul><ul class="nav__list nav__list--end"><li class=nav__list-item><div class=themeswitch><a title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></li></ul></nav></div></header><div class="post
+animated fadeInDown"><div class=post__content><h1>Lab12</h1><h2 id=answers>Answers</h2><pre tabindex=0><code>//
+//  main.cpp
+//  rec12
+//
+//  Created by DJ on 4/22/22.
+//
+
+#include &lt;cstdlib&gt;
+#include &lt;iostream&gt;
+using namespace std;
+
+class List {
+
+    friend ostream&amp; operator&lt;&lt;(ostream&amp; os, const List&amp; rhs){
+        os &lt;&lt; &#34;Outputting the list: &#34; &lt;&lt; endl;
+        Node* temp = rhs.header-&gt;next;
+        while(temp != rhs.trailer){
+            os &lt;&lt; temp-&gt;data &lt;&lt; &#39; &#39;;
+            temp = temp-&gt;next;
+        }
+        return os;
+    }
+    
+    struct Node{
+        Node(int data = 0, Node* next = nullptr, Node* prior = nullptr): data(data), next(next), prior(prior){}
+        int data;
+        Node* next;
+        Node* prior;
+    };
+public:
+    
+    class Iterator{
+    public:
+        friend bool operator==(const List::Iterator&amp; lhs, const List::Iterator&amp; rhs){
+            return lhs.header == rhs.header;
+        }
+
+        friend bool operator!=(const List::Iterator&amp; lhs, const List::Iterator&amp; rhs){
+            return !(lhs == rhs);
+        }
+        friend List;
+    
+        Iterator(Node* header): header(header){}
+        
+        Iterator&amp; operator++(){
+            this-&gt;header = header-&gt;next;
+            return *this;
+        }
+        
+        Iterator operator--(){
+            this-&gt;header = header-&gt;prior;
+            return *this;
+        }
+        
+        int&amp; operator*(){
+            return header-&gt;data;
+        }
+        
+    private:
+        Node* header;
+    };
+    
+    List(int size = 0): list_size(size), header(new Node()), trailer(new Node()){
+        header-&gt;next = trailer;
+        trailer-&gt;prior = header;
+    }
+    
+    Iterator begin(){
+        return Iterator(header-&gt;next);
+    }
+    Iterator end(){
+        return Iterator(trailer);
+    }
+    
+    Iterator insert(Iterator iter, int data){
+        iter.header-&gt;prior = new Node(data, iter.header, iter.header-&gt;prior);
+        iter.header-&gt;prior-&gt;prior-&gt;next = iter.header-&gt;prior;
+        iter.header = iter.header-&gt;prior;
+        ++list_size;
+        return iter;
+    }
+    
+    Iterator erase(Iterator iter){
+        Node* p1 = iter.header-&gt;prior;
+        Node* p2 = iter.header-&gt;next;
+        p1-&gt;next = p2;
+        p2-&gt;prior = p1;
+        delete iter.header;
+        --list_size;
+        return Iterator(p2);
+    }
+    
+    void push_back(int data){
+//        if(list_size == 0){
+//            //the new node should be attached right after the head
+//            //the new node should be attached right before the trail
+//            header-&gt;next = new Node(data);
+//            header-&gt;next-&gt;next = trailer;
+//            trailer-&gt;prior = header-&gt;next;
+//            ++list_size;
+//        } else {
+            //if the list is not empty
+            //the new node should be attached right before the trailer. and
+            //right after trailer&#39;s prior node
+        Node* sec = trailer-&gt;prior;
+        Node* temp = new Node(data);
+        trailer-&gt;prior-&gt;next = temp;
+        temp-&gt;next = trailer;
+        trailer-&gt;prior = temp;
+        temp-&gt;prior = sec;
+        ++list_size;
+    }
+    
+     void pop_back(){
+        //pop back should return the last node before the trailer node
+        //and disconnect it and second last becomes the last.
+        Node* temp = trailer-&gt;prior;
+        temp-&gt;prior-&gt;next = trailer;
+         trailer-&gt;prior = temp-&gt;prior;
+         delete temp;
+        --list_size;
+    }
+    
+    int front() const {
+        //front should return the first node&#39;s data. reference. so it can be changed
+        return header-&gt;next-&gt;data;
+    }
+
+    int back() const {
+        return trailer-&gt;prior-&gt;data;
+    }
+    int&amp; front(){
+        //front should return the first node&#39;s data. reference. so it can be changed
+        return header-&gt;next-&gt;data;
+    }
+    
+    int&amp; back(){
+        return trailer-&gt;prior-&gt;data;
+    }
+    
+    size_t size() const {
+//        Node* temp = header-&gt;next;
+//        size_t list_size;
+//        while(temp != trailer){
+//            temp = temp-&gt;next;
+//            ++list_size;
+//        }
+        return list_size;
+    }
+
+    void push_front(int data){
+        //push front should add the node after the header node
+        //head-&gt;next should be the next node from the current one
+        //Node(data, next, prior)
+        Node* newGuy = new Node(data);
+        Node* temp = header-&gt;next;
+        temp-&gt;prior = newGuy;
+        newGuy-&gt;prior = header;
+        newGuy-&gt;next = temp;
+        header-&gt;next = newGuy;
+        ++list_size;
+    }
+    
+    void pop_front(){
+        //pop front should delete the first element
+        //the second node should now be the first node
+        Node* temp = header-&gt;next;
+        temp-&gt;next-&gt;prior = header;
+        header-&gt;next = temp-&gt;next;
+        delete temp;
+        --list_size;
+    }
+    
+    void clear(){
+        Node* temp = header-&gt;next;
+        while(temp != trailer){
+            Node* toDelete;
+            toDelete = temp;
+            temp = temp-&gt;next;
+            delete toDelete;
+        }
+        header-&gt;next = trailer;
+        trailer-&gt;prior = header;
+        list_size = 0;
+    }
+    
+    int operator[](size_t index) const{
+        Node* temp = header-&gt;next;
+        while(index != 0){
+            temp = temp-&gt;next;
+            --index;
+        }
+        return temp-&gt;data;
+    }
+    
+    int&amp; operator[](size_t index){
+        Node* temp = header-&gt;next;
+        while(index != 0){
+            temp = temp-&gt;next;
+            --index;
+        }
+        return temp-&gt;data;
+    }
+    
+private:
+    int list_size;
+    Node* header;
+    Node* trailer;
+};
+
+
+
+
+// Task 1
+void printListInfo(const List&amp; myList) {
+        cout &lt;&lt; &#34;size: &#34; &lt;&lt; myList.size()
+             &lt;&lt; &#34;, front: &#34; &lt;&lt; myList.front()
+             &lt;&lt; &#34;, back(): &#34; &lt;&lt; myList.back()
+             &lt;&lt; &#34;, list: &#34; &lt;&lt; myList &lt;&lt; endl;
+}
+
+// The following should not compile. Check that it does not.
+// void changeFrontAndBackConst(const List&amp; theList){
+//     theList.front() = 17;
+//     theList.back() = 42;
+// }
+
+void changeFrontAndBack(List&amp; theList){
+    theList.front() = 17;
+    theList.back() = 42;
+}
+
+ //Task 4
+void printListSlow(const List&amp; myList) {
+    for (size_t i = 0; i &lt; myList.size(); ++i) {
+        cout &lt;&lt; myList[i] &lt;&lt; &#39; &#39;;
+    }
+    cout &lt;&lt; endl;
+}
+
+// Task 8
+//void doNothing(List aList) {
+//    cout &lt;&lt; &#34;In doNothing\n&#34;;
+//    printListInfo(aList);
+//    cout &lt;&lt; endl;
+//    cout &lt;&lt; &#34;Leaving doNothing\n&#34;;
+//}
+
+int main() {
+
+    // Task 1
+    cout &lt;&lt; &#34;\n------Task One------\n&#34;;
+    List myList;
+    cout &lt;&lt; &#34;Fill empty list with push_back: i*i for i from 0 to 9\n&#34;;
+    for (int i = 0; i &lt; 10; ++i) {
+        cout &lt;&lt; &#34;myList.push_back(&#34; &lt;&lt; i*i &lt;&lt; &#34;);\n&#34;;
+        myList.push_back(i*i);
+        printListInfo(myList);
+    }
+    cout &lt;&lt; &#34;===================\n&#34;;
+    
+    cout &lt;&lt; &#34;Modify the first and last items, and display the results\n&#34;;
+    changeFrontAndBack(myList);
+    printListInfo(myList);
+    cout &lt;&lt; &#34;===================\n&#34;;
+
+    cout &lt;&lt; &#34;Remove the items with pop_back\n&#34;;
+    while (myList.size()) {
+        printListInfo(myList);
+        myList.pop_back();
+    }
+    cout &lt;&lt; &#34;===================\n&#34;;
+
+     //Task 2
+    cout &lt;&lt; &#34;\n------Task Two------\n&#34;;
+    cout &lt;&lt; &#34;Fill empty list with push_front: i*i for i from 0 to 9\n&#34;;
+    for (int i = 0; i &lt; 10; ++i) {
+        cout &lt;&lt; &#34;myList2.push_front(&#34; &lt;&lt; i*i &lt;&lt; &#34;);\n&#34;;
+        myList.push_front(i*i);
+        printListInfo(myList);
+    }
+    cout &lt;&lt; &#34;===================\n&#34;;
+    cout &lt;&lt; &#34;Remove the items with pop_front\n&#34;;
+    while (myList.size()) {
+        printListInfo(myList);
+        myList.pop_front();
+    }
+    printListInfo(myList);
+    cout &lt;&lt; &#34;===================\n&#34;;
+
+    // Task 3
+    cout &lt;&lt; &#34;\n------Task Three------\n&#34;;
+    cout &lt;&lt; &#34;Fill empty list with push_back: i*i for i from 0 to 9\n&#34;;
+    for (int i = 0; i &lt; 10; ++i) {
+        myList.push_back(i*i);
+    }
+    printListInfo(myList);
+    cout &lt;&lt; &#34;Now clear\n&#34;;
+    myList.clear();
+    cout &lt;&lt; &#34;Size: &#34; &lt;&lt; myList.size() &lt;&lt; &#34;, list: &#34; &lt;&lt; myList &lt;&lt; endl;
+    cout &lt;&lt; &#34;===================\n&#34;;
+
+     //Task 4
+    cout &lt;&lt; &#34;\n------Task Four------\n&#34;;
+    cout &lt;&lt; &#34;Fill empty list with push_back: i*i for i from 0 to 9\n&#34;;
+    for (int i = 0; i &lt; 10; ++i)  myList.push_back(i*i);
+    cout &lt;&lt; &#34;Display elements with op[]\n&#34;;
+    for (size_t i = 0; i &lt; myList.size(); ++i) cout &lt;&lt; myList[i] &lt;&lt; &#39; &#39;;
+    cout &lt;&lt; endl;
+    cout &lt;&lt; &#34;Add one to each element with op[]\n&#34;;
+    for (size_t i = 0; i &lt; myList.size(); ++i) myList[i] += 1;
+    cout &lt;&lt; &#34;And print it out again with op[]\n&#34;;
+    for (size_t i = 0; i &lt; myList.size(); ++i) cout &lt;&lt; myList[i] &lt;&lt; &#39; &#39;;
+    cout &lt;&lt; endl;
+    cout &lt;&lt; &#34;Now calling a function, printListSlow, to do the same thing\n&#34;;
+    printListSlow(myList);
+    cout &lt;&lt; &#34;Finally, for this task, using the index operator to modify\n&#34;
+         &lt;&lt; &#34;the data in the third item in the list\n&#34;
+         &lt;&lt; &#34;and then using printListSlow to display it again\n&#34;;
+    myList[2] = 42;
+    printListSlow(myList);
+
+
+//    // Task 5
+    cout &lt;&lt; &#34;\n------Task Five------\n&#34;;
+    cout &lt;&lt; &#34;Fill empty list with push_back: i*i for i from 0 to 9\n&#34;;
+    myList.clear();
+    for (int i = 0; i &lt; 10; ++i)  myList.push_back(i*i);
+    printListInfo(myList);
+    cout &lt;&lt; &#34;Now display the elements in a ranged for\n&#34;;
+    for (int x : myList) cout &lt;&lt; x &lt;&lt; &#39; &#39;;
+    cout &lt;&lt; endl;
+    cout &lt;&lt; &#34;And again using the iterator type directly:\n&#34;;
+    // Note you can choose to nest the iterator class or not, your choice.
+    //for (iterator iter = myList.begin(); iter != myList.end(); ++iter) {
+    for (List::Iterator iter = myList.begin(); iter != myList.end(); ++iter) {
+        cout &lt;&lt; *iter &lt;&lt; &#39; &#39;;
+    }
+    cout &lt;&lt; endl;
+    cout &lt;&lt; &#34;WOW!!! (I thought it was cool.)\n&#34;;
+
+//    // Task 6
+    cout &lt;&lt; &#34;\n------Task Six------\n&#34;;
+    cout &lt;&lt; &#34;Filling an empty list with insert at end: i*i for i from 0 to 9\n&#34;;
+    myList.clear();
+    for (int i = 0; i &lt; 10; ++i) myList.insert(myList.end(), i*i);
+    printListInfo(myList);
+    cout &lt;&lt; &#34;Filling an empty list with insert at begin(): &#34;
+         &lt;&lt; &#34;i*i for i from 0 to 9\n&#34;;
+    myList.clear();
+    for (int i = 0; i &lt; 10; ++i) myList.insert(myList.begin(), i*i);
+    printListInfo(myList);
+    // ***Need test for insert other than begin/end***
+    cout &lt;&lt; &#34;===================\n&#34;;
+
+    // Task 7
+    cout &lt;&lt; &#34;\n------Task Seven------\n&#34;;
+    cout &lt;&lt; &#34;Filling an empty list with insert at end: i*i for i from 0 to 9\n&#34;;
+    myList.clear();
+    for (int i = 0; i &lt; 10; ++i) myList.insert(myList.end(), i*i);
+    cout &lt;&lt; &#34;Erasing the elements in the list, starting from the beginning\n&#34;;
+    while (myList.size()) {
+        printListInfo(myList);
+        myList.erase(myList.begin());
+    }
+    // ***Need test for erase other than begin/end***
+    cout &lt;&lt; &#34;===================\n&#34;;
+
+//    // Task 8
+//    cout &lt;&lt; &#34;\n------Task Eight------\n&#34;;
+//    cout &lt;&lt; &#34;Copy control\n&#34;;
+//    cout &lt;&lt; &#34;Filling an empty list with insert at end: i*i for i from 0 to 9\n&#34;;
+//    myList.clear();
+//    for (int i = 0; i &lt; 10; ++i) myList.insert(myList.end(), i*i);
+//    printListInfo(myList);
+//    cout &lt;&lt; &#34;Calling doNothing(myList)\n&#34;;
+//    doNothing(myList);
+//    cout &lt;&lt; &#34;Back from doNothing(myList)\n&#34;;
+//    printListInfo(myList);
+//
+//    cout &lt;&lt; &#34;Filling listTwo with insert at begin: i*i for i from 0 to 9\n&#34;;
+//    List listTwo;
+//    for (int i = 0; i &lt; 10; ++i) listTwo.insert(listTwo.begin(), i*i);
+//    printListInfo(listTwo);
+//    cout &lt;&lt; &#34;listTwo = myList\n&#34;;
+//    listTwo = myList;
+//    cout &lt;&lt; &#34;myList: &#34;;
+//    printListInfo(myList);
+//    cout &lt;&lt; &#34;listTwo: &#34;;
+//    printListInfo(listTwo);
+//    cout &lt;&lt; &#34;===================\n&#34;;
+}
+</code></pre></div><div class=post__footer></div></div></main></div><footer class="footer footer__base"><ul class=footer__list><li class=footer__item>&copy;
+dongje kim
+2023</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></body></html>

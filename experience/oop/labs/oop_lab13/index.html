@@ -1,0 +1,428 @@
+<!doctype html><html dir=ltr lang=en data-theme class="html theme--light"><head><title>dongje kim
+|
+Lab13</title><meta charset=utf-8><meta name=generator content="Hugo 0.115.3"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name=author content="dongje kim"><meta name=description content="Portfolio"><link rel=stylesheet href=/dongje.kim/scss/main.min.1147aa5bacb4bce677a0e264073829caedb82fd18ea07a5f1d80521f539d1c45.css integrity="sha256-EUeqW6y0vOZ3oOJkBzgpyu24L9GOoHpfHYBSH1OdHEU=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/fontawesome.min.7d272de35b410fb165377550cdf9c4d3a80fbbcc961e111914e4d5c0eaf5729f.css integrity="sha256-fSct41tBD7FlN3VQzfnE06gPu8yWHhEZFOTVwOr1cp8=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/solid.min.55d8333481b07a08e07cf6f37319753a2b47e99f4c395394c5747b48b495aa9b.css integrity="sha256-VdgzNIGwegjgfPbzcxl1OitH6Z9MOVOUxXR7SLSVqps=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/regular.min.a7448d02590b43449364b6b5922ed9af5410abb4de4238412a830316dedb850b.css integrity="sha256-p0SNAlkLQ0STZLa1ki7Zr1QQq7TeQjhBKoMDFt7bhQs=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/brands.min.9ed75a5d670c953fe4df935937674b4646f92674367e9e66eb995bb04e821647.css integrity="sha256-ntdaXWcMlT/k35NZN2dLRkb5JnQ2fp5m65lbsE6CFkc=" crossorigin=anonymous type=text/css><link rel="shortcut icon" href=/dongje.kim/favicon.ico type=image/x-icon><link rel=apple-touch-icon sizes=180x180 href=/dongje.kim/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/dongje.kim/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/dongje.kim/favicon-16x16.png><link rel=canonical href=https://dk3156.github.io/dongje.kim/experience/oop/labs/oop_lab13/><script type=text/javascript src=/dongje.kim/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js integrity="sha256-+RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI=" crossorigin=anonymous></script>
+<script type=text/javascript src=/dongje.kim/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc=" crossorigin=anonymous></script><meta name=twitter:card content="summary"><meta name=twitter:title content="Lab13"><meta name=twitter:description content="Answers // rec13_test.cpp #include <iostream> #include <fstream> #include <vector> // task 1 #include <list> // task 2 #include <algorithm> // task 3 #include <string> // task 21 #include <set> // task 22 #include <map> // task 23 using namespace std; list<int>::iterator ourFind(list<int>::iterator start, list<int>::iterator end, int target){ while (start != end){ if(*iter == target){ return start; } ++start; } return end; } template <typename Iter, typename val> /// two typenames Iter ourFind(Iter start, Iter end, val target) { while (start !"><meta property="og:title" content="Lab13"><meta property="og:description" content="Answers // rec13_test.cpp #include <iostream> #include <fstream> #include <vector> // task 1 #include <list> // task 2 #include <algorithm> // task 3 #include <string> // task 21 #include <set> // task 22 #include <map> // task 23 using namespace std; list<int>::iterator ourFind(list<int>::iterator start, list<int>::iterator end, int target){ while (start != end){ if(*iter == target){ return start; } ++start; } return end; } template <typename Iter, typename val> /// two typenames Iter ourFind(Iter start, Iter end, val target) { while (start !"><meta property="og:type" content="article"><meta property="og:url" content="https://dk3156.github.io/dongje.kim/experience/oop/labs/oop_lab13/"><meta property="article:section" content="experience"><meta property="og:site_name" content="Dongje Kim"><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"experience","name":"Lab13","headline":"Lab13","alternativeHeadline":"","description":"
+      
+        Answers \/\/ rec13_test.cpp #include \u0026lt;iostream\u0026gt; #include \u0026lt;fstream\u0026gt; #include \u0026lt;vector\u0026gt; \/\/ task 1 #include \u0026lt;list\u0026gt; \/\/ task 2 #include \u0026lt;algorithm\u0026gt; \/\/ task 3 #include \u0026lt;string\u0026gt; \/\/ task 21 #include \u0026lt;set\u0026gt; \/\/ task 22 #include \u0026lt;map\u0026gt; \/\/ task 23 using namespace std; list\u0026lt;int\u0026gt;::iterator ourFind(list\u0026lt;int\u0026gt;::iterator start, list\u0026lt;int\u0026gt;::iterator end, int target){ while (start != end){ if(*iter == target){ return start; } \u002b\u002bstart; } return end; } template \u0026lt;typename Iter, typename val\u0026gt; \/\/\/ two typenames Iter ourFind(Iter start, Iter end, val target) { while (start !
+
+
+      
+
+
+    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/dk3156.github.io\/dongje.kim\/experience\/oop\/labs\/oop_lab13\/"},"author":{"@type":"Person","name":"dongje kim"},"creator":{"@type":"Person","name":"dongje kim"},"accountablePerson":{"@type":"Person","name":"dongje kim"},"copyrightHolder":{"@type":"Person","name":"dongje kim"},"copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"dongje kim","url":"https://dk3156.github.io/dongje.kim/","logo":{"@type":"ImageObject","url":"https:\/\/dk3156.github.io\/dongje.kim\/favicon-32x32.png","width":"32","height":"32"}},"image":[],"url":"https:\/\/dk3156.github.io\/dongje.kim\/experience\/oop\/labs\/oop_lab13\/","wordCount":"1315","genre":[],"keywords":[]}</script></head><body class=body><div class=wrapper><aside class=wrapper__sidebar><div class="sidebar
+animated fadeInDown"><div class=sidebar__content><div class=sidebar__introduction><img class=sidebar__introduction-profileimage src=/dongje.kim/images/tiger.png alt="profile picture"><div class=sidebar__introduction-title><a href=/dongje.kim>Dongje Kim</a></div><div class=sidebar__introduction-description><p>Portfolio</p></div></div><ul class=sidebar__list></ul></div><footer class="footer footer__sidebar"><ul class=footer__list><li class=footer__item>&copy;
+dongje kim
+2023</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></div></aside><main class=wrapper__main><header class=header><div class="animated fadeInDown"><a role=button class=navbar-burger data-target=navMenu aria-label=menu aria-expanded=false><span aria-hidden=true class=navbar-burger__line></span>
+<span aria-hidden=true class=navbar-burger__line></span>
+<span aria-hidden=true class=navbar-burger__line></span></a><nav class=nav><ul class=nav__list id=navMenu><li class=nav__list-item><a href=/dongje.kim/ title>Home</a></li><li class=nav__list-item><a href=/dongje.kim/experience/work/ title>experience</a></li><li class=nav__list-item><a href=/dongje.kim/projects/ title>project</a></li><li class=nav__list-item><a href=/dongje.kim/skills/ title>skill</a></li></ul><ul class="nav__list nav__list--end"><li class=nav__list-item><div class=themeswitch><a title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></li></ul></nav></div></header><div class="post
+animated fadeInDown"><div class=post__content><h1>Lab13</h1><h2 id=answers>Answers</h2><pre tabindex=0><code>// rec13_test.cpp
+
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+#include &lt;vector&gt;      // task 1
+#include &lt;list&gt;        // task 2
+#include &lt;algorithm&gt;   // task 3
+#include &lt;string&gt;      // task 21
+#include &lt;set&gt;         // task 22
+#include &lt;map&gt;         // task 23
+using namespace std;
+
+list&lt;int&gt;::iterator ourFind(list&lt;int&gt;::iterator start, list&lt;int&gt;::iterator end, int target){
+    while (start != end){
+        if(*iter == target){
+            return start;
+        }
+        ++start;
+    }
+    return end;
+}
+
+template &lt;typename Iter, typename val&gt; /// two typenames
+Iter ourFind(Iter start, Iter end, val target) {
+    while (start != end) {
+        if (*start == target) { return start; }
+        ++start;
+    } /// write regular function first, then switch to template
+    return end;
+}
+
+
+void printList(const list&lt;int&gt;&amp; lis){
+    list&lt;int&gt;::const_iterator conIter;
+    for(conIter = lis.begin(); conIter != lis.end(); ++conIter){
+        cout &lt;&lt; *conIter &lt;&lt; &#34; &#34;;
+        cout &lt;&lt; endl;
+    }
+}
+
+void printListRanged(const list&lt;int&gt;&amp; lis){
+    for (int elem : lis){
+        cout &lt;&lt; elem &lt;&lt; &#34; &#34;;
+    }
+    cout &lt;&lt; endl;
+}
+
+list&lt;int&gt;::const_iterator findList(const list&lt;int&gt;&amp; lis, int tokken){
+    for (list&lt;int&gt;::const_iterator iter = lis.begin(); iter != lis.end(); ++iter){
+        if(*iter == tokken){
+            return iter;
+        }
+    }
+    return lis.end();
+}
+
+auto findListAuto(const list&lt;int&gt;&amp; lis, int tokken){
+    for (auto iter = lis.begin(); iter != lis.end(); ++iter){
+        if(*iter == tokken){
+            return iter;
+        }
+    }
+    return lis.end();
+}
+
+void alternateList(list&lt;int&gt;&amp; lis){
+    for (auto iter = lis.begin(); iter != lis.end(); ++ ++iter){
+        cout &lt;&lt; *iter &lt;&lt; &#34; &#34;;
+    }
+    cout &lt;&lt; endl;
+}
+
+bool isEven(int tokken){
+    return tokken % 2 == 0;
+}
+
+bool findIf(const list&lt;int&gt;&amp; lis){
+    auto found = find_if(lis.begin(), lis.end(), isEven);
+    if (found == lis.end()){
+        return false;
+    }
+    return true;
+}
+
+class MyFunctor{
+public:
+    bool operator()(int x){
+        return x % 2 == 0;
+    }
+};
+
+bool findIf(const vector&lt;int&gt;&amp; vec){
+    MyFunctor func;
+    auto found = find_if(vec.begin(), vec.end(), func);
+    if (found == vec.end()){
+        return false;
+    }
+    return true;
+}
+
+bool findIf1(const vector&lt;int&gt;&amp; vec){
+    auto found = find_if(vec.begin(), vec.end(), [](int a) {return a % 2 == 0;});
+    if (found == vec.end()){
+        return false;
+    }
+    return true;
+}
+
+bool findIf2(const vector&lt;int&gt;&amp; vec){
+    auto found = find_if(vec.begin(), vec.end(), MyFunctor());
+    if (found == vec.end()){
+        return false;
+    }
+    return true;
+}
+
+
+int main() {
+    // 1. Create a vector with some values and display using ranged for
+    cout &lt;&lt; &#34;Task 1:\n&#34;;
+    vector&lt;int&gt; vec = {1,4,3,10,5,6};
+    for (int elem : vec){
+        cout &lt;&lt; elem &lt;&lt; &#34; &#34;;
+    }
+
+    cout &lt;&lt; &#34;\n=======\n&#34;;
+
+    // 2. Initalize a list as a copy of values from the vector
+    cout &lt;&lt; &#34;Task 2:\n&#34;;
+    list&lt;int&gt; lis(vec.begin(), vec.end());
+    for (int elem : lis){
+        cout &lt;&lt; elem &lt;&lt; &#34; &#34;;
+    }
+    cout &lt;&lt; &#34;\n=======\n&#34;;
+
+    // 3. Sort the original vector.  Display both the vector and the list
+    cout &lt;&lt; &#34;Task 3:\n&#34;;
+    sort(vec.begin(), vec.end());
+    for(int elem : vec){
+        cout &lt;&lt; elem &lt;&lt; &#34; &#34;;
+    }
+    cout &lt;&lt; endl;
+    for (int elem : lis){
+        cout &lt;&lt; elem &lt;&lt; &#34; &#34;;
+    }
+    cout &lt;&lt; &#34;\n=======\n&#34;;
+
+    // 4. print every other element of the vector. ASSUMING the length is odd.
+    cout &lt;&lt; &#34;Task 4:\n&#34;;
+    
+    cout &lt;&lt; &#34;\n=======\n&#34;;
+    for(size_t i = 0; i &lt; vec.size(); i += 2){
+        cout &lt;&lt; vec[i] &lt;&lt; &#34; &#34;;
+    }
+    
+    // 5. Attempt to print every other element of the list using the
+    //    same technique.
+    cout &lt;&lt; &#34;Task 5:\n&#34;;
+    
+//    list&lt;int&gt;::iterator iter;
+//    for(size_t i = 0; i &lt; lis.size(); i += 2){
+//        cout &lt;&lt; lis[i] &lt;&lt; endl;
+//    }
+
+    cout &lt;&lt; &#34;\n=======\n&#34;;
+
+    //
+    // Iterators
+    //
+
+    // 6. Repeat task 4 using iterators.  Do not use auto;
+    cout &lt;&lt; &#34;Task 6:\n&#34;;
+    vector&lt;int&gt;::iterator iter1;
+    list&lt;int&gt;::iterator iter2;
+    
+    for(iter1 = vec.begin(); iter1 != vec.end(); iter1 += 2){
+        cout &lt;&lt; *iter1 &lt;&lt; &#34; &#34;;
+    }
+    
+    cout &lt;&lt; &#34;\n=======\n&#34;;
+
+    // 7. Repeat the previous task using the list.  Again, do not use auto.
+    //    Note that you cannot use the same simple mechanism to bump
+    //    the iterator as in task 6.
+    cout &lt;&lt; &#34;Task 7:\n&#34;;
+    int counter = 0;
+    for(iter2 = lis.begin(); iter2 != lis.end(); ++iter2){
+        if (counter % 2 == 0){
+            cout &lt;&lt; *iter2 &lt;&lt; &#34; &#34;;
+        }
+        ++counter;
+        //or ++iter2 in the body / ++++iter2
+    }
+
+    cout &lt;&lt; &#34;\n=======\n&#34;;
+
+    // 8. Sorting a list
+    cout &lt;&lt; &#34;Task 8:\n&#34;;
+    
+    lis.sort();
+    for (int elem : lis){
+        cout &lt;&lt; elem &lt;&lt; &#34; &#34;;
+    }
+    cout &lt;&lt; &#34;\n=======\n&#34;;
+
+    // 9. Calling the function to print the list
+    cout &lt;&lt; &#34;Task 9:\n&#34;;
+    
+    printList(lis);
+
+    cout &lt;&lt; &#34;=======\n&#34;;
+
+    // 10. Calling the function that prints the list, using ranged-for
+    cout &lt;&lt; &#34;Task 10:\n&#34;;
+    
+    printListRanged(lis);
+
+    cout &lt;&lt; &#34;=======\n&#34;;
+
+    //
+    // Auto
+    //
+
+    // 11. Calling the function that, using auto, prints alterate
+    // items in the list
+    cout &lt;&lt; &#34;Task 11:\n&#34;;
+    
+    alternateList(lis);
+
+    cout &lt;&lt; &#34;=======\n&#34;;
+
+    
+    // 12.  Write a function find that takes a list and value to search for.
+    //      What should we return if not found
+    cout &lt;&lt; &#34;Task 12:\n&#34;;
+    
+    if(findList(lis, 5) == lis.end()){
+        cout &lt;&lt; &#34;int not found.&#34; &lt;&lt; endl;
+    } else {
+        cout &lt;&lt; &#34;int found: &#34; &lt;&lt; *findList(lis, 5) &lt;&lt; endl;
+    }
+
+    
+    cout &lt;&lt; &#34;=======\n&#34;;
+
+    // 13.  Write a function find that takes a list and value to search for.
+    //      What should we return if not found
+    cout &lt;&lt; &#34;Task 13:\n&#34;;
+    
+    if(findListAuto(lis, 5) == lis.end()){
+        cout &lt;&lt; &#34;int not found.&#34; &lt;&lt; endl;
+    } else {
+        cout &lt;&lt; &#34;int found: &#34; &lt;&lt; *findListAuto(lis, 5) &lt;&lt; endl;
+    }
+   
+    cout &lt;&lt; &#34;=======\n&#34;;
+
+    //
+    // Generic Algorithms
+    //
+    // 14. Generic algorithms: find
+    cout &lt;&lt; &#34;Task 14:\n&#34;;
+    list&lt;int&gt;::iterator found = find(lis.begin(), lis.end(), 5);
+
+    if (find(lis.begin(), lis.end(), 5) == lis.end()){
+        cout &lt;&lt; &#34;int not found with find()&#34; &lt;&lt; endl;
+    } else {
+        cout &lt;&lt; &#34;int found: &#34; &lt;&lt; *found &lt;&lt; endl;
+    }
+    
+    cout &lt;&lt; &#34;=======\n&#34;;
+
+    // 15. Generic algorithms: find_if
+    cout &lt;&lt; &#34;Task 15:\n&#34;;
+    
+    if (findIf(vec)){
+        cout &lt;&lt; &#34;Even number found in the vector.&#34; &lt;&lt; endl;
+    } else {
+        cout &lt;&lt; &#34;Even number not found in the vector.&#34; &lt;&lt; endl;
+    }
+    if (findIf(lis)){
+        cout &lt;&lt; &#34;Even number found in the list.&#34; &lt;&lt; endl;
+    } else {
+        cout &lt;&lt; &#34;Even number not found in the list.&#34; &lt;&lt; endl;
+    }
+    cout &lt;&lt; &#34;=======\n&#34;;
+
+    // 16. Functor
+    cout &lt;&lt; &#34;Task 16:\n&#34;;
+    MyFunctor Even;
+    bool twoIsEven = Even(2);
+    if (twoIsEven){
+        cout &lt;&lt; &#34;2 is even.&#34; &lt;&lt; endl;
+    } else {
+        cout &lt;&lt; &#34;2 is not even.&#34; &lt;&lt; endl;
+    }
+    cout &lt;&lt; &#34;=======\n&#34;;
+    
+    // 17. Lambda
+    cout &lt;&lt; &#34;Task 17:\n&#34;;
+    bool result = [](int a)-&gt;bool {return a % 2 == 0;}(4);
+    if (result){
+        cout &lt;&lt; &#34;4 is even&#34; &lt;&lt; endl;
+    } else {
+        cout &lt;&lt; &#34;4 is not even&#34; &lt;&lt; endl;
+    }
+    cout &lt;&lt; &#34;=======\n&#34;;
+
+    // 18. Generic algorithms: copy to an array
+    cout &lt;&lt; &#34;Task 18:\n&#34;;
+    int* array = new int[6];
+    copy(vec.begin(), vec.end(), array);
+    copy(lis.begin(), lis.begin(), array);
+    
+
+    cout &lt;&lt; &#34;=======\n&#34;;
+
+    //
+    // Templated Functions
+    //
+
+    // 19. Implement find as a function for lists
+    cout &lt;&lt; &#34;Task 19:\n&#34;;
+    
+    cout &lt;&lt; *ourFind(l1.begin(), l1.end(), 3);
+
+    cout &lt;&lt; &#34;=======\n&#34;;
+    
+    // 20. Implement find as a templated function
+    cout &lt;&lt; &#34;Task 20:\n&#34;;
+    
+    cout &lt;&lt; *ourFind(v1.begin(), v1.end(), 3);
+    
+    cout &lt;&lt; &#34;=======\n&#34;;
+
+    //
+    // Associative collections
+    //
+
+    // 21. Using a vector of strings, print a line showing the number
+    //     of distinct words and the words themselves.
+    cout &lt;&lt; &#34;Task 21:\n&#34;;
+    ifstream file(&#34;pooh-nopunc.txt&#34;);
+    if (!file) {
+        cerr &lt;&lt; &#34;failed to open the file&#34; &lt;&lt; endl;
+        exit(1);
+    }
+    vector&lt;string&gt; vec1;
+    string token;
+    
+    while(file &gt;&gt; token){
+        vector&lt;string&gt;::iterator found = find(vec1.begin(), vec1.end(), token);
+        if(found == vec1.end()){
+            vec1.push_back(token);
+        }
+    }
+    
+    for(string elem : vec1){
+        cout &lt;&lt; elem &lt;&lt; &#34; &#34;;
+    }
+    cout &lt;&lt; vec1.size() &lt;&lt; &#34;words&#34;;
+    file.close();
+    cout &lt;&lt; &#34;\n=======\n&#34;;
+
+    // 22. Repeating previous step, but using the set
+    cout &lt;&lt; &#34;Task 22:\n&#34;;
+    ifstream file2(&#34;pooh-nopunc.txt&#34;);
+    set&lt;string&gt; setString;
+    string token2;
+    
+    while(file2 &gt;&gt; token2){
+        setString.insert(token2);
+    }
+    file2.close();
+    
+    for(string elem : setString){
+        cout &lt;&lt; elem &lt;&lt; &#34; &#34;;
+    }
+    cout &lt;&lt; endl;
+    
+    cout &lt;&lt; vec1.size() &lt;&lt; &#34;words&#34;;
+    cout &lt;&lt; endl;
+
+    cout &lt;&lt; &#34;=======\n&#34;;
+
+    // 23. Word co-occurence using map
+    cout &lt;&lt; &#34;Task 23:\n&#34;;
+    ifstream file3(&#34;pooh-nopunc.txt&#34;);
+    string token3;
+    map&lt;string, vector&lt;int&gt;&gt; wordMap;
+    int num = 1;
+    
+    while(file3 &gt;&gt; token3){
+        wordMap[token3].push_back(num);
+        ++num;
+    }
+    file2.close();
+    
+    for(auto pair : wordMap){
+        cout &lt;&lt; pair.first &lt;&lt; &#34; &#34;;
+        for (int num : pair.second){
+            cout &lt;&lt; num &lt;&lt; &#34; &#34;;
+        }
+        cout &lt;&lt; endl;
+    }
+    
+    cout &lt;&lt; &#34;=======\n&#34;;
+}
+</code></pre></div><div class=post__footer></div></div></main></div><footer class="footer footer__base"><ul class=footer__list><li class=footer__item>&copy;
+dongje kim
+2023</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></body></html>

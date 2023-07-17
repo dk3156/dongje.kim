@@ -1,0 +1,346 @@
+<!doctype html><html dir=ltr lang=en data-theme class="html theme--light"><head><title>dongje kim
+|
+Lab7</title><meta charset=utf-8><meta name=generator content="Hugo 0.115.3"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name=author content="dongje kim"><meta name=description content="Portfolio"><link rel=stylesheet href=/dongje.kim/scss/main.min.1147aa5bacb4bce677a0e264073829caedb82fd18ea07a5f1d80521f539d1c45.css integrity="sha256-EUeqW6y0vOZ3oOJkBzgpyu24L9GOoHpfHYBSH1OdHEU=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/fontawesome.min.7d272de35b410fb165377550cdf9c4d3a80fbbcc961e111914e4d5c0eaf5729f.css integrity="sha256-fSct41tBD7FlN3VQzfnE06gPu8yWHhEZFOTVwOr1cp8=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/solid.min.55d8333481b07a08e07cf6f37319753a2b47e99f4c395394c5747b48b495aa9b.css integrity="sha256-VdgzNIGwegjgfPbzcxl1OitH6Z9MOVOUxXR7SLSVqps=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/regular.min.a7448d02590b43449364b6b5922ed9af5410abb4de4238412a830316dedb850b.css integrity="sha256-p0SNAlkLQ0STZLa1ki7Zr1QQq7TeQjhBKoMDFt7bhQs=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/brands.min.9ed75a5d670c953fe4df935937674b4646f92674367e9e66eb995bb04e821647.css integrity="sha256-ntdaXWcMlT/k35NZN2dLRkb5JnQ2fp5m65lbsE6CFkc=" crossorigin=anonymous type=text/css><link rel="shortcut icon" href=/dongje.kim/favicon.ico type=image/x-icon><link rel=apple-touch-icon sizes=180x180 href=/dongje.kim/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/dongje.kim/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/dongje.kim/favicon-16x16.png><link rel=canonical href=https://dk3156.github.io/dongje.kim/experience/oop/labs/oop_lab7/><script type=text/javascript src=/dongje.kim/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js integrity="sha256-+RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI=" crossorigin=anonymous></script>
+<script type=text/javascript src=/dongje.kim/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc=" crossorigin=anonymous></script><meta name=twitter:card content="summary"><meta name=twitter:title content="Lab7"><meta name=twitter:description content="Answers course.cpp // // course.cpp // rec07 // // Created by DJ on 3/11/22. // Copyright © 2022 DJ. All rights reserved. // #include &#34;course.h&#34; #include &#34;student.h&#34; #include <iostream> using namespace std; namespace BrooklynPoly{ ostream& operator<<(ostream& os, const Course& rhs) { os << rhs.name << &#34;: &#34;; for (size_t i = 0; i < rhs.students.size(); ++i){ os << rhs.students[i]->getName() << &#34; &#34;; } return os; } Course::Course(const string& courseName): name(courseName) {} const string& Course::getName() const {return name;} bool Course::addStudent(Student* rhs){ for (size_t i = 0; i < students."><meta property="og:title" content="Lab7"><meta property="og:description" content="Answers course.cpp // // course.cpp // rec07 // // Created by DJ on 3/11/22. // Copyright © 2022 DJ. All rights reserved. // #include &#34;course.h&#34; #include &#34;student.h&#34; #include <iostream> using namespace std; namespace BrooklynPoly{ ostream& operator<<(ostream& os, const Course& rhs) { os << rhs.name << &#34;: &#34;; for (size_t i = 0; i < rhs.students.size(); ++i){ os << rhs.students[i]->getName() << &#34; &#34;; } return os; } Course::Course(const string& courseName): name(courseName) {} const string& Course::getName() const {return name;} bool Course::addStudent(Student* rhs){ for (size_t i = 0; i < students."><meta property="og:type" content="article"><meta property="og:url" content="https://dk3156.github.io/dongje.kim/experience/oop/labs/oop_lab7/"><meta property="article:section" content="experience"><meta property="og:site_name" content="Dongje Kim"><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"experience","name":"Lab7","headline":"Lab7","alternativeHeadline":"","description":"
+      
+        Answers course.cpp \/\/ \/\/ course.cpp \/\/ rec07 \/\/ \/\/ Created by DJ on 3\/11\/22. \/\/ Copyright © 2022 DJ. All rights reserved. \/\/ #include \u0026#34;course.h\u0026#34; #include \u0026#34;student.h\u0026#34; #include \u0026lt;iostream\u0026gt; using namespace std; namespace BrooklynPoly{ ostream\u0026amp; operator\u0026lt;\u0026lt;(ostream\u0026amp; os, const Course\u0026amp; rhs) { os \u0026lt;\u0026lt; rhs.name \u0026lt;\u0026lt; \u0026#34;: \u0026#34;; for (size_t i = 0; i \u0026lt; rhs.students.size(); \u002b\u002bi){ os \u0026lt;\u0026lt; rhs.students[i]-\u0026gt;getName() \u0026lt;\u0026lt; \u0026#34; \u0026#34;; } return os; } Course::Course(const string\u0026amp; courseName): name(courseName) {} const string\u0026amp; Course::getName() const {return name;} bool Course::addStudent(Student* rhs){ for (size_t i = 0; i \u0026lt; students.
+
+
+      
+
+
+    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/dk3156.github.io\/dongje.kim\/experience\/oop\/labs\/oop_lab7\/"},"author":{"@type":"Person","name":"dongje kim"},"creator":{"@type":"Person","name":"dongje kim"},"accountablePerson":{"@type":"Person","name":"dongje kim"},"copyrightHolder":{"@type":"Person","name":"dongje kim"},"copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"dongje kim","url":"https://dk3156.github.io/dongje.kim/","logo":{"@type":"ImageObject","url":"https:\/\/dk3156.github.io\/dongje.kim\/favicon-32x32.png","width":"32","height":"32"}},"image":[],"url":"https:\/\/dk3156.github.io\/dongje.kim\/experience\/oop\/labs\/oop_lab7\/","wordCount":"836","genre":[],"keywords":[]}</script></head><body class=body><div class=wrapper><aside class=wrapper__sidebar><div class="sidebar
+animated fadeInDown"><div class=sidebar__content><div class=sidebar__introduction><img class=sidebar__introduction-profileimage src=/dongje.kim/images/tiger.png alt="profile picture"><div class=sidebar__introduction-title><a href=/dongje.kim>Dongje Kim</a></div><div class=sidebar__introduction-description><p>Portfolio</p></div></div><ul class=sidebar__list></ul></div><footer class="footer footer__sidebar"><ul class=footer__list><li class=footer__item>&copy;
+dongje kim
+2023</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></div></aside><main class=wrapper__main><header class=header><div class="animated fadeInDown"><a role=button class=navbar-burger data-target=navMenu aria-label=menu aria-expanded=false><span aria-hidden=true class=navbar-burger__line></span>
+<span aria-hidden=true class=navbar-burger__line></span>
+<span aria-hidden=true class=navbar-burger__line></span></a><nav class=nav><ul class=nav__list id=navMenu><li class=nav__list-item><a href=/dongje.kim/ title>Home</a></li><li class=nav__list-item><a href=/dongje.kim/experience/work/ title>experience</a></li><li class=nav__list-item><a href=/dongje.kim/projects/ title>project</a></li><li class=nav__list-item><a href=/dongje.kim/skills/ title>skill</a></li></ul><ul class="nav__list nav__list--end"><li class=nav__list-item><div class=themeswitch><a title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></li></ul></nav></div></header><div class="post
+animated fadeInDown"><div class=post__content><h1>Lab7</h1><h2 id=answers>Answers</h2><h2 id=coursecpp>course.cpp</h2><pre tabindex=0><code>//
+//  course.cpp
+//  rec07
+//
+//  Created by DJ on 3/11/22.
+//  Copyright © 2022 DJ. All rights reserved.
+//
+
+#include &#34;course.h&#34;
+#include &#34;student.h&#34;
+#include &lt;iostream&gt;
+using namespace std;
+
+namespace BrooklynPoly{
+    ostream&amp; operator&lt;&lt;(ostream&amp; os, const Course&amp; rhs) {
+        os &lt;&lt; rhs.name &lt;&lt; &#34;: &#34;;
+        for (size_t i = 0; i &lt; rhs.students.size(); ++i){
+            os &lt;&lt; rhs.students[i]-&gt;getName() &lt;&lt; &#34; &#34;;
+        }
+        return os;
+    }
+    
+    Course::Course(const string&amp; courseName): name(courseName) {}
+    
+    const string&amp; Course::getName() const {return name;}
+    
+    bool Course::addStudent(Student* rhs){
+        for (size_t i = 0; i &lt; students.size(); ++i){
+            if (students[i]-&gt;getName() == rhs-&gt;getName()){
+                return false;
+            }
+        }
+        students.push_back(rhs);
+        return true;
+    }
+    
+    void Course::removeStudentsFromCourse(){
+        for (size_t i = 0; i &lt; students.size(); ++i){
+            students[i]-&gt;removedFromCourse(this);
+        }
+        students.clear();
+    }
+    
+    //student definition
+    ostream&amp; operator&lt;&lt;(ostream&amp; os, const Student&amp; rhs) {
+        os &lt;&lt; rhs.name &lt;&lt; &#34;: &#34;;
+        for (size_t i = 0; i &lt; rhs.courses.size(); ++i){
+            os &lt;&lt; rhs.courses[i]-&gt;getName() &lt;&lt; &#34; &#34;;
+        }
+        return os;
+    }
+    
+    Student::Student(const string&amp; name): name(name) {}
+    
+    const string&amp; Student::getName() const {return name;}
+    
+    bool Student::addCourse(Course* rhs){
+        for (size_t i = 0; i &lt; courses.size(); ++i){
+            if (courses[i] == rhs){
+                return false;
+            }
+        }
+        courses.push_back(rhs);
+        return true;
+    }
+}
+</code></pre><h2 id=courseh>course.h</h2><pre tabindex=0><code>//
+//  course.h
+//  rec07
+//
+//  Created by DJ on 3/11/22.
+//  Copyright © 2022 DJ. All rights reserved.
+//
+
+#ifndef course_h
+#define course_h
+
+#include&lt;iostream&gt;
+#include&lt;string&gt;
+#include&lt;vector&gt;
+
+namespace BrooklynPoly{
+    class Student;
+    
+    class Course {
+        friend std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, const Course&amp; rhs);
+    public:
+        // Course methods needed by Registrar
+        Course(const std::string&amp; courseName);
+        const std::string&amp; getName() const;
+        bool addStudent(Student*);
+        void removeStudentsFromCourse();
+        
+    private:
+        std::string name;
+        std::vector&lt;Student*&gt; students;
+    };
+}
+
+
+#endif /* course_h */
+</code></pre><h2 id=registrarcpp>registrar.cpp</h2><pre tabindex=0><code>//
+//  registrar.cpp
+//  rec07
+//
+//  Created by DJ on 3/11/22.
+//  Copyright © 2022 DJ. All rights reserved.
+//
+
+#include &#34;registrar.h&#34;
+#include &#34;course.h&#34;
+#include &#34;student.h&#34;
+#include &lt;iostream&gt;
+using namespace std;
+
+namespace BrooklynPoly {
+    ostream&amp; operator&lt;&lt;(ostream&amp; os, const Registrar&amp; rhs){
+        os &lt;&lt; &#34;Registrar&#39;s report: &#34; &lt;&lt; endl;
+        os &lt;&lt; &#34;Courses:&#34; &lt;&lt; endl;
+        for (size_t i = 0; i &lt; rhs.courses.size(); ++i){
+            os &lt;&lt; *rhs.courses[i] &lt;&lt; endl;
+        }
+        os &lt;&lt; &#34;Students:&#34; &lt;&lt; endl;
+        for (size_t i = 0; i &lt; rhs.students.size(); ++i){
+            os &lt;&lt; *rhs.students[i] &lt;&lt; endl;
+        }
+        return os;
+    }
+    
+    Registrar::Registrar(){}
+    
+    bool Registrar::addCourse(const string&amp; name){
+        size_t idx = findCourse(name);
+        if (idx != courses.size()){
+            return false;
+        }
+        courses.push_back(new Course(name));
+        return true;
+    }
+    
+    bool Registrar::addStudent(const string&amp; name){
+        size_t idx = findStudent(name);
+        if (idx != students.size()){
+            return false;
+        }
+        students.push_back(new Student(name));
+        return true;
+    }
+    
+    bool Registrar::enrollStudentInCourse(const string&amp; studentName,
+                                          const string&amp; courseName){
+        if (findStudent(studentName) == students.size() || findCourse(courseName) == courses.size()){
+            return false;
+        }
+        Student* stu = students[findStudent(studentName)];
+        Course* cour = courses[findCourse(courseName)];
+        stu-&gt;addCourse(cour);
+        cour-&gt;addStudent(stu);
+        return true;
+    }
+    
+    bool Registrar::cancelCourse(const string&amp; courseName){
+        size_t idx = findCourse(courseName);
+        if(idx == courses.size()){
+            return false;
+        }
+        courses[idx]-&gt;removeStudentsFromCourse();
+        delete courses[idx];
+        for (size_t i = idx; i &lt; courses.size(); ++i){
+            courses[i] = courses[i+1];
+        }
+        courses.pop_back();
+        return true;
+    }
+    
+    void Registrar::purge(){
+        for (size_t i = 0; i &lt; courses.size(); ++i){
+            delete courses[i];
+        }
+        courses.clear();
+        for (size_t i = 0; i &lt; students.size(); ++i){
+            delete students[i];
+        }
+        students.clear();
+    }
+    
+    
+    size_t Registrar::findStudent(const string&amp; name) const{
+        for (size_t i = 0; i &lt; students.size(); ++i){
+            if(students[i]-&gt;getName() == name){
+                return i;
+            }
+        }
+        return students.size();
+    }
+    
+    size_t Registrar::findCourse(const string&amp; name) const{
+        for (size_t i = 0; i &lt; courses.size(); ++i){
+            if(courses[i]-&gt;getName() == name){
+                return i;
+            }
+        }
+        return courses.size();
+    }
+}
+</code></pre><h2 id=registrarh>registrar.h</h2><pre tabindex=0><code>//
+//  registrar.h
+//  rec07
+//
+//  Created by DJ on 3/11/22.
+//  Copyright © 2022 DJ. All rights reserved.
+//
+
+#ifndef registrar_h
+#define registrar_h
+#include&lt;iostream&gt;
+#include&lt;string&gt;
+#include&lt;vector&gt;
+
+class Student;
+class Course;
+class Registrar {
+    friend std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, const Registrar&amp; rhs);
+public:
+    Registrar();
+    bool addCourse(const std::string&amp;);
+    bool addStudent(const std::string&amp;);
+    bool enrollStudentInCourse(const std::string&amp; studentName,
+                               const std::string&amp; courseName);
+    bool cancelCourse(const std::string&amp; courseName);
+    void purge();
+    
+private:
+    size_t findStudent(const std::string&amp;) const;
+    size_t findCourse(const std::string&amp;) const;
+    
+    std::vector&lt;Course*&gt; courses;
+    std::vector&lt;Student*&gt; students;
+};
+
+
+#endif /* registrar_h */
+</code></pre><h2 id=studentcpp>student.cpp</h2><pre tabindex=0><code>//
+//  student.cpp
+//  rec07
+//
+//  Created by DJ on 3/11/22.
+//  Copyright © 2022 DJ. All rights reserved.
+//
+
+#include &#34;course.h&#34;
+#include &#34;student.h&#34;
+#include &lt;iostream&gt;
+using namespace std;
+
+namespace BrooklynPoly{
+    ostream&amp; operator&lt;&lt;(ostream&amp; os, const Student&amp; rhs) {
+        os &lt;&lt; rhs.name &lt;&lt; &#34;: &#34;;
+        for (size_t i = 0; i &lt; rhs.courses.size(); ++i){
+            os &lt;&lt; rhs.courses[i]-&gt;getName() &lt;&lt; &#34; &#34;;
+        }
+        return os;
+    }
+    
+    Student::Student(const string&amp; name): name(name) {}
+    
+    const string&amp; Student::getName() const {return name;}
+    
+    bool Student::addCourse(Course* rhs){
+        for (size_t i = 0; i &lt; courses.size(); ++i){
+            if (courses[i] == rhs){
+                return false;
+            }
+        }
+        courses.push_back(rhs);
+        return true;
+    }
+    
+    // Student method needed by Course
+    void Student::removedFromCourse(Course* rhs) {
+        for (size_t i = 0; i &lt; courses.size(); ++i){
+            if (courses[i] == rhs){
+                for (size_t j = i; j &lt; courses.size(); ++j){
+                    courses[j] = courses[j+1];
+                }
+                courses.pop_back();
+                return;
+            }
+        }
+    }
+
+}
+</code></pre><h2 id=studenth>student.h</h2><pre tabindex=0><code>//
+//  student.h
+//  rec07
+//
+//  Created by DJ on 3/11/22.
+//  Copyright © 2022 DJ. All rights reserved.
+//
+
+#ifndef student_h
+#define student_h
+#include&lt;string&gt;
+#include&lt;vector&gt;
+#include&lt;iostream&gt;
+
+namespace BrooklynPoly{
+    class Course;
+    class Student {
+        friend std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, const Student&amp; rhs);
+    public:
+        // Student methods needed by Registrar
+        Student(const std::string&amp; name);
+        const std::string&amp; getName() const;
+        bool addCourse(Course*);
+        
+        // Student method needed by Course
+        void removedFromCourse(Course*);
+        
+    private:
+        std::string name;
+        std::vector&lt;Course*&gt; courses;
+    };
+}
+
+#endif /* student_h */
+</code></pre></div><div class=post__footer></div></div></main></div><footer class="footer footer__base"><ul class=footer__list><li class=footer__item>&copy;
+dongje kim
+2023</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></body></html>
