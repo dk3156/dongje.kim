@@ -1,5 +1,6 @@
 ---
 title: "Home"
+date: 2023-06-17
 mainSectionTitle: "About me"
 ---
 Dongje Kim is a recent graduate of Bachelor of Science, Computer Science from NYU, Tandon School of Engineering. He spent freshman and sophomore as NYU Tisch School of the Arts, Film and TV major. He is from South Korea, Yongin.
