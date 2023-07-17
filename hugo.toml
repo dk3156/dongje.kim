@@ -1,0 +1,38 @@
+baseURL = "https://dongje.kim/"
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = "anatole"
+enableEmoji = true
+
+[params]
+title = "Dongje Kim"
+author = "dongje kim"
+description = "Portfolio"
+mainSections = ["experience", "projects", "skills"]
+profilePicture = "images/tiger.png"
+
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 1
+  url = "/"
+
+  [[menu.main]]
+  name = "experience"
+  weight = 2
+  identifier = "experience"
+  url = "/experience/work/"
+
+  [[menu.main]]
+  name = "project"
+  weight = 3
+  identifier = "project"
+  url = "/projects/"
+
+  [[menu.main]]
+  name = "skill"
+  weight = 4
+  identifier = "skill"
+  url = "/skills/"
