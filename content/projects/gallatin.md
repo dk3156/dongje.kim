@@ -4,7 +4,7 @@ date: 2023-05-03
 mainSectionTitle: "gallatin"
 ---
 
-Gallatin is a web application built with Python frameworks (scikit-learn, numpy, Flask) and external APIs (Spotify API, OpenWeather API) that recommends music based on external condition, including weather and location, which maps to a specific emotion from four categories -- anger, happiness, sadness, and relaxed.
+Gallatin is a web application that exports playlists into users' spotify account using machine learning algorithm. Playlist is determined by user's preference on song's emotion and user's current location / weather factors. It is built with Python frameworks (scikit-learn, numpy, Flask) and external APIs (Spotify API, OpenWeather API). It maps songs to a specific emotion from four categories -- anger, happiness, sadness, and relaxed.
 
 - Gallatin uses OpenWeather API to check the weather of the user's current location
 - Gallatin collect training data from Spotify song objects (including danceability, valence, energy, etc)
@@ -12,7 +12,7 @@ Gallatin is a web application built with Python frameworks (scikit-learn, numpy,
 - Gallatin let the user run the calculations manually.
 - Gallatin exports the songs into a Spotify playlist via Spotify API
 
-Github: https://github.com/dk3156/gallatin
+#### Github: https://github.com/dk3156/gallatin
 
 ## Setup
 

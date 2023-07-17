@@ -4,7 +4,7 @@ date: 2022-09-01
 mainSectionTitle: "ptc"
 ---
 # 2022 - 2023
-Specialized in assisting students with Object-Oriented Programming, Data Structures, and Intro to programming with C, C++ and Python. Provided one-on-one tutoring and in-person exam review in private tutoring sessions. 
+Tutored students for Object-Oriented Programming, Data Structures, and Intro To Programming course at Polytechnic Tutoring Center, 2 Metrotech NYU, Brooklyn. Used three programming languages: C, C++ and Python. Tutored in large group settings and provided exam review / homework assistance in-person.
 
 Take a look at my tutoring materials:
 
