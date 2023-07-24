@@ -7,6 +7,7 @@ enableEmoji = true
 [params]
 title = "Dongje Kim"
 author = "dongje kim"
+email = "djkim0424@gmail.com"
 description = "Portfolio"
 mainSections = ["experience", "projects", "skills", "blog"]
 profilePicture = "images/tiger.png"
