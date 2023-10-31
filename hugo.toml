@@ -1,6 +1,6 @@
 baseURL = "https://dk3156.github.io/dongje.kim/"
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'DONGJE KIM'
 theme = "anatole"
 enableEmoji = true
 
@@ -11,6 +11,7 @@ email = "djkim0424@gmail.com"
 description = "Portfolio"
 mainSections = ["experience", "projects", "skills", "blog"]
 profilePicture = "images/tiger.png"
+BookSection = '/'
 
 [menu]
 
