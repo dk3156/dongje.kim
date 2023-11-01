@@ -1,6 +1,7 @@
 ---
 title: "운영체제"
 date: 2023-10-31
+weight: 3
 mainSectionTitle: "hugo"
 ---
 ### 운영체제 란?

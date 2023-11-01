@@ -1,6 +1,7 @@
 ---
 title: "네트워크"
 date: 2023-10-31
+weight: 2
 mainSectionTitle: "hello"
 ---
 대규모 트래픽 처리가 중요한 이유: 잠재적인 고객이 이탈
