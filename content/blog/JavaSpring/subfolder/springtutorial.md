@@ -3,6 +3,7 @@ title: "자바 스프링 튜토리얼"
 date: 2023-10-30
 mainSectionTitle: "hugo"
 ---
+https://velog.io/@kjyeon1101/Spring-Controller%EC%99%80-Service 참고. 
 
 ### 데이터 베이스 테이블과 자바 클래스를 매핑하는법
 spring-boot-starter-data-jpa 의존성을 추가하고 @Entity 어노테이션을 붙여서 매핑한다.

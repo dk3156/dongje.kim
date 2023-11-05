@@ -3,6 +3,9 @@ title: "JPA 이란?"
 date: 2023-11-03
 mainSectionTitle: "hugo"
 ---
+https://yjkim-dev.tistory.com/3
+https://dbjh.tistory.com/77 참고. 
+
 # JPA and H2
 
 H2 Database 란?
@@ -39,8 +42,10 @@ JPA를 사용하면 SQL이 아닌 객체 중심으로 개발할 수 있다는 �
 
 인터페이스는 추상 클래스와 마찬가지로 자신이 직접 인스턴스를 생성할 수는 없습니다. 따라서 인터페이스가 포함하고 있는 추상 메소드를 구현해 줄 클래스를 작성해야만 합니다.
 
+https://gofnrk.tistory.com/22 참고.
+
 ### JPA Repository
 
 실제 DB에 Access 하여 쿼리를 수행하는 등의 역할을 하는 Repository Interface를 생성합니다. @Repository 어노테이션을 추가하고, JpaRepository를 상속합니다. JpaRepository는 Spring Data JPA에서 제공하는 JPA 구현을 위한 인터페이스로 간단하게 상속하여 사전에 정의된 여러 메서드를 통해 간단히 DB에 Create/Read/Update/Delete 쿼리를 수행할 수 있습니다
 
-예시: java interface extends JPArepository<class name>
+예시:``` java interface extends JPArepository<class name>```
