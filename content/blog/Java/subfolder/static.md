@@ -3,6 +3,9 @@ title: "자바에서 자주 보이는 Static 이란 무엇일까?"
 date: 2023-11-03
 mainSectionTitle: "hugo"
 ---
+
+https://honbabzone.com/java/java-static/ 참고.
+
 # JVM 메모리 구조
 
 Java Virtual Machine 은 
