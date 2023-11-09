@@ -1,0 +1,58 @@
+<!doctype html><html dir=ltr lang=en data-theme class="html theme--light"><head><title>dongje kim
+|
+구현 & 계산
+</title><meta charset=utf-8><meta name=generator content="Hugo 0.120.4"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name=author content="dongje kim"><meta name=description content="Portfolio"><link rel=stylesheet href=/dongje.kim/scss/main.min.1147aa5bacb4bce677a0e264073829caedb82fd18ea07a5f1d80521f539d1c45.css integrity="sha256-EUeqW6y0vOZ3oOJkBzgpyu24L9GOoHpfHYBSH1OdHEU=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/fontawesome.min.7d272de35b410fb165377550cdf9c4d3a80fbbcc961e111914e4d5c0eaf5729f.css integrity="sha256-fSct41tBD7FlN3VQzfnE06gPu8yWHhEZFOTVwOr1cp8=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/solid.min.55d8333481b07a08e07cf6f37319753a2b47e99f4c395394c5747b48b495aa9b.css integrity="sha256-VdgzNIGwegjgfPbzcxl1OitH6Z9MOVOUxXR7SLSVqps=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/regular.min.a7448d02590b43449364b6b5922ed9af5410abb4de4238412a830316dedb850b.css integrity="sha256-p0SNAlkLQ0STZLa1ki7Zr1QQq7TeQjhBKoMDFt7bhQs=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/dongje.kim/fontawesome/css/brands.min.9ed75a5d670c953fe4df935937674b4646f92674367e9e66eb995bb04e821647.css integrity="sha256-ntdaXWcMlT/k35NZN2dLRkb5JnQ2fp5m65lbsE6CFkc=" crossorigin=anonymous type=text/css><link rel="shortcut icon" href=/dongje.kim/favicon.ico type=image/x-icon><link rel=apple-touch-icon sizes=180x180 href=/dongje.kim/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/dongje.kim/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/dongje.kim/favicon-16x16.png><link rel=canonical href=https://dk3156.github.io/dongje.kim/blog/algorithm/subfolder/implement/><script type=text/javascript src=/dongje.kim/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js integrity="sha256-+RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI=" crossorigin=anonymous></script><script type=text/javascript src=/dongje.kim/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc=" crossorigin=anonymous></script><meta name=twitter:card content="summary"><meta name=twitter:title content="구현 & 계산"><meta name=twitter:description content="선분의 길이
+https://school.programmers.co.kr/learn/courses/30/lessons/120876
+class Solution { public int solution(int[][] lines) { // 1. arr 배열 및 변수 초기화 int[] arr = new int[200]; int answer = 0; // 2. lines 정보를 arr 배열에 적용 for(int i = 0; i < lines.length; i++) for(int j = lines[i][0] + 100; j < lines[i][1] + 100; j++) arr[j]++; // 3. arr 배열에서 겹친 부분 세기 for(int i = 0; i < 200; i++) if(arr[i] > 1) answer++; return answer; } } array 를 사용하기."><meta property="og:title" content="구현 & 계산"><meta property="og:description" content="선분의 길이
+https://school.programmers.co.kr/learn/courses/30/lessons/120876
+class Solution { public int solution(int[][] lines) { // 1. arr 배열 및 변수 초기화 int[] arr = new int[200]; int answer = 0; // 2. lines 정보를 arr 배열에 적용 for(int i = 0; i < lines.length; i++) for(int j = lines[i][0] + 100; j < lines[i][1] + 100; j++) arr[j]++; // 3. arr 배열에서 겹친 부분 세기 for(int i = 0; i < 200; i++) if(arr[i] > 1) answer++; return answer; } } array 를 사용하기."><meta property="og:type" content="article"><meta property="og:url" content="https://dk3156.github.io/dongje.kim/blog/algorithm/subfolder/implement/"><meta property="article:section" content="blog"><meta property="article:published_time" content="2023-11-09T00:00:00+00:00"><meta property="article:modified_time" content="2023-11-09T00:00:00+00:00"><meta property="og:site_name" content="Dongje Kim"><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"blog","name":"구현 \u0026 계산","headline":"구현 \u0026 계산","alternativeHeadline":"","description":"
+      
+        선분의 길이\nhttps:\/\/school.programmers.co.kr\/learn\/courses\/30\/lessons\/120876\nclass Solution { public int solution(int[][] lines) { \/\/ 1. arr 배열 및 변수 초기화 int[] arr = new int[200]; int answer = 0; \/\/ 2. lines 정보를 arr 배열에 적용 for(int i = 0; i \u0026lt; lines.length; i\u002b\u002b) for(int j = lines[i][0] \u002b 100; j \u0026lt; lines[i][1] \u002b 100; j\u002b\u002b) arr[j]\u002b\u002b; \/\/ 3. arr 배열에서 겹친 부분 세기 for(int i = 0; i \u0026lt; 200; i\u002b\u002b) if(arr[i] \u0026gt; 1) answer\u002b\u002b; return answer; } } array 를 사용하기.
+
+
+      
+
+
+    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/dk3156.github.io\/dongje.kim\/blog\/algorithm\/subfolder\/implement\/"},"author":{"@type":"Person","name":"dongje kim"},"creator":{"@type":"Person","name":"dongje kim"},"accountablePerson":{"@type":"Person","name":"dongje kim"},"copyrightHolder":{"@type":"Person","name":"dongje kim"},"copyrightYear":"2023","dateCreated":"2023-11-09T00:00:00.00Z","datePublished":"2023-11-09T00:00:00.00Z","dateModified":"2023-11-09T00:00:00.00Z","publisher":{"@type":"Organization","name":"dongje kim","url":"https://dk3156.github.io/dongje.kim/","logo":{"@type":"ImageObject","url":"https:\/\/dk3156.github.io\/dongje.kim\/favicon-32x32.png","width":"32","height":"32"}},"image":[],"url":"https:\/\/dk3156.github.io\/dongje.kim\/blog\/algorithm\/subfolder\/implement\/","wordCount":"228","genre":[],"keywords":[]}</script></head><body class=body><div class=wrapper><aside class=wrapper__sidebar><div class="sidebar
+animated fadeInDown"><div class=sidebar__content><div class=sidebar__introduction><img class=sidebar__introduction-profileimage src=/dongje.kim/images/tiger.png alt="profile picture"><div class=sidebar__introduction-title><a href=/dongje.kim>Dongje Kim</a></div><div class=sidebar__introduction-description><p>Portfolio</p></div></div><ul class=sidebar__list></ul></div><footer class="footer footer__sidebar"><ul class=footer__list><li class=footer__item>@
+djkim0424@gmail.com</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></div></aside><main class=wrapper__main><header class=header><div class="animated fadeInDown"><a role=button class=navbar-burger data-target=navMenu aria-label=menu aria-expanded=false><span aria-hidden=true class=navbar-burger__line></span>
+<span aria-hidden=true class=navbar-burger__line></span>
+<span aria-hidden=true class=navbar-burger__line></span></a><nav class=nav><ul class=nav__list id=navMenu><li class=nav__list-item><a href=/dongje.kim/ title>Home</a></li><li class=nav__list-item><a href=/dongje.kim/experience/work/ title>experience</a></li><li class=nav__list-item><a href=/dongje.kim/projects/ title>project</a></li><li class=nav__list-item><a href=/dongje.kim/blog/ title>blog</a></li></ul><ul class="nav__list nav__list--end"><li class=nav__list-item><div class=themeswitch><a title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></li></ul></nav></div></header><div class="post
+animated fadeInDown"><div class=post__content><h1>구현 & 계산</h1><p>선분의 길이</p><p><a href=https://school.programmers.co.kr/learn/courses/30/lessons/120876>https://school.programmers.co.kr/learn/courses/30/lessons/120876</a></p><pre tabindex=0><code>class Solution {
+    public int solution(int[][] lines) {
+        // 1. arr 배열 및 변수 초기화
+        int[] arr = new int[200];
+        int answer = 0;
+        
+        // 2. lines 정보를 arr 배열에 적용
+        for(int i = 0; i &lt; lines.length; i++)
+            for(int j = lines[i][0] + 100; j &lt; lines[i][1] + 100; j++)
+                arr[j]++;
+        
+        // 3. arr 배열에서 겹친 부분 세기
+        for(int i = 0; i &lt; 200; i++)
+            if(arr[i] &gt; 1)
+                answer++;
+        
+        return answer;
+    }
+  }
+</code></pre><p>array 를 사용하기. &lt;0 값이 있을때 배열에 넣기 위해서 최솟값을 더해서 인덱스를 구하기.</p><ol><li>array 초기화.</li><li>lines 정보를 arr 에 적용</li><li>arr 배열에 겹친 부분 세기</li></ol><p>최대공약수</p><p><a href="https://www.youtube.com/watch?v=8upKVJc1tgo&amp;list=PLlV7zJmoG4XJtqWjB6pPCe5i7b064dfvB&amp;index=5">https://www.youtube.com/watch?v=8upKVJc1tgo&amp;list=PLlV7zJmoG4XJtqWjB6pPCe5i7b064dfvB&amp;index=5</a></p><pre tabindex=0><code>int gcdA = arrayA[0];
+        int gcdB = arrayB[0];
+        
+        // 1. 각 배열의 최대공약수 구하기
+        for(int i =1; i&lt; arrayA.length;i++){
+            gcdA = gcd(gcdA, arrayA[i]);
+            gcdB = gcd(gcdB, arrayB[i]);
+        }
+</code></pre><p>3 개 숫자의 최대공약수를 구할 때( A, B, C)
+f = gcd(A, B) 라고 했을때 gcd(f, C) 가 A B C 의 최대 공약수가 되는것.
+gcd(A B C) 를 동시에 구하는게 아니라 한쌍의 최대공약수를 구하고 나머지 쌍과 다시 최대 공약수를 구하는것.</p><h2 id=gcd-재귀함수-외워버리기>gcd 재귀함수 외워버리기</h2><pre tabindex=0><code>int gcd(int a, int b){
+if (a % b == 0) return b;
+	return gcd(b, a % b)
+}
+</code></pre><p>마지막 두개의 원소에 2를 곱하고 그 원소를 다시 리스트에 넣는다…
+score[:] = 이렇게 되는거였어?? 충격…
+String.isnumeric() → if it is number or not</p><pre tabindex=0><code>scores[-2:] = [x * 2 for x in scores[-2:]]
+</code></pre></div><div class=post__footer></div></div></main></div><footer class="footer footer__base"><ul class=footer__list><li class=footer__item>@
+djkim0424@gmail.com</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></body></html>
