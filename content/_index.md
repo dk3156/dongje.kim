@@ -15,6 +15,6 @@ Github: https://github.com/dk3156
 
 LinkedIn: https://www.linkedin.com/in/dongjekim/
 
-Other Portfolio: https://dk3156.github.io/Art
+2nd Portfolio: https://dk3156.github.io/Art
 
 ---
