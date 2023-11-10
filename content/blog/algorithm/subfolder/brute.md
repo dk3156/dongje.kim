@@ -3,7 +3,7 @@ title: "완전탐색"
 date: 2023-11-05
 mainSectionTitle: "hugo"
 ---
-# Brute Force, 완전탐색
+### Brute Force, 완전탐색
 https://www.youtube.com/watch?v=9aHVA7mJcqQ 참고.
 모든 경우의 수를 전부 탐색하는것.
 세가지 종류가 있다 
@@ -50,3 +50,29 @@ do{
 ```
 
 pre_permutation 은 전 수열로 돌아가는 방식으로 next_permutation 순서 꺼꾸로 바꾼다고 생각하면 된다.
+
+### 완전탐색 재귀함수
+숫자가 들어간 String 에서 꺼낼 수 있는 모든 조합의 숫자 - 예를들어, "17" 이 주어졌을때 만들 수 있는 수는 1, 7, 17, 71
+를 위한 재귀함수. 방향을 보고 나중에 써먹을 수 있게 하기.
+```
+def recursive(combination, string):
+	if combination != "":
+		numberSet.add(int(combination))
+
+	for i in range(0, len(string)):
+		combination += string[i]
+		recursive(combination, string[:i] + string[i+1:])
+```
+
+### 정규표현식
+
+* []
+or: 대괄호 안의 모든 문자를 말함
+* [^]
+not: 대괄호 안의 문자 외의 모든 문자를 말함
+* ^[]
+대괄호 안의 문자로 시작하는 문자열을 말함
+* []$
+대괄호 안의 문자로 끝나는 문자열을 말함
+* /+
+1개 이상의 문자를 말함
