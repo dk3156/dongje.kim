@@ -11,12 +11,12 @@
       
 
 
-    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/dk3156.github.io\/dongje.kim\/blog\/algorithm\/subfolder\/brute\/"},"author":{"@type":"Person","name":"dongje kim"},"creator":{"@type":"Person","name":"dongje kim"},"accountablePerson":{"@type":"Person","name":"dongje kim"},"copyrightHolder":{"@type":"Person","name":"dongje kim"},"copyrightYear":"2023","dateCreated":"2023-11-05T00:00:00.00Z","datePublished":"2023-11-05T00:00:00.00Z","dateModified":"2023-11-05T00:00:00.00Z","publisher":{"@type":"Organization","name":"dongje kim","url":"https://dk3156.github.io/dongje.kim/","logo":{"@type":"ImageObject","url":"https:\/\/dk3156.github.io\/dongje.kim\/favicon-32x32.png","width":"32","height":"32"}},"image":[],"url":"https:\/\/dk3156.github.io\/dongje.kim\/blog\/algorithm\/subfolder\/brute\/","wordCount":"196","genre":[],"keywords":[]}</script></head><body class=body><div class=wrapper><aside class=wrapper__sidebar><div class="sidebar
+    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/dk3156.github.io\/dongje.kim\/blog\/algorithm\/subfolder\/brute\/"},"author":{"@type":"Person","name":"dongje kim"},"creator":{"@type":"Person","name":"dongje kim"},"accountablePerson":{"@type":"Person","name":"dongje kim"},"copyrightHolder":{"@type":"Person","name":"dongje kim"},"copyrightYear":"2023","dateCreated":"2023-11-05T00:00:00.00Z","datePublished":"2023-11-05T00:00:00.00Z","dateModified":"2023-11-05T00:00:00.00Z","publisher":{"@type":"Organization","name":"dongje kim","url":"https://dk3156.github.io/dongje.kim/","logo":{"@type":"ImageObject","url":"https:\/\/dk3156.github.io\/dongje.kim\/favicon-32x32.png","width":"32","height":"32"}},"image":[],"url":"https:\/\/dk3156.github.io\/dongje.kim\/blog\/algorithm\/subfolder\/brute\/","wordCount":"287","genre":[],"keywords":[]}</script></head><body class=body><div class=wrapper><aside class=wrapper__sidebar><div class="sidebar
 animated fadeInDown"><div class=sidebar__content><div class=sidebar__introduction><img class=sidebar__introduction-profileimage src=/dongje.kim/images/tiger.png alt="profile picture"><div class=sidebar__introduction-title><a href=/dongje.kim>Dongje Kim</a></div><div class=sidebar__introduction-description><p>Portfolio</p></div></div><ul class=sidebar__list></ul></div><footer class="footer footer__sidebar"><ul class=footer__list><li class=footer__item>@
 djkim0424@gmail.com</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></div></aside><main class=wrapper__main><header class=header><div class="animated fadeInDown"><a role=button class=navbar-burger data-target=navMenu aria-label=menu aria-expanded=false><span aria-hidden=true class=navbar-burger__line></span>
 <span aria-hidden=true class=navbar-burger__line></span>
 <span aria-hidden=true class=navbar-burger__line></span></a><nav class=nav><ul class=nav__list id=navMenu><li class=nav__list-item><a href=/dongje.kim/ title>Home</a></li><li class=nav__list-item><a href=/dongje.kim/experience/work/ title>experience</a></li><li class=nav__list-item><a href=/dongje.kim/projects/ title>project</a></li><li class=nav__list-item><a href=/dongje.kim/blog/ title>blog</a></li></ul><ul class="nav__list nav__list--end"><li class=nav__list-item><div class=themeswitch><a title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></li></ul></nav></div></header><div class="post
-animated fadeInDown"><div class=post__content><h1>완전탐색</h1><h1 id=brute-force-완전탐색>Brute Force, 완전탐색</h1><p><a href="https://www.youtube.com/watch?v=9aHVA7mJcqQ">https://www.youtube.com/watch?v=9aHVA7mJcqQ</a> 참고.
+animated fadeInDown"><div class=post__content><h1>완전탐색</h1><h3 id=brute-force-완전탐색>Brute Force, 완전탐색</h3><p><a href="https://www.youtube.com/watch?v=9aHVA7mJcqQ">https://www.youtube.com/watch?v=9aHVA7mJcqQ</a> 참고.
 모든 경우의 수를 전부 탐색하는것.
 세가지 종류가 있다</p><ul><li>포문 : for 문으로 모든 경우의 수를 본다. for 문의 개수는 임의로 정해도 되고 재귀를 서서 조건이 만족할 때까지 불러도 된다. 1초 제한 문제(코테) 에는 먹히지 않는다.</li></ul><pre tabindex=0><code>for(int i=0; i&lt;n; i++)
 	for(int j= i + 1; j &lt; n; j++)
@@ -42,5 +42,18 @@ do{
 	cout &lt;&lt; &#39;\n&#39;;
 
 }while(prev_permutation(v.begin(),v.end()));
-</code></pre><p>pre_permutation 은 전 수열로 돌아가는 방식으로 next_permutation 순서 꺼꾸로 바꾼다고 생각하면 된다.</p></div><div class=post__footer></div></div></main></div><footer class="footer footer__base"><ul class=footer__list><li class=footer__item>@
+</code></pre><p>pre_permutation 은 전 수열로 돌아가는 방식으로 next_permutation 순서 꺼꾸로 바꾼다고 생각하면 된다.</p><h3 id=완전탐색-재귀함수>완전탐색 재귀함수</h3><p>숫자가 들어간 String 에서 꺼낼 수 있는 모든 조합의 숫자 - 예를들어, &ldquo;17&rdquo; 이 주어졌을때 만들 수 있는 수는 1, 7, 17, 71
+를 위한 재귀함수. 방향을 보고 나중에 써먹을 수 있게 하기.</p><pre tabindex=0><code>def recursive(combination, string):
+	if combination != &#34;&#34;:
+		numberSet.add(int(combination))
+
+	for i in range(0, len(string)):
+		combination += string[i]
+		recursive(combination, string[:i] + string[i+1:])
+</code></pre><h3 id=정규표현식>정규표현식</h3><ul><li>[]
+or: 대괄호 안의 모든 문자를 말함</li><li>[^]
+not: 대괄호 안의 문자 외의 모든 문자를 말함</li><li>^[]
+대괄호 안의 문자로 시작하는 문자열을 말함</li><li>[]$
+대괄호 안의 문자로 끝나는 문자열을 말함</li><li>/+
+1개 이상의 문자를 말함</li></ul></div><div class=post__footer></div></div></main></div><footer class="footer footer__base"><ul class=footer__list><li class=footer__item>@
 djkim0424@gmail.com</li></ul></footer><script type=text/javascript src=/dongje.kim/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ=" crossorigin=anonymous></script></body></html>
