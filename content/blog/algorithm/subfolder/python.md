@@ -106,3 +106,12 @@ List Comprehension 으로 map, filter 를 대채할 수 있다.
 ```
 [n for n in [1,2,3,4] if n % 2 == 0]
 ```
+
+### heapq
+Python 
+import heapq
+
+두개의 원소를 줄때 heapq 는 항상 첫번째 숫자를 priority 로 생각하고 넣는다. 
+그리고 리스트가 있으면 heaq.heapify(list) 이렇게 해서 정렬할 수 있다. in place.
+
+python 리스트는 find 메서드 가 없어서 index 를 쓰는데 이거는 원소가 없으면 에러가 리턴된다. 에러처리를 하고 싶지 않으면 count 를 쓰자.
