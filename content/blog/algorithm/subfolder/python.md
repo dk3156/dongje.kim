@@ -176,3 +176,19 @@ def solution(preferences):
 preferences = [[2, 1, 0], [0, 2, 1], [0, 2, 1]]
 print(solution(preferences))
 ```
+
+### lambda key 를 이용한 정렬
+프로그래머스 오답풀이: 
+https://school.programmers.co.kr/learn/courses/30/lessons/42579 
+
+lambda key x : criteria(x) 로 정렬을 할때, () 를 사용하면 두 가지 이상의 criteria 로 정렬을 할 수 있다.
+(criteria1(x), criteria2(x), criteria3(x))  형식으로 3개의 함수를 wrap 해서 lambda key 로 넘겨주면 3 가지 조건 전부 적용이 되서 정렬된다.
+```
+temp = [[genres[i], plays[i], i] for i in range(len(genres))]   
+temp = sorted(temp, key=lambda x: (x[0], -x[1], x[2]))  
+```
+
+dictionary.item() 으로 key, value pairs 를 동시에 정렬도 가능.
+```
+total_genre_d = sorted(total_genre_d.items(), key = lambda x: -x[1]) 
+```
