@@ -187,3 +187,8 @@ lambda key x : criteria(x) 로 정렬을 할때, () 를 사용하면 두 가지 
 temp = [[genres[i], plays[i], i] for i in range(len(genres))]   
 temp = sorted(temp, key=lambda x: (x[0], -x[1], x[2]))  
 ```
+
+dictionary.item() 으로 key, value pairs 를 동시에 정렬도 가능.
+```
+total_genre_d = sorted(total_genre_d.items(), key = lambda x: -x[1]) 
+```
