@@ -8,8 +8,7 @@ code &amp;mdash;- 소스코드가 들어가는 부분. 실행할 프로그램의
 data &amp;mdash;- global, static 변수가 할당되는 영역.</description></item><item><title>MySQL</title><link>https://dk3156.github.io/dongje.kim/blog/database/subfolder/sql/</link><pubDate>Wed, 06 Dec 2023 00:00:00 +0000</pubDate><guid>https://dk3156.github.io/dongje.kim/blog/database/subfolder/sql/</guid><description>1주차 링크 https://teamsparta.notion.site/SQL-1-bba7788fb6b54b609e389c438678ba0e
 2주차 링크 https://teamsparta.notion.site/SQL-2-0f26aba347204efbbcd9c6db432a15d5
 중요개념!:
-select, from, where, order by, group by, min, max, avg, count, like &amp;lsquo;%%&amp;rsquo;, in (value, value &amp;hellip;), inner, outer, left, right join
-group by - 1, 2, 3 : select 한 첫번째, 두번째, 세번째 컬럼을 기준으로 그룹한다. 3주차 링크 다른 개발자분의 말&amp;hellip;
+select, from, where, order by, group by, min, max, avg, count, like &amp;lsquo;%%&amp;rsquo;, in (value, value &amp;hellip;), inner, outer, left, right join, =, &amp;lt;&amp;gt; , &amp;gt;=, &amp;lt;= group by - 1, 2, 3 : select 한 첫번째, 두번째, 세번째 컬럼을 기준으로 그룹한다. 3주차 링크 다른 개발자분의 말&amp;hellip;
 데이터베이스를 설명하려고 하면 한도 끝도 없고 배울 내용도 하루 이틀에 끝날 내용이 아니다. 데이터베이스는 너무나 방대하고 데이터베이스가 없으면 프로그래밍이 아무런 소용이 없다.</description></item><item><title>Data Analytics</title><link>https://dk3156.github.io/dongje.kim/blog/web/subfolder/dataanalytic/</link><pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate><guid>https://dk3156.github.io/dongje.kim/blog/web/subfolder/dataanalytic/</guid><description>Data Analytics Landscape Descriptive analytics ansers the question of what happened. It provides a historical view of adata to identify parrerns and trends. Examples: monthly sales report, social media post engagement
 Diagnostic analytics delves into why something happened. It examines data to understand the cuase of event an dbehaviors.
 Predictive analytics forecasts what might happen in the future based on past data Examples: sales forecasting and customer churn prediction
